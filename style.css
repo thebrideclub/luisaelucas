@@ -83,20 +83,20 @@ body {
 
 /* Texto pós-imagem */
 .info-casal {
-  margin-top: -60px;
+  margin-top: -80px; /* Subido */
   background-image: url('fundo_branco.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  padding: 60px 0;
+  padding: 40px 0; /* Mais compacto */
 }
 
 .nomes {
   font-family: "Girly Moods DEMO", cursive;
   font-size: 100px;
   color: #c3af8e;
-  margin-bottom: 0;
+  margin-bottom: 10px; /* Aproximado da data */
   font-weight: normal;
 }
 
@@ -104,7 +104,7 @@ body {
   font-family: 'Chopard', serif;
   font-size: 20px;
   color: #9c9585;
-  margin: -10px 0  -40px 0;
+  margin: -5px 0 -20px 0; /* Aproximado da cidade */
   text-transform: uppercase;
 }
 
@@ -112,12 +112,12 @@ body {
   font-family: "Girly Moods DEMO", cursive;
   font-size: 64px;
   color: #c3af8e;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Aproximado do coqueiro */
 }
 
 .coqueiro {
-  height: 100px;
-  margin-bottom: 20px;
+  height: 90px; /* Diminuído */
+  margin-bottom: 10px; /* Mais próximo */
 }
 
 /* Texto de boas-vindas */
@@ -140,7 +140,7 @@ body {
   letter-spacing: 1.2px;
   max-width: 800px;
   margin: 0 auto 40px auto;
-  padding: 20px;
+  padding: 20px 40px; /* Mais margem lateral */
 }
 
 /* Contagem regressiva */
@@ -193,6 +193,7 @@ body {
   font-family: 'Chopard', serif;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
 
   .menu {
@@ -212,23 +213,22 @@ body {
 
   .nav-container {
     width: 100%;
-    overflow-x: auto; /* rolagem horizontal se necessário */
+    overflow-x: auto;
   }
 
   .menu-list {
     flex-direction: row;
-    flex-wrap: nowrap; /* impede quebra de linha */
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 10px;
     padding: 0 10px;
     margin: 0;
-    list-style: none;
   }
 
   .menu-list li a {
-    font-size: 12px; /* reduz tamanho da fonte */
+    font-size: 12px;
     padding: 4px 6px;
-    white-space: nowrap; /* evita quebra de palavra */
+    white-space: nowrap;
   }
 
   .foto-principal {
@@ -236,31 +236,37 @@ body {
     height: auto;
   }
 
+  .info-casal {
+    margin-top: -60px;
+    padding: 30px 0;
+  }
+
   .nomes {
     font-size: 16vw;
     padding: 20px 10px;
-  }
-
-  .data {
-    font-size: 4vw; /* Reduzida */
     margin-bottom: 10px;
   }
 
+  .data {
+    font-size: 4vw;
+    margin-bottom: 5px;
+  }
+
   .cidade {
-    font-size: 8vw; /* Aumentada */
+    font-size: 8vw;
     padding: 20px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .coqueiro {
-    width: 40vw;
+    width: 35vw;
     height: auto;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 
   .texto-boas-vindas-conteudo {
-    font-size: 3vw; /* Reduzido um pouco */
-    padding: 0 15px;
+    font-size: 3vw;
+    padding: 0 25px; /* Mais margem lateral no mobile */
   }
 
   .titulo-contagem {
@@ -268,17 +274,10 @@ body {
   }
 
   .contador {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-  }
-
-  .bloco {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .bloco span {
@@ -292,6 +291,4 @@ body {
   .dois-pontos {
     display: none;
   }
-
 }
-

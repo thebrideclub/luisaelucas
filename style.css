@@ -318,6 +318,8 @@ body {
 
   .nomes {
     font-size: 14vw;
+        display: block; /* Adicionado */
+    margin: 0 auto;  /* Adicionado */
   }
 
   .data {

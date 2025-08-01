@@ -265,9 +265,10 @@ body {
     padding: 10px 20px; /* espaçamento lateral */
   }
 
-  .logo-container {
-    margin-bottom: 10px;
-  }
+.logo-container {
+  margin: 0 auto 10px auto; /* centraliza horizontalmente */
+}
+
 
   .logo {
     width: 80px;

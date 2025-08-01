@@ -99,15 +99,15 @@ body {
 
 .nomes {
   font-family: "Girly Moods DEMO", cursive;
-  font-size: 100px;
+  font-size: 80px;
   color: #c3af8e;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-weight: normal;
 }
 
 .data {
   font-family: 'Chopard', serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #9c9585;
   margin: -5px 0 -20px 0;
   text-transform: uppercase;

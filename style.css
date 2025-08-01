@@ -249,11 +249,12 @@ body {
   }
 
   .data {
+    font-size: 10vw;
     margin-bottom: 20px;
   }
 
   .cidade {
-    font-size: 5vw;
+    font-size: 10vw;
     padding: 20px 10px;
     margin-bottom: 20px;
   }
@@ -265,7 +266,7 @@ body {
   }
 
   .texto-boas-vindas-conteudo {
-    font-size: 4.2vw;
+    font-size: 4vw;
     padding: 0 15px;
   }
 

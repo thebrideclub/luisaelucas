@@ -331,7 +331,7 @@ body {
   .cidade {
     font-size: 8vw;
     padding: 20px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .coqueiro {
@@ -341,7 +341,7 @@ body {
   }
 
   .texto-boas-vindas-conteudo {
-margin-top: -10px;
+margin-top: -20px;
     font-size: 3vw;
     padding: 0 25px;
   }

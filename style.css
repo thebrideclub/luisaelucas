@@ -193,7 +193,11 @@ body {
   font-family: 'Chopard', serif;
 }
 .sessao-como-chegar {
-  background-color: #fdfcf9;
+  background-image: url('fundo_branco.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 60px 20px;
   text-align: center;
 }
@@ -310,19 +314,17 @@ body {
   }
 
   .data {
- margin-top: -30px
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .cidade {
     font-size: 8vw;
-     margin-top: -60px
     padding: 20px 10px;
     margin-bottom: 10px;
   }
 
   .coqueiro {
-    width: 10vw; /* diminuído no mobile */
+    width: 25vw; /* diminuído no mobile */
     height: auto;
     margin: 10px auto;
   }

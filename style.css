@@ -127,7 +127,7 @@ body {
 
 /* Texto de boas-vindas */
 .texto-boas-vindas {
-  width: 90%;
+  width: 100%;
   background-image: url('fundo.png');
   background-size: cover;
   background-position: center;
@@ -145,7 +145,7 @@ body {
   letter-spacing: 1.2px;
   max-width: 800px;
   margin: 0 auto 40px auto;
-  padding: 10px 10px;
+  padding: 20px 40px;
 }
 
 /* Contagem regressiva */

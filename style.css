@@ -193,12 +193,12 @@ body {
   font-family: 'Chopard', serif;
 }
 
-@@media (max-width: 768px) {
+@media (max-width: 768px) {
 
   .menu {
     flex-direction: column;
     align-items: center;
-    padding: 20px 0 10px;
+    padding: 10px 0;
   }
 
   .logo-container {
@@ -206,32 +206,30 @@ body {
   }
 
   .logo {
-    width: 100px;
+    width: 80px;
     height: auto;
-    margin: 0 auto;
   }
 
   .nav-container {
-    display: flex;
-    justify-content: center;
-    width: 60%;
+    width: 100%;
+    overflow-x: auto; /* rolagem horizontal se necessário */
   }
 
   .menu-list {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* impede quebra de linha */
     justify-content: center;
-    gap: 15px;
-    padding: 0;
+    gap: 10px;
+    padding: 0 10px;
     margin: 0;
     list-style: none;
   }
 
   .menu-list li a {
-    font-size: 6px;
-    padding: 5px;
+    font-size: 12px; /* reduz tamanho da fonte */
+    padding: 4px 6px;
+    white-space: nowrap; /* evita quebra de palavra */
   }
-}
 
   .foto-principal {
     width: 100%;
@@ -295,4 +293,5 @@ body {
     display: none;
   }
 
+}
 

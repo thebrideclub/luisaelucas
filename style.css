@@ -116,7 +116,7 @@ body {
 }
 
 .coqueiro {
-  height: 90px; /* Diminuído */
+  height: 40px; /* Diminuído */
   margin-bottom: 10px; /* Mais próximo */
 }
 
@@ -314,7 +314,7 @@ body {
   }
 
   .data {
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
 
   .cidade {
@@ -324,7 +324,7 @@ body {
   }
 
   .coqueiro {
-    width: 25vw; /* diminuído no mobile */
+    width: 15vw; /* diminuído no mobile */
     height: auto;
     margin: 10px auto;
   }

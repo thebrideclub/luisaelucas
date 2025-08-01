@@ -193,9 +193,6 @@ body {
   font-family: 'Chopard', serif;
 }
 
-/* ===================== */
-/* MEDIA QUERY PARA MOBILE */
-/* ===================== */
 @media (max-width: 768px) {
 
   .menu {
@@ -243,11 +240,12 @@ body {
   }
 
   .data {
-    margin-bottom: 20px;
+    font-size: 3vw; /* Reduzida */
+    margin-bottom: 10px;
   }
 
   .cidade {
-    font-size: 5vw;
+    font-size: 7vw; /* Aumentada */
     padding: 20px 10px;
     margin-bottom: 20px;
   }
@@ -259,7 +257,7 @@ body {
   }
 
   .texto-boas-vindas-conteudo {
-    font-size: 4.2vw;
+    font-size: 3.6vw; /* Reduzido um pouco */
     padding: 0 15px;
   }
 

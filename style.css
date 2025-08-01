@@ -117,6 +117,7 @@ body {
   font-family: "Girly Moods DEMO", cursive;
   font-size: 64px;
   color: #c3af8e;
+  margin-top: -10px;
 }
 
 .coqueiro {
@@ -126,7 +127,7 @@ body {
 
 /* Texto de boas-vindas */
 .texto-boas-vindas {
-  width: 100%;
+  width: 90%;
   background-image: url('fundo.png');
   background-size: cover;
   background-position: center;

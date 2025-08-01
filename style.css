@@ -338,6 +338,7 @@ body {
   }
 
   .texto-boas-vindas-conteudo {
+margin-top: -10px;
     font-size: 3vw;
     padding: 0 25px;
   }

@@ -262,11 +262,79 @@ body {
   background-color: #b09a7a;
 }
 
-.coqueiro-sessao {
-  width: 40px;
-  height: auto;
-  margin: 30px auto;
+
+.sessao-dress-code {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fdfaf6;
+  font-family: 'Chopard', sans-serif;
 }
+
+.icone-coqueiro {
+  width: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo-dress {
+  font-family: 'GirlyDemo', cursive;
+  font-size: 32px;
+  color: #9b7b5a;
+  margin: 10px 0 30px;
+}
+
+.imagem-casal {
+  width: 120px;
+  margin: 0 auto 10px;
+}
+
+.traje {
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #4a3f35;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.imagem-salto {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.descricao-dress {
+  font-size: 13px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  color: #4a3f35;
+  font-family: 'Chopard', serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.botao-referencias {
+  background-color: #c6af91;
+  border: none;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-family: 'Chopard', serif;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.convite-final {
+  font-family: 'GirlyDemo', cursive;
+  font-size: 22px;
+  color: #4a3f35;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.imagem-flor {
+  width: 50px;
+  margin-top: 10px;
+}
+
 
 /* Responsivo */
 @media (max-width: 768px) {

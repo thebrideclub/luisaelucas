@@ -121,13 +121,15 @@ body {
 }
 
 .coqueiro-sessao {
-  height: 35px;
+ margin-top: 10px;  
+height: 42px;
   margin-bottom: 10px;
 }
 
 /* Texto de boas-vindas */
 .texto-boas-vindas {
-  width: 100%;
+  
+width: 100%;
   background-image: url('fundo.png');
   background-size: cover;
   background-position: center;
@@ -271,7 +273,7 @@ body {
 }
 
 .icone-coqueiro {
-  width: 35px;
+  width: 42px;
   margin-bottom: 10px;
 }
 

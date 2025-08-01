@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Chopard';
+  src: url('fonts/Chopard.woff2') format('woff2'),
+       url('fonts/Chopard.woff') format('woff'),
+       url('fonts/Chopard.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GirlyMoods';
+  src: url('fonts/GirlyMoods.woff2') format('woff2'),
+       url('fonts/GirlyMoods.woff') format('woff'),
+       url('fonts/GirlyMoods.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Menu */
+.menu {
+  background-color: #fdfcf9;
+  padding: 30px 0 10px;
+  border-top: 2px solid #e8c6c6;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #5f7157;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  font-family: 'Chopard', serif;
+}
+
+.menu-list li a:hover {
+  color: #a55b4a;
+}
+
+/* Imagem principal */
+.foto-principal {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+ 
+}
+
+/* Texto pós-imagem */
+.info-casal {
+  margin-top: -60px;
+     background-image: url('imagens/fundo_branco.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* ou fixed, se quiser efeito de paralaxe */
+  padding: 60px 0;
+}
+
+.nomes {
+  font-family: "Girly Moods DEMO", cursive;
+  font-size: 100px;
+  color: #c3af8e;
+  margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.data {
+  font-family: 'Chopard', serif;
+  font-size: 20px;
+  color: #9c9585;
+  margin: -10px 0;
+   margin-bottom: -40px;
+    text-transform: uppercase; /* Adicionado */
+}
+
+.cidade {
+  font-family: "Girly Moods DEMO", cursive;
+  font-size: 64px;
+  color: #c3af8e;
+  margin-bottom: 30px;
+}
+
+.coqueiro {
+  height: 100px;
+    margin-bottom: 20px;
+}
+.texto-boas-vindas {
+  width: 100%;
+  background-image: url('imagens/fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* ou fixed, se quiser efeito de paralaxe */
+  padding: 60px 0;
+;
+}
+
+.texto-boas-vindas-conteudo {
+  font-family: 'Chopard', serif;
+  text-transform: uppercase;
+  color: #5f7157;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px;
+    margin-bottom: 40px;
+}
+.contagem-regressiva {
+  padding: 60px 20px;
+  
+  background-color: #fdfcf9;
+  text-align: center;
+
+}
+
+.titulo-contagem {
+  font-family: "Girly Moods DEMO", cursive;
+  font-size: 80px;
+  color: #5f7157;
+  margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloco span {
+  font-family: 'Chopard', serif;
+  font-size: 48px;
+  color: #222;
+}
+
+.bloco p {
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.dois-pontos {
+  font-size: 48px;
+  color: #222;
+  font-family: 'Chopard', serif;
+}
+

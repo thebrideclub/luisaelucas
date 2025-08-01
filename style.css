@@ -288,4 +288,69 @@ body {
   .dois-pontos {
     display: none;
   }
+  .sessao-como-chegar {
+  background-color: #fdfcf9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-sessao {
+  font-family: "Girly Moods DEMO", cursive;
+  font-size: 48px;
+  color: #9c8a73;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.data-sessao {
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #5f5a4c;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.imagem-sessao {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+.local-sessao {
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #5f5a4c;
+  line-height: 1.6;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.botao-como-chegar {
+  font-family: 'Chopard', serif;
+  text-transform: uppercase;
+  background-color: #c3af8e;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.botao-como-chegar:hover {
+  background-color: #b09a7a;
+}
+
+.coqueiro-sessao {
+  width: 40px;
+  height: auto;
+  margin: 30px auto;
+}
+
 }

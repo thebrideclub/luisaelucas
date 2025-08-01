@@ -314,11 +314,12 @@ body {
   }
 
   .data {
-    font-size: 3.2vw;
+    font-size: 3.4vw;
   }
 
   .cidade {
     font-size: 8vw;
+    margin-top: -60px;
     padding: 20px 10px;
     margin-bottom: 10px;
   }

@@ -175,13 +175,13 @@ body {
 .bloco span {
   font-family: 'Chopard', serif;
   font-size: 48px;
-  color: #222;
+  color: #ffffff;
 }
 
 .bloco p {
   font-family: 'Chopard', serif;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
   text-transform: uppercase;
   margin-top: 10px;
   letter-spacing: 1px;
@@ -189,7 +189,7 @@ body {
 
 .dois-pontos {
   font-size: 48px;
-  color: #222;
+  color: #ffffff;
   font-family: 'Chopard', serif;
 }
 .sessao-como-chegar {

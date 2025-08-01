@@ -226,13 +226,13 @@ body {
 
   .nomes {
     font-size: 12vw;
-    padding: 0 10px;
+    padding: 20px 10px;
   }
 
-  .data,
+  .data,{ margin-bottom: 20px;}
   .cidade {
     font-size: 5vw;
-    padding: 0 10px;
+    padding: 20px 10px;
   }
 
   .cidade {

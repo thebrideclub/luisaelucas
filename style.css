@@ -198,45 +198,39 @@ body {
 /* ===================== */
 @media (max-width: 768px) {
 
-  @media (max-width: 768px) {
-
   .menu {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 20px 0 10px;
-  }
-
-  .logo-container {
-    margin-bottom: 10px;
-  }
-
-  .logo {
-    width: 100px;
-    height: auto;
-    margin: 0 auto;
+    padding: 20px 0;
   }
 
   .nav-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
+    align-items: center;
   }
 
   .menu-list {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
   .menu-list li a {
-    font-size: 14px;
-    padding: 5px;
+    font-size: 18px;
   }
-}
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-right: 30px;
+  }
 
   .foto-principal {
     width: 100%;
@@ -249,12 +243,11 @@ body {
   }
 
   .data {
-    font-size: 10vw;
     margin-bottom: 20px;
   }
 
   .cidade {
-    font-size: 10vw;
+    font-size: 5vw;
     padding: 20px 10px;
     margin-bottom: 20px;
   }
@@ -266,7 +259,7 @@ body {
   }
 
   .texto-boas-vindas-conteudo {
-    font-size: 4vw;
+    font-size: 4.2vw;
     padding: 0 15px;
   }
 
@@ -301,3 +294,4 @@ body {
   }
 
 }
+

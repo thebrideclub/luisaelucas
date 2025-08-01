@@ -367,7 +367,7 @@ body {
 }
 
 .subtitulo-programacao {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Chopard', serif;
   margin-bottom: 10px;
   letter-spacing: 1px;
@@ -378,7 +378,6 @@ body {
   font-size: 18px;
   font-family: 'Chopard', serif;
   line-height: 1.5;
-  margin-bottom: 8px;
   letter-spacing: 1px;
   color: #5f5a4c;
 }

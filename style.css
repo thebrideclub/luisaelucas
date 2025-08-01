@@ -301,7 +301,7 @@ width: 100%;
 }
 
 .imagem-salto {
-  width: 120px;
+  width: 160px;
   margin-bottom: 15px;
 }
 
@@ -329,9 +329,9 @@ width: 100%;
 
 .convite-final {
   font-family: "Girly Moods DEMO", cursive;
-  font-size: 28px;
+  font-size: 36px;
   color: #4a3f35;
-  line-height: 1;
+  line-height: 0.4;
   margin-bottom: 20px;
   line-height: 1.6;
 }

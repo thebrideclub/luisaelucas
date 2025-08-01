@@ -9,10 +9,10 @@
 }
 
 @font-face {
-  font-family: "Girly Moods DEMO";
-  src: url('fonts/Girly Moods DEMO.ttf') format('woff2'),
-       url('fonts/Girly Moods DEMO.ttf') format('woff'),
-       url('fonts/Girly Moods DEMO.ttf') format('truetype');
+  font-family: "Girly Moods";
+  src: url('fonts/GirlyMoods.woff2') format('woff2'),
+       url('fonts/GirlyMoods.woff') format('woff'),
+       url('fonts/GirlyMoods.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .nomes {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "Girly Moods", cursive;
   font-size: 100px;
   color: #c3af8e;
   margin-bottom: 0px;
@@ -106,7 +106,7 @@ body {
 }
 
 .cidade {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "Girly Moods", cursive;
   font-size: 64px;
   color: #c3af8e;
   margin-bottom: 30px;
@@ -149,7 +149,7 @@ body {
 }
 
 .titulo-contagem {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "Girly Moods", cursive;
   font-size: 80px;
   color: #5f7157;
   margin-bottom: 40px;

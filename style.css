@@ -320,7 +320,7 @@ body {
   }
 
   .coqueiro {
-    width: 25vw; /* diminuído no mobile */
+    width: 10vw; /* diminuído no mobile */
     height: auto;
     margin: 10px auto;
   }

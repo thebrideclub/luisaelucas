@@ -281,32 +281,32 @@ width: 100%;
 
 .titulo-dress {
    font-family: "Girly Moods DEMO", cursive;
-  font-size: 48px;
+  font-size: 60px;
   color: #9c8a73;
   margin-bottom: 20px;
   font-weight: normal;
 }
 
 .imagem-casal {
-  width: 120px;
+  width: 150px;
   margin: 0 auto 10px;
 }
 
 .traje {
   font-family: 'Chopard', serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #4a3f35;
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
 .imagem-salto {
-  width: 50px;
+  width: 160px;
   margin-bottom: 15px;
 }
 
 .descricao-dress {
-  font-size: 13px;
+  font-size: 10px;
   max-width: 400px;
   margin: 0 auto 30px;
   color: #4a3f35;
@@ -336,7 +336,7 @@ width: 100%;
 }
 
 .imagem-flor {
-  width: 50px;
+  width: 150px;
   margin-top: 10px;
 }
 

@@ -243,16 +243,15 @@ body {
 
   .nomes {
     font-size: 16vw;
-    padding: 20px 0px;
   }
 
   .data {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .cidade {
     font-size: 8vw;
-    padding: 20px 0px;
+    padding: 20px 10px;
     margin-bottom: 10px;
   }
 

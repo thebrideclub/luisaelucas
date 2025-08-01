@@ -1,3 +1,4 @@
+/* Fontes personalizadas */
 @font-face {
   font-family: 'Chopard';
   src: url('fonts/Chopard.woff2') format('woff2'),
@@ -254,8 +255,17 @@ body {
   }
 
   .contador {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row; /* lado a lado */
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+  }
+
+  .bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .bloco span {
@@ -269,4 +279,5 @@ body {
   .dois-pontos {
     display: none;
   }
+
 }

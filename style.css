@@ -1,10 +1,11 @@
-/* -----------------------------------
-   COMPORTAMENTO GERAL E FONTES
------------------------------------- */
+/* ================================
+   COMPORTAMENTO E FONTES
+==================================*/
 html {
   scroll-behavior: smooth;
 }
 
+/* Fontes personalizadas */
 @font-face {
   font-family: 'Chopard';
   src: url('Chopard.woff2') format('woff2'),
@@ -30,9 +31,9 @@ body {
   text-align: center;
 }
 
-/* -----------------------------------
-   CABEÇALHO E MENU
------------------------------------- */
+/* ================================
+   MENU E CABEÇALHO
+==================================*/
 .menu {
   background-color: #fdfcf9;
   padding: 30px 0 10px;
@@ -80,9 +81,9 @@ body {
   color: #a55b4a;
 }
 
-/* -----------------------------------
-   INÍCIO / PÁGINA PRINCIPAL
------------------------------------- */
+/* ================================
+   FOTO PRINCIPAL E INFORMAÇÕES
+==================================*/
 .foto-principal {
   max-width: 1200px;
   width: 100%;
@@ -96,6 +97,8 @@ body {
   background-image: url('fundo_branco.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 40px 0;
 }
 
@@ -123,18 +126,21 @@ body {
 }
 
 .coqueiro-sessao {
- margin-top: 10px;  
-height: 42px;
+  margin-top: 10px;  
+  height: 42px;
   margin-bottom: 10px;
 }
 
-/* -----------------------------------
-   BOAS-VINDAS
------------------------------------- */
+/* ================================
+   TEXTO DE BOAS-VINDAS
+==================================*/
 .texto-boas-vindas {
+  width: 100%;
   background-image: url('fundo.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 60px 0;
 }
 
@@ -146,13 +152,13 @@ height: 42px;
   line-height: 1.8;
   letter-spacing: 1.2px;
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 0 auto 40px auto;
   padding: 20px 40px;
 }
 
-/* -----------------------------------
+/* ================================
    CONTAGEM REGRESSIVA
------------------------------------- */
+==================================*/
 .contagem-regressiva {
   padding: 60px 20px;
   background-color: #c3af8e;
@@ -164,6 +170,7 @@ height: 42px;
   font-size: 80px;
   color: #ffffff;
   margin-bottom: 40px;
+  font-weight: normal;
 }
 
 .contador {
@@ -201,12 +208,15 @@ height: 42px;
   font-family: 'Chopard', serif;
 }
 
-/* -----------------------------------
-   SEÇÃO O CASAMENTO
------------------------------------- */
+/* ================================
+   SEÇÃO: O CASAMENTO
+==================================*/
 .sessao-como-chegar {
   background-image: url('fundo_branco.png');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 60px 20px;
   text-align: center;
 }
@@ -216,6 +226,7 @@ height: 42px;
   font-size: 48px;
   color: #9c8a73;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .data-sessao {
@@ -223,6 +234,7 @@ height: 42px;
   font-size: 16px;
   color: #5f5a4c;
   letter-spacing: 1px;
+  line-height: 1.6;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -230,19 +242,23 @@ height: 42px;
 .imagem-sessao {
   max-width: 500px;
   width: 100%;
+  height: auto;
   margin: 0 auto 40px;
+  display: block;
 }
 
 .local-sessao {
   font-family: 'Chopard', serif;
   font-size: 14px;
   color: #5f5a4c;
+  line-height: 1.6;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .botao-como-chegar {
   font-family: 'Chopard', serif;
+  text-transform: uppercase;
   background-color: #c3af8e;
   color: #fff;
   padding: 10px 30px;
@@ -258,12 +274,21 @@ height: 42px;
   background-color: #b09a7a;
 }
 
-/* -----------------------------------
-   SEÇÃO DRESS CODE
------------------------------------- */
+/* ================================
+   SEÇÃO: DRESS CODE
+==================================*/
 .sessao-dress-code {
   background-image: url('fundo_branco.png');
-  padding: 60px 20px;
+  font-family: "Girly Moods DEMO", cursive;
+  font-size: 48px;
+  color: #9c8a73;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.icone-coqueiro {
+  width: 42px;
+  margin-bottom: 10px;
 }
 
 .titulo-dress {
@@ -271,6 +296,7 @@ height: 42px;
   font-size: 60px;
   color: #9c8a73;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .imagem-casal {
@@ -317,8 +343,9 @@ height: 42px;
   font-family: "Girly Moods DEMO", cursive;
   font-size: 36px;
   color: #4a3f35;
-  line-height: 1.6;
+  line-height: 8px;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .imagem-flor {
@@ -326,13 +353,17 @@ height: 42px;
   margin-top: 10px;
 }
 
-/* -----------------------------------
-   SEÇÃO PROGRAMAÇÃO
------------------------------------- */
+/* ================================
+   SEÇÃO: PROGRAMAÇÃO
+==================================*/
 .sessao-programacao {
   padding: 60px 20px;
   background-image: url('fundo_branco.png');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: center;
 }
 
 .subtitulo-programacao {
@@ -341,11 +372,6 @@ height: 42px;
   margin-bottom: 10px;
   letter-spacing: 1px;
   color: #5f5a4c;
-}
-
-.icone-coqueiro {
-  width: 42px;
-  margin-bottom: 10px;
 }
 
 .mensagem-programacao {
@@ -364,9 +390,9 @@ height: 42px;
   border-radius: 8px;
 }
 
-/* -----------------------------------
+/* ================================
    RESPONSIVO
------------------------------------- */
+==================================*/
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
@@ -381,6 +407,13 @@ height: 42px;
   .logo {
     margin-top: 20px;
     width: 80px;
+    height: auto;
+  }
+
+  .nav-container {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
   }
 
   .menu-list {
@@ -388,7 +421,7 @@ height: 42px;
     flex-wrap: nowrap;
     gap: 10px;
     padding: 0 10px;
-    overflow-x: auto;
+    margin: 0;
   }
 
   .menu-list li a {
@@ -397,25 +430,55 @@ height: 42px;
     white-space: nowrap;
   }
 
+  .foto-principal {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .info-casal {
+    margin-top: 10px;
+    padding: 30px 0;
+  }
+
   .nomes {
     font-size: 14vw;
+    display: block;
+    margin: 0 auto;
   }
 
   .data {
+    margin-top: -10px;
     font-size: 3.4vw;
   }
 
   .cidade {
     font-size: 8vw;
+    padding: 20px 10px;
+    margin-bottom: 0px;
+  }
+
+  .coqueiro {
+    width: 15vw;
+    height: auto;
+    margin: 10px auto;
   }
 
   .texto-boas-vindas-conteudo {
+    margin-top: -30px;
     font-size: 3vw;
     padding: 0 25px;
   }
 
   .titulo-contagem {
     font-size: 10vw;
+  }
+
+  .contador {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   .bloco span {

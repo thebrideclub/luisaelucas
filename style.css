@@ -104,6 +104,7 @@ body {
   font-size: 80px;
   color: #c3af8e;
   margin-bottom: 9px;
+  font-weight: normal;
 }
 
 .data {
@@ -122,8 +123,8 @@ body {
 }
 
 .coqueiro-sessao {
-  margin-top: 10px;
-  height: 42px;
+ margin-top: 10px;  
+height: 42px;
   margin-bottom: 10px;
 }
 

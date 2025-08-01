@@ -279,10 +279,11 @@ width: 100%;
 }
 
 .titulo-dress {
-  font-family: "Girly Moods DEMO", cursive;
-  font-size: 32px;
-  color: #9b7b5a;
-  margin: 10px 0 30px;
+   font-family: "Girly Moods DEMO", cursive;
+  font-size: 48px;
+  color: #9c8a73;
+  margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .imagem-casal {

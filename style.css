@@ -261,8 +261,8 @@ body {
 
   .menu {
     flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+    align-items: flex-start; /* alinhado à esquerda */
+    padding: 10px 20px; /* espaçamento lateral */
   }
 
   .logo-container {
@@ -277,12 +277,12 @@ body {
   .nav-container {
     width: 100%;
     overflow-x: auto;
+    justify-content: flex-start; /* alinhado à esquerda */
   }
 
   .menu-list {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     gap: 10px;
     padding: 0 10px;
     margin: 0;
@@ -319,14 +319,14 @@ body {
   }
 
   .coqueiro {
-    width: 35vw;
+    width: 25vw; /* diminuído no mobile */
     height: auto;
     margin: 10px auto;
   }
 
   .texto-boas-vindas-conteudo {
     font-size: 3vw;
-    padding: 0 25px; /* Mais margem lateral no mobile */
+    padding: 0 25px;
   }
 
   .titulo-contagem {
@@ -351,6 +351,7 @@ body {
   .dois-pontos {
     display: none;
   }
-  
+
+
 
 }

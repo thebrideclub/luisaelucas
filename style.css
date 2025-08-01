@@ -8,10 +8,10 @@
 }
 
 @font-face {
-  font-family: 'GirlyMoods';
-  src: url('fonts/GirlyMoods.woff2') format('woff2'),
-       url('fonts/GirlyMoods.woff') format('woff'),
-       url('fonts/GirlyMoods.ttf') format('truetype');
+  font-family: "Girly Moods DEMO";
+  src: url('fonts/Girly Moods DEMO.woff2') format('woff2'),
+       url('fonts/Girly Moods DEMO.woff') format('woff'),
+       url('fonts/Girly Moods DEMO.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -74,17 +74,16 @@ body {
   height: auto;
   display: block;
   margin: 0px auto;
- 
 }
 
 /* Texto pós-imagem */
 .info-casal {
   margin-top: -60px;
-     background-image: url('imagens/fundo_branco.png');
+  background-image: url('imagens/fundo_branco.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* ou fixed, se quiser efeito de paralaxe */
+  background-attachment: scroll;
   padding: 60px 0;
 }
 
@@ -93,7 +92,7 @@ body {
   font-size: 100px;
   color: #c3af8e;
   margin-bottom: 0px;
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .data {
@@ -101,8 +100,8 @@ body {
   font-size: 20px;
   color: #9c9585;
   margin: -10px 0;
-   margin-bottom: -40px;
-    text-transform: uppercase; /* Adicionado */
+  margin-bottom: -40px;
+  text-transform: uppercase;
 }
 
 .cidade {
@@ -114,17 +113,18 @@ body {
 
 .coqueiro {
   height: 100px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
+/* Texto de boas-vindas */
 .texto-boas-vindas {
   width: 100%;
   background-image: url('imagens/fundo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* ou fixed, se quiser efeito de paralaxe */
+  background-attachment: scroll;
   padding: 60px 0;
-;
 }
 
 .texto-boas-vindas-conteudo {
@@ -137,14 +137,14 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px 20px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
+
+/* Contagem regressiva */
 .contagem-regressiva {
   padding: 60px 20px;
-  
   background-color: #fdfcf9;
   text-align: center;
-
 }
 
 .titulo-contagem {
@@ -152,7 +152,7 @@ body {
   font-size: 80px;
   color: #5f7157;
   margin-bottom: 40px;
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .contador {
@@ -190,3 +190,83 @@ body {
   font-family: 'Chopard', serif;
 }
 
+/* ===================== */
+/* MEDIA QUERY PARA MOBILE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .foto-principal {
+    width: 100%;
+    height: auto;
+  }
+
+  .nomes {
+    font-size: 12vw;
+    padding: 0 10px;
+  }
+
+  .data,
+  .cidade {
+    font-size: 5vw;
+    padding: 0 10px;
+  }
+
+  .cidade {
+    margin-bottom: 20px;
+  }
+
+  .coqueiro {
+    width: 40vw;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .texto-boas-vindas-conteudo {
+    font-size: 4.2vw;
+    padding: 0 15px;
+  }
+
+  .titulo-contagem {
+    font-size: 10vw;
+  }
+
+  .contador {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloco span {
+    font-size: 8vw;
+  }
+
+  .bloco p {
+    font-size: 4vw;
+  }
+
+  .dois-pontos {
+    display: none;
+  }
+}

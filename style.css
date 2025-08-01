@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: "Girly Moods DEMO";
-  src: url('fonts/girlydemo.woff2') format('woff2'),
-       url('fonts/girlydemo.woff') format('woff'),
-       url('fonts/girlydemo.ttf') format('truetype');
+  src: url('girlydemo.woff2') format('woff2'),
+       url('girlydemo.woff') format('woff'),
+       url('girlydemo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

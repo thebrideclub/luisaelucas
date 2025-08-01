@@ -266,10 +266,11 @@ width: 100%;
 
 
 .sessao-dress-code {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #fdfaf6;
-  font-family: 'Chopard', sans-serif;
+  font-family: "Girly Moods DEMO", cursive;
+  font-size: 48px;
+  color: #9c8a73;
+  margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .icone-coqueiro {

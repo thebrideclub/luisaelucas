@@ -504,12 +504,12 @@ body {
    PROGRAMAÇÃO - LUISA & LUCAS
    ========================================== */
 
-/* Fonte já registrada no seu projeto:
-   Chopard para títulos e textos
+/* Fontes já registradas no projeto:
+   Chopard para textos gerais
    Girly Moods DEMO para nomes dos eventos
 */
 
-/* Bloco geral da programação */
+/* Sessão geral da programação */
 .sessao-programacao {
   padding: 60px 20px;
   background-color: #fefcf9;
@@ -548,14 +548,14 @@ body {
   line-height: 1.5;
 }
 
-/* Cada dia da programação */
+/* Blocos de cada dia da programação */
 .dia-programacao {
   margin-bottom: 60px;
 }
 
 /* Nome do evento (ex: Pool Party) */
 .dia-programacao .evento-nome {
-  font-family: 'Girly Moods DEMO', cursive;
+  font-family: "Girly Mood DEMO", cursive;
   font-size: 2rem;
   color: #b98b5e;
   margin: 10px 0;
@@ -576,7 +576,7 @@ body {
   margin-top: 10px;
 }
 
-/* Ícones adicionais (coqueiro, sapato, folha) */
+/* Ícones adicionais */
 .icone-sapato,
 .icone-folha {
   width: 50px;
@@ -610,7 +610,7 @@ body {
   .dia-programacao .evento-nome {
     font-size: 1.5rem;
   }
-
 }
+
 
 }

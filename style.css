@@ -500,75 +500,83 @@ body {
   .subtitulo-programacao {
     font-size: 18px;
   }
-
 /* ==========================================
    PROGRAMAÇÃO - LUISA & LUCAS
    ========================================== */
 
-/* Bloco geral */
+/* Fonte já registrada no seu projeto:
+   Chopard para títulos e textos
+   Girly Moods DEMO para nomes dos eventos
+*/
+
+/* Bloco geral da programação */
 .sessao-programacao {
   padding: 60px 20px;
-  text-align: center;
   background-color: #fefcf9;
   color: #2f2f2f;
   font-family: 'Chopard', serif;
+  text-align: center;
 }
 
-/* Título */
+/* Título principal */
 .sessao-programacao .titulo-sessao {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-/* Subtítulo */
+/* Subtítulo (datas) */
 .sessao-programacao .subtitulo-programacao {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
-/* Ícone coqueiro */
+/* Ícone coqueiro separador */
 .sessao-programacao .icone-coqueiro {
-  width: 40px;
-  margin: 20px 0;
+  width: 30px;
+  margin: 20px auto;
+  display: block;
 }
 
-/* Mensagem inicial */
+/* Mensagem abaixo do coqueiro */
 .sessao-programacao .mensagem-programacao {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 40px;
   line-height: 1.5;
 }
 
-/* Dia de programação */
+/* Cada dia da programação */
 .dia-programacao {
   margin-bottom: 60px;
 }
 
-/* Nome do evento */
+/* Nome do evento (ex: Pool Party) */
 .dia-programacao .evento-nome {
-  font-size: 1.5rem;
   font-family: 'Girly Moods DEMO', cursive;
+  font-size: 2rem;
   color: #b98b5e;
   margin: 10px 0;
 }
 
-/* Detalhes do evento */
-.dia-programacao p {
+/* Texto com local e horário */
+.dia-programacao .evento-detalhes {
+  font-family: 'Chopard', serif;
+  font-size: 0.95rem;
   margin: 8px 0;
-  font-size: 1rem;
 }
 
-/* Imagens */
-.imagem-programacao {
-  width: 100%;
-  max-width: 400px;
-  margin: 20px auto;
-  border-radius: 12px;
+/* Dress code ou mensagens */
+.dia-programacao .evento-extra {
+  font-family: 'Chopard', serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
 }
 
-/* Ícone salto ou folha */
+/* Ícones adicionais (coqueiro, sapato, folha) */
 .icone-sapato,
 .icone-folha {
   width: 50px;
@@ -576,11 +584,19 @@ body {
   display: block;
 }
 
-/* Texto de agradecimento final */
+/* Agradecimento final */
 .agradecimento {
-  margin-top: 20px;
-  font-size: 1rem;
+  margin-top: 30px;
+  font-size: 0.95rem;
   font-style: italic;
+}
+
+/* Imagens ilustrativas do evento */
+.imagem-programacao {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
 }
 
 /* Responsivo */
@@ -592,8 +608,9 @@ body {
     font-size: 1.5rem;
   }
   .dia-programacao .evento-nome {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
+
 }
 
 }

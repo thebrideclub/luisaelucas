@@ -541,24 +541,4 @@ font-weight: normal;
     display: none;
   }
 
-  .mensagem-programacao {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-
-  .subtitulo-programacao {
-    font-size: 18px;
-  }
-
-  .sessao-programacao {
-    padding: 40px 15px;
-  }
-
-  .sessao-programacao .titulo-sessao {
-    font-size: 1.5rem;
-  }
-
-  .dia-programacao .evento-nome {
-    font-size: 1.5rem;
-  }
 }

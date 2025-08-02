@@ -358,35 +358,80 @@ body {
 ==================================*/
 .sessao-programacao {
   padding: 60px 20px;
-  background-image: url('fundo_branco.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-color: #fefcf9;
+  color: #2f2f2f;
+  font-family: 'Chopard', serif;
   text-align: center;
 }
 
-.subtitulo-programacao {
-  font-size: 16px;
-  font-family: 'Chopard', serif;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  color: #5f5a4c;
+.sessao-programacao .titulo-sessao {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-.mensagem-programacao {
-  font-size: 18px;
-  font-family: 'Chopard', serif;
-  line-height: 1.5;
+.sessao-programacao .subtitulo-programacao {
+  font-size: 0.9rem;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  color: #5f5a4c;
+  margin-bottom: 20px;
+}
+
+.sessao-programacao .icone-coqueiro {
+  width: 30px;
+  margin: 20px auto;
+  display: block;
+}
+
+.sessao-programacao .mensagem-programacao {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.dia-programacao {
+  margin-bottom: 60px;
+}
+
+.dia-programacao .evento-nome {
+  font-family: "Girly Mood DEMO", cursive;
+  font-size: 2rem;
+  color: #b98b5e;
+  margin: 10px 0;
+}
+
+.dia-programacao .evento-detalhes {
+  font-family: 'Chopard', serif;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.dia-programacao .evento-extra {
+  font-family: 'Chopard', serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.icone-sapato,
+.icone-folha {
+  width: 50px;
+  margin: 10px auto;
+  display: block;
+}
+
+.agradecimento {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  font-style: italic;
 }
 
 .imagem-programacao {
   width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
 }
 
 /* ================================
@@ -500,117 +545,16 @@ body {
   .subtitulo-programacao {
     font-size: 18px;
   }
-/* ==========================================
-   PROGRAMAÇÃO - LUISA & LUCAS
-   ========================================== */
 
-/* Fontes já registradas no projeto:
-   Chopard para textos gerais
-   Girly Moods DEMO para nomes dos eventos
-*/
-
-/* Sessão geral da programação */
-.sessao-programacao {
-  padding: 60px 20px;
-  background-color: #fefcf9;
-  color: #2f2f2f;
-  font-family: 'Chopard', serif;
-  text-align: center;
-}
-
-/* Título principal */
-.sessao-programacao .titulo-sessao {
-  font-size: 1.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-/* Subtítulo (datas) */
-.sessao-programacao .subtitulo-programacao {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-/* Ícone coqueiro separador */
-.sessao-programacao .icone-coqueiro {
-  width: 30px;
-  margin: 20px auto;
-  display: block;
-}
-
-/* Mensagem abaixo do coqueiro */
-.sessao-programacao .mensagem-programacao {
-  font-size: 1rem;
-  margin-bottom: 40px;
-  line-height: 1.5;
-}
-
-/* Blocos de cada dia da programação */
-.dia-programacao {
-  margin-bottom: 60px;
-}
-
-/* Nome do evento (ex: Pool Party) */
-.dia-programacao .evento-nome {
-  font-family: "Girly Mood DEMO", cursive;
-  font-size: 2rem;
-  color: #b98b5e;
-  margin: 10px 0;
-}
-
-/* Texto com local e horário */
-.dia-programacao .evento-detalhes {
-  font-family: 'Chopard', serif;
-  font-size: 0.95rem;
-  margin: 8px 0;
-}
-
-/* Dress code ou mensagens */
-.dia-programacao .evento-extra {
-  font-family: 'Chopard', serif;
-  font-size: 0.9rem;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-/* Ícones adicionais */
-.icone-sapato,
-.icone-folha {
-  width: 50px;
-  margin: 10px auto;
-  display: block;
-}
-
-/* Agradecimento final */
-.agradecimento {
-  margin-top: 30px;
-  font-size: 0.95rem;
-  font-style: italic;
-}
-
-/* Imagens ilustrativas do evento */
-.imagem-programacao {
-  width: 100%;
-  max-width: 400px;
-  margin: 20px auto;
-  border-radius: 12px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
   .sessao-programacao {
     padding: 40px 15px;
   }
+
   .sessao-programacao .titulo-sessao {
     font-size: 1.5rem;
   }
+
   .dia-programacao .evento-nome {
     font-size: 1.5rem;
   }
-}
-
-
 }

@@ -438,6 +438,57 @@ font-weight: normal;
   margin-top: -30;
 }
 
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  background-color: #fffaf8;
+  padding: 40px 0;
+}
+
+/* Slider */
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Faixa que se move */
+.slider-track {
+  display: flex;
+  width: calc(250px * 10); /* largura total: número de slides * largura */
+  animation: scroll 30s linear infinite;
+}
+
+/* Cada slide */
+.slide {
+  min-width: 250px;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Animação de rolagem contínua */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ================================
    RESPONSIVO
 ==================================*/

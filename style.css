@@ -500,4 +500,100 @@ body {
   .subtitulo-programacao {
     font-size: 18px;
   }
+
+/* ==========================================
+   PROGRAMAÇÃO - LUISA & LUCAS
+   ========================================== */
+
+/* Bloco geral */
+.sessao-programacao {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fefcf9;
+  color: #2f2f2f;
+  font-family: 'Chopard', serif;
+}
+
+/* Título */
+.sessao-programacao .titulo-sessao {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.sessao-programacao .subtitulo-programacao {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Ícone coqueiro */
+.sessao-programacao .icone-coqueiro {
+  width: 40px;
+  margin: 20px 0;
+}
+
+/* Mensagem inicial */
+.sessao-programacao .mensagem-programacao {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Dia de programação */
+.dia-programacao {
+  margin-bottom: 60px;
+}
+
+/* Nome do evento */
+.dia-programacao .evento-nome {
+  font-size: 1.5rem;
+  font-family: 'Girly Moods DEMO', cursive;
+  color: #b98b5e;
+  margin: 10px 0;
+}
+
+/* Detalhes do evento */
+.dia-programacao p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Imagens */
+.imagem-programacao {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* Ícone salto ou folha */
+.icone-sapato,
+.icone-folha {
+  width: 50px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Texto de agradecimento final */
+.agradecimento {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sessao-programacao {
+    padding: 40px 15px;
+  }
+  .sessao-programacao .titulo-sessao {
+    font-size: 1.5rem;
+  }
+  .dia-programacao .evento-nome {
+    font-size: 1.2rem;
+  }
+}
+
 }

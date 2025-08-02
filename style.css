@@ -391,11 +391,12 @@ body {
 
 .dia-programacao {
   margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
 .dia-programacao .evento-nome {
   font-family: "Girly Moods DEMO", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #b98b5e;
   margin: 10px 0;
 }

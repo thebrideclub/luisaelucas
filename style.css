@@ -391,7 +391,7 @@ body {
 
 .dia-programacao {
   margin-bottom: 60px;
-    text-transform: uppercase;
+
 }
 
 .dia-programacao .evento-nome {
@@ -404,6 +404,8 @@ body {
 .dia-programacao .evento-detalhes {
   font-family: 'Chopard', serif;
   font-size: 0.95rem;
+       text-transform: uppercase;
+font-weight: normal;
   margin: 8px 0;
 }
 

@@ -357,6 +357,7 @@ body {
    SEÇÃO: PROGRAMAÇÃO
 ==================================*/
 .sessao-programacao {
+background-image: url('fundo_branco.png');
   padding: 60px 20px;
   background-color: #fefcf9;
   color: #2f2f2f;

@@ -418,13 +418,18 @@ font-weight: normal;
   margin-top: 10px;
 }
 
-.icone-sapato, imagem-maio,
+.icone-sapato, 
 .icone-folha {
   width: 50px;
   margin: 10px auto;
   display: block;
 }
-
+. imagem-maio
+{ 
+ width: 10px;
+  margin: 10px auto;
+  display: block;
+}
 .agradecimento {
   margin-top: 30px;
   font-size: 0.95rem;

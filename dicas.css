@@ -1,57 +1,85 @@
-/* Reset básico */
-* {
+/* ================================
+   COMPORTAMENTO E FONTES
+==================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fontes personalizadas */
+@font-face {
+  font-family: 'Chopard';
+  src: url('Chopard.woff2') format('woff2'),
+       url('Chopard.woff') format('woff'),
+       url('Chopard.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Girly Moods DEMO";
+  src: url('girlydemo.woff2') format('woff2'),
+       url('girlydemo.woff') format('woff'),
+       url('girlydemo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-/* Fonte e comportamento */
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fffdf8;
-  color: #333;
-  padding-top: 100px; /* espaço para o menu fixo */
-}
-
-/* ======================
-      CABEÇALHO / MENU
-====================== */
+/* ================================
+   MENU E CABEÇALHO
+==================================*/
 .menu {
-  background-color: #fef9f5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  background-color: #fdfcf9;
+  padding: 30px 0 10px;
+  border-top: 2px solid #e8c6c6;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 12px 24px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container {
+  margin-bottom: 20px;
 }
 
 .logo {
-  height: 60px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu-list {
-  display: flex;
-  gap: 20px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-list li a {
   text-decoration: none;
-  color: #be9272;
+  color: #5f7157;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 14px;
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  font-family: 'Chopard', serif;
 }
 
 .menu-list li a:hover {
-  color: #d6b49c;
+  color: #a55b4a;
 }
-
 /* ======================
       SESSÃO DICAS
 ====================== */

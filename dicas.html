@@ -3,35 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hospedagem - Luisa & Lucas</title>
+  <title>Dicas - Luisa & Lucas</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style-dicas.css" />
 </head>
 <body>
 
-  <section class="sessao">
-    <h2>Hospedagem</h2>
+  <!-- Cabeçalho -->
+  <header class="menu">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+    <nav class="nav-container">
+      <ul class="menu-list">
+        <li><a href="index.html#casamento">O CASAMENTO</a></li>
+        <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
+        <li><a href="index.html#dicas">DICAS</a></li>
+        <li><a href="index.html#como-chegar">COMO CHEGAR</a></li>
+        <li><a href="index.html#presentes">PRESENTES</a></li>
+        <li><a href="index.html#mensagem">MENSAGEM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Dicas -->
+  <section class="sessao-dicas">
+    <h2 class="titulo-sessao">Hospedagem em Teresópolis</h2>
 
     <div class="hotel">
       <h3>Intercity Teresópolis</h3>
-      <p>📞 Telefone: (21) 0000-0000</p>
+      <p>📞 (21) 0000-0000</p>
       <button onclick="abrirModal('modal1')">Ver mais</button>
     </div>
 
     <div class="hotel">
       <h3>Pousada Oásis Teresópolis</h3>
-      <p>📞 Telefone: (21) 3726-3237</p>
+      <p>📞 (21) 3726-3237</p>
       <button onclick="abrirModal('modal2')">Ver mais</button>
     </div>
 
     <div class="hotel">
       <h3>Pousada Cascata dos Amores</h3>
-      <p>📞 Telefone: (21) 0000-0001</p>
+      <p>📞 (21) 0000-0001</p>
       <button onclick="abrirModal('modal3')">Ver mais</button>
     </div>
 
     <div class="hotel">
       <h3>Pousada Terê Parque</h3>
-      <p>📞 Telefone: (21) 0000-0002</p>
+      <p>📞 (21) 0000-0002</p>
       <button onclick="abrirModal('modal4')">Ver mais</button>
     </div>
   </section>

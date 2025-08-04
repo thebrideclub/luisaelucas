@@ -127,3 +127,19 @@ button:hover {
 .fechar:hover {
   color: #333;
 }
+.decorativa-canto-esquerdo {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 70px;
+  opacity: 0.9;
+}
+
+.decorativa-canto-direito {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  width: 70px;
+  opacity: 0.9;
+}
+

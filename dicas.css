@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e comportamento */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fffdf8;
+  color: #333;
+  padding-top: 100px; /* espaço para o menu fixo */
+}
+
+/* ======================
+      CABEÇALHO / MENU
+====================== */
+.menu {
+  background-color: #fef9f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #be9272;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #d6b49c;
+}
+
+/* ======================
+      SESSÃO DICAS
+====================== */
+.sessao-dicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.dica-card {
+  background-color: #fffaf5;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.dica-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dica-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.titulo-dica {
+  padding: 16px;
+  font-size: 18px;
+  color: #7b4e35;
+  font-weight: 600;
+}
+
+/* ======================
+      RESPONSIVO
+====================== */
+@media (max-width: 768px) {
+  .menu-list {
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .menu-list li {
+    padding: 12px 0;
+    text-align: center;
+  }
+}
+
+/* ======================
+  DECORAÇÕES OPCIONAIS
+====================== */
+.decorativa-canto-esquerdo,
+.decorativa-canto-direito {
+  position: fixed;
+  bottom: 0;
+  width: 80px;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.decorativa-canto-esquerdo {
+  left: 0;
+}
+
+.decorativa-canto-direito {
+  right: 0;
+}

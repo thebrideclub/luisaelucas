@@ -493,6 +493,48 @@ body {
   100% { transform: translateX(-50%); }
 }
 
+/* ======================
+      SESSÃO DICAS
+====================== */
+.sessao-dicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.dica-card {
+  background-color: #fffaf5;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.dica-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dica-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.titulo-dica {
+  padding: 16px;
+  font-size: 18px;
+  color: #7b4e35;
+  font-weight: 600;
+}
+
+
 /* ================================
    RESPONSIVO
 ==================================*/

@@ -509,9 +509,15 @@ body {
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  width: 100px;
+  width: 200px; /* Definindo largura */
+  height: 200px; /* Altura igual à largura para ser quadrado */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .dica-card:hover {
@@ -520,21 +526,22 @@ body {
 }
 
 .dica-card img {
-  width: 200%;
-  height: 200px;
+  width: 100%;
+  height: 120px; /* Ajuste conforme o espaço disponível */
   object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  display: block;
+  margin: 0 auto;
 }
 
 .titulo-dica {
-font-family: 'Chopard', serif;
-  padding: 16px;
-  font-size: 18px;
+  font-family: 'Chopard', serif;
+  padding: 10px;
+  font-size: 16px;
   color: #7b4e35;
   font-weight: 600;
 }
-
 
 /* ================================
    RESPONSIVO

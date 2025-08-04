@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hospedagem - Luisa & Lucas</title>
+  <link rel="stylesheet" href="style-dicas.css" />
+</head>
+<body>
+
+  <section class="sessao">
+    <h2>Hospedagem</h2>
+
+    <div class="hotel">
+      <h3>Intercity Teresópolis</h3>
+      <p>📞 Telefone: (21) 0000-0000</p>
+      <button onclick="abrirModal('modal1')">Ver mais</button>
+    </div>
+
+    <div class="hotel">
+      <h3>Pousada Oásis Teresópolis</h3>
+      <p>📞 Telefone: (21) 3726-3237</p>
+      <button onclick="abrirModal('modal2')">Ver mais</button>
+    </div>
+
+    <div class="hotel">
+      <h3>Pousada Cascata dos Amores</h3>
+      <p>📞 Telefone: (21) 0000-0001</p>
+      <button onclick="abrirModal('modal3')">Ver mais</button>
+    </div>
+
+    <div class="hotel">
+      <h3>Pousada Terê Parque</h3>
+      <p>📞 Telefone: (21) 0000-0002</p>
+      <button onclick="abrirModal('modal4')">Ver mais</button>
+    </div>
+  </section>
+
+  <!-- Modais -->
+  <div class="modal" id="modal1">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <h3>Intercity Teresópolis</h3>
+      <img src="intercity.jpg" alt="Intercity Teresópolis" />
+      <p>📍 Localizado no centro de Teresópolis, próximo ao comércio.</p>
+      <p>Hotel moderno com restaurante, academia e café da manhã incluso. Aceita pets.</p>
+      <a href="https://www.intercityhoteis.com.br" target="_blank">Site Oficial</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <h3>Pousada Oásis Teresópolis</h3>
+      <img src="pousada-oasis.jpg" alt="Pousada Oásis" />
+      <p>📍 R. Carmela Dutra, 645 – Agriões, Teresópolis</p>
+      <p>Pousada simples e bem localizada com café da manhã e estacionamento gratuitos. Ótimo atendimento.</p>
+      <a href="https://pousadaoasisteresopolis.com.br" target="_blank">Site Oficial</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+      <h3>Pousada Cascata dos Amores</h3>
+      <img src="cascata-amores.jpg" alt="Cascata dos Amores" />
+      <p>📍 Bairro Alto – Teresópolis, RJ</p>
+      <p>Ambiente aconchegante, chalés com varanda e excelente atendimento. Diárias a partir de R$220.</p>
+      <a href="#" target="_blank">Ver no Booking</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal4')">&times;</span>
+      <h3>Pousada Terê Parque</h3>
+      <img src="tere-parque.jpg" alt="Pousada Terê Parque" />
+      <p>📍 Granja Guarani – Teresópolis, RJ</p>
+      <p>Piscinas, trilhas e suítes com hidromassagem. Ideal para relaxar na natureza.</p>
+      <a href="#" target="_blank">Ver no Booking</a>
+    </div>
+  </div>
+
+  <script src="script-dicas.js"></script>
+</body>
+</html>

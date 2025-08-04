@@ -1,26 +1,21 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0 20px;
+.sessao-dicas {
+  padding: 60px 20px;
   background: #fff8f2;
-  color: #333;
+  text-align: center;
 }
 
-.sessao {
-  padding: 40px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-h2 {
+.titulo-sessao {
   font-family: 'Chopard', cursive;
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hotel {
   margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
+}
+
+.hotel p {
+  margin: 5px 0;
 }
 
 button {

@@ -1,38 +1,67 @@
+/* ================================
+   ESTILO DA PÁGINA DICAS
+==================================*/
+
 .sessao-dicas {
   padding: 60px 20px;
-  background: #fff8f2;
+  background: url('fundo_branco.png') no-repeat center center;
+  background-size: cover;
   text-align: center;
 }
 
 .titulo-sessao {
   font-family: 'Chopard', cursive;
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  color: #b96c6c;
+  margin-bottom: 40px;
 }
 
+/* Cartão do hotel */
 .hotel {
-  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.hotel:hover {
+  transform: translateY(-5px);
+}
+
+.hotel h3 {
+  font-family: 'Girly Mood DEMO', cursive;
+  font-size: 24px;
+  color: #8c4c4c;
+  margin-bottom: 10px;
 }
 
 .hotel p {
-  margin: 5px 0;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
+/* Botão Ver mais */
 button {
-  background-color: #f7b5b5;
-  color: #fff;
+  background-color: #e7b1b1;
+  color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 10px 20px;
   font-size: 14px;
+  border-radius: 30px;
   cursor: pointer;
-  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #e48e8e;
+  background-color: #d58a8a;
 }
 
-/* Modal */
+/* ========== MODAL ========== */
+
 .modal {
   display: none;
   position: fixed;
@@ -43,30 +72,52 @@ button:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
 }
 
 .modal-conteudo {
-  background-color: #fff;
+  background-color: #fff8f5;
   margin: auto;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 18px;
   width: 90%;
   max-width: 500px;
   position: relative;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .modal-conteudo img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 15px;
 }
 
+.modal-conteudo h3 {
+  font-family: 'Girly Mood DEMO', cursive;
+  color: #8c4c4c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-conteudo p {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modal-conteudo a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d58a8a;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .fechar {
-  color: #aaa;
+  color: #999;
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 20px;
   font-size: 28px;
   font-weight: bold;
@@ -74,5 +125,5 @@ button:hover {
 }
 
 .fechar:hover {
-  color: #000;
+  color: #333;
 }

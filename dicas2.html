@@ -58,7 +58,140 @@
     </div>
   </section>
 
- ///// <!-- MODAL 1 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modais com Carrossel</title>
+<style>
+  /* ========== MODAL ========== */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .modal-conteudo {
+    background-color: #fff8f5;
+    margin: auto;
+    padding: 30px;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: 'Chopard', serif;
+  }
+
+  .modal-conteudo h3 {
+    color: #8c4c4c;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .modal-conteudo p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .modal-conteudo a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #d58a8a;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Chopard', serif;
+  }
+
+  /* Botão fechar */
+  .fechar {
+    color: #999;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .fechar:hover {
+    color: #333;
+  }
+
+  /* CARROSSEL */
+  .carousel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .carousel-img {
+    display: none;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .carousel-img.active {
+    display: block;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 248, 245, 0.7);
+    border: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #7b4e35;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  .carousel-btn:hover {
+    background-color: #f5d6cb;
+  }
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  .carousel-btn.next {
+    right: 10px;
+  }
+
+  /* Botões abrir modais */
+  .abrir-modal {
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Chopard', serif;
+    font-weight: bold;
+    background-color: #d58a8a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .abrir-modal:hover {
+    background-color: #b75d5d;
+  }
+</style>
+</head>
+<body>
+
+<!-- Botões para abrir cada modal -->
+<button class="abrir-modal" data-modal="modal1">Ver mais Intercity Teresópolis</button>
+<button class="abrir-modal" data-modal="modal2">Ver mais Pousada Oásis</button>
+<button class="abrir-modal" data-modal="modal3">Ver mais Pousada Cascata dos Amores</button>
+<button class="abrir-modal" data-modal="modal4">Ver mais Pousada Terê Parque</button>
+
+<!-- MODAL 1 -->
 <div class="modal" id="modal1">
   <div class="modal-conteudo">
     <span class="fechar">&times;</span>
@@ -129,6 +262,100 @@
     <a href="#" target="_blank" rel="noopener noreferrer">Ver no Booking</a>
   </div>
 </div>
-</div>
+
+<script>
+  // script-dicas.js content:
+
+  const estadoCarrossel = {};
+  const intervalosCarrossel = {};
+
+  function abrirModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+    modal.style.display = 'block';
+    mostrarImagem(modalId, 0);
+    estadoCarrossel[modalId] = 0;
+
+    if (intervalosCarrossel[modalId]) clearInterval(intervalosCarrossel[modalId]);
+
+    intervalosCarrossel[modalId] = setInterval(() => {
+      mudarImagem(modalId, 1);
+    }, 3000);
+  }
+
+  function fecharModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+    modal.style.display = 'none';
+
+    if (intervalosCarrossel[modalId]) {
+      clearInterval(intervalosCarrossel[modalId]);
+      intervalosCarrossel[modalId] = null;
+    }
+  }
+
+  function mostrarImagem(modalId, index) {
+    const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
+    if (imagens.length === 0) return;
+
+    if (index < 0) index = imagens.length - 1;
+    if (index >= imagens.length) index = 0;
+
+    imagens.forEach(img => img.classList.remove('active'));
+    imagens[index].classList.add('active');
+    estadoCarrossel[modalId] = index;
+  }
+
+  function mudarImagem(modalId, delta) {
+    const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
+    if (imagens.length === 0) return;
+    const atual = estadoCarrossel[modalId] ?? 0;
+    mostrarImagem(modalId, (atual + delta + imagens.length) % imagens.length);
+  }
+
+  // Botões abrir modal
+  document.querySelectorAll('.abrir-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.dataset.modal;
+      abrirModal(modalId);
+    });
+  });
+
+  // Botões fechar modal (×)
+  document.querySelectorAll('.modal .fechar').forEach(btnFechar => {
+    btnFechar.addEventListener('click', () => {
+      const modal = btnFechar.closest('.modal');
+      fecharModal(modal.id);
+    });
+  });
+
+  // Botões setas do carrossel
+  document.querySelectorAll('.modal').forEach(modal => {
+    const id = modal.id;
+
+    const btnPrev = modal.querySelector('.carousel-btn.prev');
+    if (btnPrev) {
+      btnPrev.addEventListener('click', () => mudarImagem(id, -1));
+    }
+
+    const btnNext = modal.querySelector('.carousel-btn.next');
+    if (btnNext) {
+      btnNext.addEventListener('click', () => mudarImagem(id, 1));
+    }
+  });
+
+  // Fecha modal ao clicar fora do conteúdo
+  window.addEventListener('click', (event) => {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (event.target === modal) {
+        fecharModal(modal.id);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
 </body>
 </html>

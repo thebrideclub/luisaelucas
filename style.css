@@ -619,6 +619,7 @@ body {
 }
 
 /* ========== MODAL ========== */
+/* ========== MODAL ========== */
 .modal {
   display: none;
   position: fixed;
@@ -645,12 +646,6 @@ body {
   font-family: 'Chopard', serif;
 }
 
-.modal-conteudo img {
-  max-width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
 .modal-conteudo h3 {
   color: #8c4c4c;
   font-size: 24px;
@@ -669,7 +664,6 @@ body {
   color: #d58a8a;
   text-decoration: underline;
   font-weight: bold;
-  font-family: 'Chopard', serif;
 }
 
 /* Botão de fechar (X) */
@@ -683,10 +677,61 @@ body {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .fechar:hover {
   color: #333;
 }
+
+/* ========== CARROSSEL ========== */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.slide.ativo {
+  display: block;
+}
+
+.anterior,
+.proximo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  user-select: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.anterior:hover,
+.proximo:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.anterior {
+  left: 10px;
+}
+
+.proximo {
+  right: 10px;
+}
+
 
 
 

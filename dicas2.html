@@ -58,76 +58,87 @@
     </div>
   </section>
 
-  <!-- Modais -->
-<!-- MODAL 1 -->
+ ///// <!-- Modais -->
+<!-- MODAL 1 - INTERCITY -->
 <div class="modal" id="modal1">
   <div class="modal-conteudo">
     <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
     <h3>Intercity Teresópolis</h3>
-    <div class="carousel" id="carousel1">
-      <img src="intercity1.jpg" class="slide ativo" />
-      <img src="intercity2.jpg" class="slide" />
-      <img src="intercity3.jpg" class="slide" />
-<img src="intercity4.jpg" class="slide" />
-      <button class="anterior" onclick="mudarSlide(-1, 1)">&#10094;</button>
-      <button class="proximo" onclick="mudarSlide(1, 1)">&#10095;</button>
+    
+    <div class="carousel">
+      <img class="carousel-img active" src="intercity1.jpg" alt="Foto 1 do hotel">
+      <img class="carousel-img" src="intercity2.jpg" alt="Foto 2 do hotel">
+      <img class="carousel-img" src="intercity3.jpg" alt="Foto 3 do hotel">
+      <button class="carousel-btn prev" onclick="mudarImagem('modal1', -1)">❮</button>
+      <button class="carousel-btn next" onclick="mudarImagem('modal1', 1)">❯</button>
     </div>
+
     <p>📍 Localizado no centro de Teresópolis, próximo ao comércio.</p>
     <p>Hotel moderno com restaurante, academia e café da manhã incluso. Aceita pets.</p>
     <a href="https://www.intercityhoteis.com.br" target="_blank">Site Oficial</a>
   </div>
 </div>
 
-<!-- MODAL 2 -->
+<!-- MODAL 2 - OÁSIS -->
 <div class="modal" id="modal2">
   <div class="modal-conteudo">
     <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
     <h3>Pousada Oásis Teresópolis</h3>
-    <div class="carousel" id="carousel2">
-      <img src="oasis1.jpg" class="slide ativo" />
-      <img src="oasis2.jpg" class="slide" />
-      <button class="anterior" onclick="mudarSlide(-1, 2)">&#10094;</button>
-      <button class="proximo" onclick="mudarSlide(1, 2)">&#10095;</button>
+
+    <div class="carousel">
+      <img class="carousel-img active" src="oasis1.jpg" alt="Foto 1 da pousada">
+      <img class="carousel-img" src="oasis2.jpg" alt="Foto 2 da pousada">
+      <img class="carousel-img" src="oasis3.jpg" alt="Foto 3 da pousada">
+      <button class="carousel-btn prev" onclick="mudarImagem('modal2', -1)">❮</button>
+      <button class="carousel-btn next" onclick="mudarImagem('modal2', 1)">❯</button>
     </div>
+
     <p>📍 R. Carmela Dutra, 645 – Agriões, Teresópolis</p>
     <p>Pousada simples e bem localizada com café da manhã e estacionamento gratuitos. Ótimo atendimento.</p>
     <a href="https://pousadaoasisteresopolis.com.br" target="_blank">Site Oficial</a>
   </div>
 </div>
 
-<!-- MODAL 3 -->
+<!-- MODAL 3 - CASCATA DOS AMORES -->
 <div class="modal" id="modal3">
   <div class="modal-conteudo">
     <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
     <h3>Pousada Cascata dos Amores</h3>
-    <div class="carousel" id="carousel3">
-      <img src="cascata1.jpg" class="slide ativo" />
-      <img src="cascata2.jpg" class="slide" />
-      <button class="anterior" onclick="mudarSlide(-1, 3)">&#10094;</button>
-      <button class="proximo" onclick="mudarSlide(1, 3)">&#10095;</button>
+
+    <div class="carousel">
+      <img class="carousel-img active" src="cascata1.jpg" alt="Foto 1 do hotel">
+      <img class="carousel-img" src="cascata2.jpg" alt="Foto 2 do hotel">
+      <img class="carousel-img" src="cascata3.jpg" alt="Foto 3 do hotel">
+      <button class="carousel-btn prev" onclick="mudarImagem('modal3', -1)">❮</button>
+      <button class="carousel-btn next" onclick="mudarImagem('modal3', 1)">❯</button>
     </div>
+
     <p>📍 Bairro Alto – Teresópolis, RJ</p>
     <p>Ambiente aconchegante, chalés com varanda e excelente atendimento. Diárias a partir de R$220.</p>
     <a href="#" target="_blank">Ver no Booking</a>
   </div>
 </div>
 
-<!-- MODAL 4 -->
+<!-- MODAL 4 - TERÊ PARQUE -->
 <div class="modal" id="modal4">
   <div class="modal-conteudo">
     <span class="fechar" onclick="fecharModal('modal4')">&times;</span>
     <h3>Pousada Terê Parque</h3>
-    <div class="carousel" id="carousel4">
-      <img src="tereparque1.jpg" class="slide ativo" />
-      <img src="tereparque2.jpg" class="slide" />
-      <button class="anterior" onclick="mudarSlide(-1, 4)">&#10094;</button>
-      <button class="proximo" onclick="mudarSlide(1, 4)">&#10095;</button>
+
+    <div class="carousel">
+      <img class="carousel-img active" src="tere1.jpg" alt="Foto 1 do hotel">
+      <img class="carousel-img" src="tere2.jpg" alt="Foto 2 do hotel">
+      <img class="carousel-img" src="tere3.jpg" alt="Foto 3 do hotel">
+      <button class="carousel-btn prev" onclick="mudarImagem('modal4', -1)">❮</button>
+      <button class="carousel-btn next" onclick="mudarImagem('modal4', 1)">❯</button>
     </div>
+
     <p>📍 Granja Guarani – Teresópolis, RJ</p>
     <p>Piscinas, trilhas e suítes com hidromassagem. Ideal para relaxar na natureza.</p>
     <a href="#" target="_blank">Ver no Booking</a>
   </div>
 </div>
+
   <script src="script-dicas.js"></script>
 </body>
 </html>

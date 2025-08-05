@@ -732,7 +732,28 @@ body {
 }
 
 
+/* ========== DICA MAQUIAGEM - FEED INSTAGRAM ========== */
 
+.feed-instagram {
+  background-color: #fffafc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feed-instagram h2 {
+  font-family: 'Chopard', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #d49ca3;
+}
+
+.dica-make img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
 
 /* ================================
    RESPONSIVO

@@ -747,12 +747,12 @@ body {
   color: #d49ca3;
 }
 
-.dica-make img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 10px;
+.dica-make {
+  width: 100%;
+  max-width: 100px;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+  display: block;
 }
 
 /* ================================

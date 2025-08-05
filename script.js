@@ -39,4 +39,37 @@ document.addEventListener('DOMContentLoaded', () => {
     if (firstSlide) firstSlide.classList.add('active');
   }
 });
+function abrirModal(idModal, imagens) {
+  const modal = document.getElementById(idModal);
+  modal.style.display = "block";
+
+  // Configura carrossel
+  const carrossel = modal.querySelector(".carrossel-imagens");
+  if (carrossel) {
+    let indice = 0;
+    const imgTag = carrossel.querySelector("img");
+
+    function mostrarImagem() {
+      imgTag.src = imagens[indice];
+    }
+
+    carrossel.querySelector(".anterior").onclick = () => {
+      indice = (indice - 1 + imagens.length) % imagens.length;
+      mostrarImagem();
+    };
+
+    carrossel.querySelector(".proximo").onclick = () => {
+      indice = (indice + 1) % imagens.length;
+      mostrarImagem();
+    };
+
+    mostrarImagem(); // Mostra imagem inicial
+  }
+}
+
+function fecharModal(idModal) {
+  const modal = document.getElementById(idModal);
+  modal.style.display = "none";
+}
+
 </script>

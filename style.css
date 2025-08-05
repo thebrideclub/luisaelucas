@@ -544,16 +544,22 @@ body {
 }
 
 /* ================================
-   ESTILO DA PÁGINA DICAS
+   ESTILO DA PÁGINA DICAS2 HOSPEDAGEM
 ==================================*/
 
-.sessao-dicas {
+.sessao-hospedagem{
   padding: 60px 20px;
   background: url('fundo_branco.png') no-repeat center center;
   background-size: cover;
   text-align: center;
 }
-
+.titulo-hospedagem{
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #7b4e35;
+  font-weight: 600;
+  padding: 0 10px;
+}
 
 /* Cartão do hotel */
 .hotel {

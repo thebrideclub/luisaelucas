@@ -20,6 +20,8 @@ function atualizarContagem() {
 // Atualiza a contagem a cada segundo agora
 atualizarContagem();
 setInterval(atualizarContagem, 1000);
+}
+
 
 function abrirModal(id) {
   document.getElementById(id).style.display = "block";

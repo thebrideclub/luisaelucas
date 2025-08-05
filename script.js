@@ -71,5 +71,41 @@ function fecharModal(idModal) {
   const modal = document.getElementById(idModal);
   modal.style.display = "none";
 }
+function abrirModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'block';
+    mostrarImagem(modalId, 0); // sempre começa na primeira imagem
+  }
+}
+
+function fecharModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'none';
+  }
+}
+
+const estadoCarrossel = {};
+
+function mostrarImagem(modalId, index) {
+  const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
+  if (!estadoCarrossel[modalId]) {
+    estadoCarrossel[modalId] = 0;
+  }
+
+  if (index < 0) index = imagens.length - 1;
+  if (index >= imagens.length) index = 0;
+
+  imagens.forEach(img => img.classList.remove('active'));
+  imagens[index].classList.add('active');
+  estadoCarrossel[modalId] = index;
+}
+
+function mudarImagem(modalId, delta) {
+  const total = document.querySelectorAll(`#${modalId} .carousel-img`).length;
+  const atual = estadoCarrossel[modalId] || 0;
+  mostrarImagem(modalId, (atual + delta + total) % total);
+}
 
 </script>

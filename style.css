@@ -754,7 +754,7 @@ body {
 }
 
 .feed-instagram.fundo-branco h2 {
-  font-family: 'Chopard', cursive;
+  font-family: 'Girly Moods DEMO', cursive;
   font-size: 2.5rem;
   color: #d49ca3;
   margin-bottom: 40px;
@@ -769,10 +769,12 @@ body {
 }
 
 .perfil-item p {
-  font-family: 'Girly Moods DEMO', cursive;
+  font-family: 'Chopard', serif;
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 10px;
+ font-weight: normal;
+  text-align: center;
 }
 
 .feed-instagram {

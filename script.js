@@ -22,60 +22,23 @@ atualizarContagem();
 setInterval(atualizarContagem, 1000);
 
 ////modal
-<script>
-function mudarSlide(n, modalId) {
-  const slides = document.querySelectorAll('.carousel-img.modal' + modalId);
-  let indexAtual = [...slides].findIndex(slide => slide.classList.contains('active'));
 
-  slides[indexAtual].classList.remove('active');
-  let novoIndex = (indexAtual + n + slides.length) % slides.length;
-  slides[novoIndex].classList.add('active');
-}
+const estadoCarrossel = {};
+const intervalosCarrossel = {};
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Garante que todos os primeiros slides fiquem ativos
-  for (let i = 1; i <= 4; i++) {
-    const firstSlide = document.querySelector('.carousel-img.modal' + i);
-    if (firstSlide) firstSlide.classList.add('active');
-  }
-});
-function abrirModal(idModal, imagens) {
-  const modal = document.getElementById(idModal);
-  modal.style.display = "block";
-
-  // Configura carrossel
-  const carrossel = modal.querySelector(".carrossel-imagens");
-  if (carrossel) {
-    let indice = 0;
-    const imgTag = carrossel.querySelector("img");
-
-    function mostrarImagem() {
-      imgTag.src = imagens[indice];
-    }
-
-    carrossel.querySelector(".anterior").onclick = () => {
-      indice = (indice - 1 + imagens.length) % imagens.length;
-      mostrarImagem();
-    };
-
-    carrossel.querySelector(".proximo").onclick = () => {
-      indice = (indice + 1) % imagens.length;
-      mostrarImagem();
-    };
-
-    mostrarImagem(); // Mostra imagem inicial
-  }
-}
-
-function fecharModal(idModal) {
-  const modal = document.getElementById(idModal);
-  modal.style.display = "none";
-}
 function abrirModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = 'block';
-    mostrarImagem(modalId, 0); // sempre começa na primeira imagem
+    mostrarImagem(modalId, 0);
+
+    // Limpa intervalo anterior se existir
+    if (intervalosCarrossel[modalId]) clearInterval(intervalosCarrossel[modalId]);
+
+    // Começa troca automática a cada 3 segundos
+    intervalosCarrossel[modalId] = setInterval(() => {
+      mudarImagem(modalId, 1);
+    }, 3000);
   }
 }
 
@@ -83,16 +46,18 @@ function fecharModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = 'none';
+
+    // Para o intervalo automático
+    if (intervalosCarrossel[modalId]) {
+      clearInterval(intervalosCarrossel[modalId]);
+      intervalosCarrossel[modalId] = null;
+    }
   }
 }
 
-const estadoCarrossel = {};
-
 function mostrarImagem(modalId, index) {
   const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
-  if (!estadoCarrossel[modalId]) {
-    estadoCarrossel[modalId] = 0;
-  }
+  if (imagens.length === 0) return;
 
   if (index < 0) index = imagens.length - 1;
   if (index >= imagens.length) index = 0;
@@ -103,9 +68,22 @@ function mostrarImagem(modalId, index) {
 }
 
 function mudarImagem(modalId, delta) {
-  const total = document.querySelectorAll(`#${modalId} .carousel-img`).length;
-  const atual = estadoCarrossel[modalId] || 0;
-  mostrarImagem(modalId, (atual + delta + total) % total);
+  const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
+  if (imagens.length === 0) return;
+
+  const atual = estadoCarrossel[modalId] ?? 0;
+  mostrarImagem(modalId, (atual + delta + imagens.length) % imagens.length);
 }
+
+// Fecha modal ao clicar fora do conteúdo
+window.onclick = function(event) {
+  const modais = document.querySelectorAll('.modal');
+  modais.forEach(modal => {
+    if (event.target === modal) {
+      fecharModal(modal.id);
+    }
+  });
+};
+
 
 </script>

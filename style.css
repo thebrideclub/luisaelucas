@@ -575,6 +575,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: transform 0.2s;
+  font-family: 'Chopard', serif;
 }
 
 .hotel:hover {
@@ -604,6 +605,7 @@ button {
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+     font-family: 'Chopard', serif;
 }
 
 button:hover {
@@ -635,6 +637,7 @@ button:hover {
   position: relative;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: 'Chopard', serif;
 }
 
 .modal-conteudo img {
@@ -644,19 +647,21 @@ button:hover {
 }
 
 .modal-conteudo h3 {
-  font-family: 'Girly Mood DEMO', cursive;
+  font-family: 'Chopard', serif;
   color: #8c4c4c;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .modal-conteudo p {
+  font-family: 'Chopard', serif;
   color: #444;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
 .modal-conteudo a {
+  font-family: 'Chopard', serif;
   display: inline-block;
   margin-top: 10px;
   color: #d58a8a;

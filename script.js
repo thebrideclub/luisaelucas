@@ -20,3 +20,23 @@ function atualizarContagem() {
 // Atualiza a contagem a cada segundo agora
 atualizarContagem();
 setInterval(atualizarContagem, 1000);
+
+////modal
+<script>
+function mudarSlide(n, modalId) {
+  const slides = document.querySelectorAll('.carousel-img.modal' + modalId);
+  let indexAtual = [...slides].findIndex(slide => slide.classList.contains('active'));
+
+  slides[indexAtual].classList.remove('active');
+  let novoIndex = (indexAtual + n + slides.length) % slides.length;
+  slides[novoIndex].classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Garante que todos os primeiros slides fiquem ativos
+  for (let i = 1; i <= 4; i++) {
+    const firstSlide = document.querySelector('.carousel-img.modal' + i);
+    if (firstSlide) firstSlide.classList.add('active');
+  }
+});
+</script>

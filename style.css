@@ -568,6 +568,7 @@ body {
 
 /* Cartão do hotel */
 .hotel {
+  font-family: 'Chopard', serif;
   background: rgba(255, 255, 255, 0.9);
   max-width: 500px;
   margin: 20px auto;
@@ -575,7 +576,6 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: transform 0.2s;
-  font-family: 'Chopard', serif;
 }
 
 .hotel:hover {
@@ -583,13 +583,14 @@ body {
 }
 
 .hotel h3 {
-  font-family: 'Girly Mood DEMO', cursive;
+   font-family: 'Chopard', serif;
   font-size: 24px;
   color: #8c4c4c;
   margin-bottom: 10px;
 }
 
 .hotel p {
+  font-family: 'Chopard', serif;
   font-size: 16px;
   margin-bottom: 15px;
   color: #333;

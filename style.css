@@ -802,6 +802,43 @@ body {
   text-align: center;
 }
 
+/* ===========================
+   RODAPÉ PADRÃO DO SITE
+=========================== */
+.rodape-site {
+  background-color: #f5f0e8; /* bege igual à contagem */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Girly Mood DEMO', sans-serif;
+  color: #5c4a36;
+  margin-top: 60px;
+}
+
+.conteudo-rodape {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.links-rodape {
+  margin-bottom: 15px;
+}
+
+.links-rodape a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #5c4a36;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links-rodape a:hover {
+  color: #a38662;
+}
+
+.endereco-rodape {
+  font-size: 16px;
+  margin-top: 10px;
+}
 
 
 

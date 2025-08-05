@@ -23,68 +23,20 @@ setInterval(atualizarContagem, 1000);
 
 ////modal
 
-const estadoCarrossel = {};
-const intervalosCarrossel = {};
-
 function abrirModal(modalId) {
   const modal = document.getElementById(modalId);
-  if (modal) {
-    modal.style.display = 'block';
-    mostrarImagem(modalId, 0);
-    estadoCarrossel[modalId] = 0; // adiciona esta linha
+  if (!modal) return;
+  modal.style.display = 'block';
+  mostrarImagem(modalId, 0);
+  estadoCarrossel[modalId] = 0;
 
-    // Limpa intervalo anterior se existir
-    if (intervalosCarrossel[modalId]) clearInterval(intervalosCarrossel[modalId]);
+  if (intervalosCarrossel[modalId]) clearInterval(intervalosCarrossel[modalId]);
 
-    // Começa troca automática a cada 3 segundos
-    intervalosCarrossel[modalId] = setInterval(() => {
-      mudarImagem(modalId, 1);
-    }, 3000);
-  }
+  // Troca automática a cada 3 segundos
+  intervalosCarrossel[modalId] = setInterval(() => {
+    mudarImagem(modalId, 1);
+  }, 3000);
 }
-
-function fecharModal(modalId) {
-  const modal = document.getElementById(modalId);
-  if (modal) {
-    modal.style.display = 'none';
-
-    // Para o intervalo automático
-    if (intervalosCarrossel[modalId]) {
-      clearInterval(intervalosCarrossel[modalId]);
-      intervalosCarrossel[modalId] = null;
-    }
-  }
-}
-
-function mostrarImagem(modalId, index) {
-  const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
-  if (imagens.length === 0) return;
-
-  if (index < 0) index = imagens.length - 1;
-  if (index >= imagens.length) index = 0;
-
-  imagens.forEach(img => img.classList.remove('active'));
-  imagens[index].classList.add('active');
-  estadoCarrossel[modalId] = index; // Atualiza o estado
-}
-
-function mudarImagem(modalId, delta) {
-  const imagens = document.querySelectorAll(`#${modalId} .carousel-img`);
-  if (imagens.length === 0) return;
-
-  const atual = estadoCarrossel[modalId] ?? 0;
-  mostrarImagem(modalId, (atual + delta + imagens.length) % imagens.length);
-}
-
-// Fecha modal ao clicar fora do conteúdo
-window.onclick = function(event) {
-  const modais = document.querySelectorAll('.modal');
-  modais.forEach(modal => {
-    if (event.target === modal) {
-      fecharModal(modal.id);
-    }
-  });
-};
 
 
 </script>

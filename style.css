@@ -546,7 +546,12 @@ body {
 /* ================================
    ESTILO DA PÁGINA DICAS2 HOSPEDAGEM
 ==================================*/
-
+.imagem-hosp {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto 0 auto; /* ajuste fino */
+  border-radius: 2px
+}
 .sessao-hospedagem{
   padding: 60px 20px;
   background: url('fundo_branco.png') no-repeat center center;

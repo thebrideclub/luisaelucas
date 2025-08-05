@@ -31,6 +31,7 @@ function abrirModal(modalId) {
   if (modal) {
     modal.style.display = 'block';
     mostrarImagem(modalId, 0);
+    estadoCarrossel[modalId] = 0; // adiciona esta linha
 
     // Limpa intervalo anterior se existir
     if (intervalosCarrossel[modalId]) clearInterval(intervalosCarrossel[modalId]);
@@ -64,7 +65,7 @@ function mostrarImagem(modalId, index) {
 
   imagens.forEach(img => img.classList.remove('active'));
   imagens[index].classList.add('active');
-  estadoCarrossel[modalId] = index;
+  estadoCarrossel[modalId] = index; // Atualiza o estado
 }
 
 function mudarImagem(modalId, delta) {

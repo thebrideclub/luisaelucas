@@ -806,11 +806,11 @@ body {
    RODAPÉ PADRÃO DO SITE
 =========================== */
 .rodape-site {
-  background-color: #f5f0e8; /* bege igual à contagem */
+  background-color: #f5f0e8; /* Bege igual da contagem */
   padding: 40px 20px;
   text-align: center;
-  font-family: 'Girly Mood DEMO', sans-serif;
-  color: #5c4a36;
+  color: #3d2e24; /* Marrom escuro elegante */
+  font-family: 'Chopard', serif;
   margin-top: 60px;
 }
 
@@ -826,20 +826,20 @@ body {
 .links-rodape a {
   margin: 0 15px;
   text-decoration: none;
-  color: #5c4a36;
-  font-weight: bold;
+  color: #3d2e24;
+  font-weight: normal;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .links-rodape a:hover {
-  color: #a38662;
+  color: #a38662; /* Bege queimado suave */
 }
 
 .endereco-rodape {
   font-size: 16px;
   margin-top: 10px;
 }
-
 
 
 /* ================================

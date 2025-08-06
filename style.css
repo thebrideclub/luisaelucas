@@ -571,11 +571,13 @@ body {
 /* Título principal da seção */
 .titulo-hospedagem {
   font-family: 'Girly Moods DEMO', cursive;
-  font-size: 30px;
+  font-size: 60px;
   color: #c3af8e;
   font-weight: 600;
   padding: 0 10px;
   margin-bottom: 40px;
+ font-weight: normal;
+  text-align: center;
 }
 
 /* Cartão do hotel */
@@ -610,7 +612,7 @@ text-transform: uppercase;
 
 /* Botão "Ver mais" */
 .hotel button {
-  background-color: #e7b1b1;
+  background-color: #dbe4a9;
   color: white;
   border: none;
   padding: 10px 20px;

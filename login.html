@@ -40,7 +40,6 @@
       background: #b07;
     }
 
-    /* Estilo da tabela */
     #rsvpTable {
       width: 90%;
       margin: 30px auto;
@@ -102,7 +101,7 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Dados serão preenchidos via JS -->
+        <!-- Dados preenchidos via JS -->
       </tbody>
     </table>
   </div>
@@ -110,6 +109,7 @@
   <script>
     const usuarioCorreto = "luisa";
     const senhaCorreta = "luisa123";
+    const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyuLXmplYCokZzXkTgeCSDL_1UA8M5qmtQK9BO7cxAAXiq_RKN-pHzNiDC2GmiL4NKg2g/exec";
 
     function verificarLogin() {
       const usuario = document.getElementById('usuario').value;
@@ -125,11 +125,11 @@
     }
 
     function carregarRSVPs() {
-      fetch("https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec")
+      fetch(WEBAPP_URL)
         .then(res => res.json())
         .then(data => {
           const tbody = document.querySelector("#rsvpTable tbody");
-          tbody.innerHTML = ""; // limpa tabela
+          tbody.innerHTML = "";
           data.forEach(item => {
             const tr = document.createElement("tr");
             tr.innerHTML = `

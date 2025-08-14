@@ -80,6 +80,52 @@ body {
 .menu-list li a:hover {
   color: #a55b4a;
 }
+/* Garantir que o menu fique fixo no topo */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  background-color: transparent; /* Começa transparente */
+  z-index: 1000;
+}
+
+/* Quando rolar a página */
+.menu.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* fundo branco translúcido */
+  padding: 10px 40px; /* diminui altura */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para a logo */
+.logo {
+  height: 50px;
+  transition: height 0.3s ease;
+}
+
+.menu.scrolled .logo {
+  height: 40px; /* diminui um pouco quando rola */
+}
+
+/* Ajuste para lista de links */
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
 
 /* ================================
    FOTO PRINCIPAL E INFORMAÇÕES

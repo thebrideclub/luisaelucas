@@ -28,7 +28,7 @@ html {
   src: url('Montserrat.woff2') format('woff2'),
        url('Montserrat.woff') format('woff'),
        url('Montserrat.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: light;
   font-style: normal;
 }
 

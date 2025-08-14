@@ -16,6 +16,38 @@
       border-radius: 8px;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
     }
+    .login-container {
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 25px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      font-family: 'Chopard', serif;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      background: #d19;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #b07;
+    }
   </style>
 </head>
 <body>
@@ -37,8 +69,34 @@
     </nav>
   </header>
 
-  <h1 style="font-family: 'Chopard', serif; color: #5f7157;">Lista de RSVPs</h1>
-  <iframe src="COLE_AQUI_O_LINK_PUBLICO_DA_PLANILHA"></iframe>
+  <h1 style="font-family: 'Chopard', serif; color: #5f7157;">Área restrita - Login</h1>
+
+  <div class="login-container" id="loginDiv">
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="verificarLogin()">Entrar</button>
+  </div>
+
+  <div id="planilhaDiv" style="display:none;">
+    <iframe src="COLE_AQUI_O_LINK_PUBLICO_DA_PLANILHA"></iframe>
+  </div>
+
+  <script>
+    const usuarioCorreto = "luisa";
+    const senhaCorreta = "luisa123";
+
+    function verificarLogin() {
+      const usuario = document.getElementById('usuario').value;
+      const senha = document.getElementById('senha').value;
+
+      if(usuario === usuarioCorreto && senha === senhaCorreta) {
+        document.getElementById('loginDiv').style.display = "none";
+        document.getElementById('planilhaDiv').style.display = "block";
+      } else {
+        alert("Usuário ou senha incorretos!");
+      }
+    }
+  </script>
 
 </body>
 </html>

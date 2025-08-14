@@ -23,6 +23,15 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat.woff2') format('woff2'),
+       url('Montserrat.woff') format('woff'),
+       url('Montserrat.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;

@@ -92,7 +92,6 @@
     <table id="rsvpTable">
       <thead>
         <tr>
-          <th>Data</th>
           <th>Nome</th>
           <th>Email</th>
           <th>Presença</th>
@@ -132,8 +131,8 @@
           tbody.innerHTML = "";
           data.forEach(item => {
             const tr = document.createElement("tr");
+            // Ignorando a primeira coluna "data"
             tr.innerHTML = `
-              <td>${item.data}</td>
               <td>${item.nome}</td>
               <td>${item.email}</td>
               <td>${item.presenca}</td>

@@ -7,15 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.png" type="image/png">
   <style>
-    iframe {
-      width: 90%;
-      height: 600px;
-      border: none;
-      margin: 30px auto;
-      display: block;
-      border-radius: 8px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
-    }
     .login-container {
       max-width: 400px;
       margin: 60px auto;
@@ -48,6 +39,26 @@
     button:hover {
       background: #b07;
     }
+
+    /* Estilo da tabela */
+    #rsvpTable {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      font-family: 'Chopard', serif;
+    }
+    #rsvpTable th, #rsvpTable td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    #rsvpTable th {
+      background-color: #fdfcf9;
+      color: #5f7157;
+    }
+    #rsvpTable tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
   </style>
 </head>
 <body>
@@ -77,8 +88,23 @@
     <button onclick="verificarLogin()">Entrar</button>
   </div>
 
-  <div id="planilhaDiv" style="display:none;">
-    <iframe src="https://docs.google.com/spreadsheets/d/1CONUl9Hl4G1vd0h8EuJi6LtqqXOWu0jqs_zm3WgF7FY/edit?gid=0#gid=0"></iframe>
+  <div id="rsvpDiv" style="display:none;">
+    <h2 style="text-align:center; font-family: 'Chopard', serif; color:#5f7157;">Lista de RSVPs</h2>
+    <table id="rsvpTable">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Presença</th>
+          <th>Acompanhantes</th>
+          <th>Mensagem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dados serão preenchidos via JS -->
+      </tbody>
+    </table>
   </div>
 
   <script>
@@ -91,10 +117,33 @@
 
       if(usuario === usuarioCorreto && senha === senhaCorreta) {
         document.getElementById('loginDiv').style.display = "none";
-        document.getElementById('planilhaDiv').style.display = "block";
+        document.getElementById('rsvpDiv').style.display = "block";
+        carregarRSVPs();
       } else {
         alert("Usuário ou senha incorretos!");
       }
+    }
+
+    function carregarRSVPs() {
+      fetch("https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec")
+        .then(res => res.json())
+        .then(data => {
+          const tbody = document.querySelector("#rsvpTable tbody");
+          tbody.innerHTML = ""; // limpa tabela
+          data.forEach(item => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td>${item.data}</td>
+              <td>${item.nome}</td>
+              <td>${item.email}</td>
+              <td>${item.presenca}</td>
+              <td>${item.acompanhantes}</td>
+              <td>${item.mensagem}</td>
+            `;
+            tbody.appendChild(tr);
+          });
+        })
+        .catch(err => alert("Erro ao carregar RSVPs: " + err));
     }
   </script>
 

@@ -93,7 +93,7 @@
     const form = document.getElementById('rsvpForm');
     form.addEventListener('submit', e => {
       e.preventDefault();
-      fetch('COLE_AQUI_A_URL_DO_APPSCRIPT', {
+      fetch('https://docs.google.com/spreadsheets/d/1CONUl9Hl4G1vd0h8EuJi6LtqqXOWu0jqs_zm3WgF7FY/edit?gid=0#gid=0', {
         method: 'POST',
         body: new FormData(form)
       })

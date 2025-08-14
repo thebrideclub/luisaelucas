@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.png" type="image/png">
   <style>
-    /* Estilo do formulário */
     form {
       max-width: 500px;
       margin: 40px auto;
@@ -91,9 +90,11 @@
 
   <script>
     const form = document.getElementById('rsvpForm');
+
     form.addEventListener('submit', e => {
       e.preventDefault();
-      fetch('https://docs.google.com/spreadsheets/d/1CONUl9Hl4G1vd0h8EuJi6LtqqXOWu0jqs_zm3WgF7FY/edit?gid=0#gid=0', {
+
+      fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
         method: 'POST',
         body: new FormData(form)
       })

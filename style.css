@@ -90,7 +90,25 @@ body {
   color: #a55b4a;
 }
 
+.menu {
+  position: absolute; /* fica sobre a imagem */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4); /* sombra escura translúcida */
+  color: white;
+}
 
+.menu-list li a {
+  color: white; /* deixa os links visíveis */
+  text-decoration: none;
+}
+
+.foto-principal {
+  width: 100%;
+  display: block;
+}
 
 /* ================================
    FOTO PRINCIPAL E INFORMAÇÕES

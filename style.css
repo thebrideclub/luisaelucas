@@ -119,16 +119,17 @@ eight: auto;
 display: block; 
 margin: 0 auto; 
 margin-top: 20px; 
-  opacity: 0.8; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
-
 }
 
 
 body {
-   background-image: url('fundo_branco.png');
+   background-image: url('fundo.png');
   color: #6e5a38;
   text-align: center;
   padding: 80px 20px;
+  opacity: 0.8; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
+
+
 }
 
 /* nomes */

@@ -788,13 +788,23 @@ font-weight: 100; /* Thin */
   color: #5f7157;
   text-transform: uppercase;
 }
+
+.radio-group {
+  display: flex;
+  gap: 20px; /* espaço entre os dois radios */
+}
+
 .radio-group label {
-  display: inline-block; /* deixa os labels lado a lado */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* espaço entre a bolinha e o texto */
+  cursor: pointer;
   margin-right: 20px;    /* espaço entre eles */
   font-size: 12px;
   font-family: 'Chopard', serif;
   text-transform: uppercase;
 
+}
 
 
 

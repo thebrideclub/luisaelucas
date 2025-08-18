@@ -110,6 +110,8 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-top: 20px;
+
 }
 
 .info-casal {
@@ -154,7 +156,7 @@ transform: scaleX(1.2);
 .data2 {
   font-family: 'Chopard', serif;
   font-size: 16px;
-  color: #9c9585;
+  color: #a89e86;
   margin: -5px -20px;
   text-transform: uppercase;
   font-weight: thin;

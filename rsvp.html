@@ -4,71 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RSVP - Luisa & Lucas</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="rsvp.css" />
   <link rel="icon" href="logo.png" type="image/png">
-  <style>
-    form {
-      max-width: 500px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
-      text-align: left;
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-      font-family: 'Chopard', serif;
-      font-size: 18px;
-      color: #5f7157;
-    }
-    input, select, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-    }
-    button {
-      background: #d19;
-      color: #fff;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    button:hover {
-      background: #b07;
-    }
-
-    .retangulo {
-      background: #f7f5ef; /* bege claro */
-      padding: 40px;
-      width: 400px; /* ajuste o tamanho */
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-      border-radius: 4px; /* cantos levemente arredondados */
-      text-align: center;
-    }
-
-    .retangulo h2 {
-      font-family: 'RetroSignature', cursive;
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #3b4d2d; /* verde musgo */
-    }
-
-    .retangulo input,
-    .retangulo button {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: none;
-      border-bottom}
-
-  </style>
 </head>
 <body>
 
@@ -82,38 +19,40 @@
       <ul class="menu-list">
         <li><a href="index.html">CASAMENTO</a></li>
         <li><a href="dicas.html">DICAS</a></li>
-        <li> <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
-      COMO CHEGAR</a></li>
- <li><a href="rsvp.html">R.S.V.P</a></li>
+        <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
+        <li><a href="rsvp.html">R.S.V.P</a></li>
         <li><a href="presentes.html">PRESENTES</a></li>
         <li><a href="mensagem.html">MENSAGEM</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1 style="font-family: 'RetroSignature', serif; color: #5f7157;">Confirme sua presença</h1>
-  
-  <form id="rsvpForm">
-    <label>Nome</label>
-    <input type="text" name="nome" required>
+  <!-- Retângulo central -->
+  <div class="retangulo">
+    <h2>Confirme sua presença</h2>
+    
+    <form id="rsvpForm">
+      <label>Nome</label>
+      <input type="text" name="nome" required>
 
-    <label>Whatsapp (DDD) + NÚMERO</label>
-    <input type="email" name="email" required>
+      <label>Whatsapp (DDD) + NÚMERO</label>
+      <input type="text" name="telefone" required>
 
-    <label>Vai comparecer?</label>
-    <select name="presenca" required>
-      <option value="Sim">Sim</option>
-      <option value="Não">Não</option>
-    </select>
+      <label>Vai comparecer?</label>
+      <select name="presenca" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
 
-    <label>Número de acompanhantes:</label>
-    <input type="number" name="acompanhantes" min="0">
+      <label>Número de acompanhantes:</label>
+      <input type="number" name="acompanhantes" min="0">
 
-    <label>Mensagem:</label>
-    <textarea name="mensagem"></textarea>
+      <label>Mensagem:</label>
+      <textarea name="mensagem"></textarea>
 
-    <button type="submit">Enviar RSVP</button>
-  </form>
+      <button type="submit">Enviar RSVP</button>
+    </form>
+  </div>
 
   <script>
     const form = document.getElementById('rsvpForm');

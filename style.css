@@ -486,57 +486,103 @@ body {
   margin: 10px auto 0 auto;
   border-radius: 2px;
 }
- <!-- Seção do RSVP -->
-  <section class="rsvp-section">
-    <div class="retangulo">
-      <h2>Confirme sua presença</h2>
+/* Área que contém o cartão do RSVP */
+.rsvp-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
 
-      <form id="rsvpForm" autocomplete="off">
-        <label>Nome</label>
-        <input type="text" name="nome" required>
+/* Cartão/retângulo central */
+.retangulo {
+  background: #f7f5ef;
+  padding: 40px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
 
-        <label>Whatsapp (DDD) + NÚMERO</label>
-        <input type="tel" name="whatsapp" required>
+/* Título em RetroSignature */
+.retangulo h2 {
+  font-family: 'RetroSignature', cursive;
+  font-size: 52px;
+  color: #5f7157;
+  text-align: center;
+  margin: 0 0 24px 0;
+font-weight: 100; /* Thin */
 
-        <label>Vai comparecer?</label>
-        <select name="presenca" required>
-          <option value="Sim">Sim</option>
-          <option value="Não">Não</option>
-        </select>
+}
 
-        <label>Número de acompanhantes</label>
-        <input type="number" name="acompanhantes" min="0" value="0">
+/* Formulário em Montserrat */
+.retangulo form {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
 
-        <label>Mensagem</label>
-        <textarea name="mensagem"></textarea>
+/* Rótulos */
+.retangulo label {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #5f7157;
+  text-transform: uppercase;
+}
 
-        <button type="submit">ENVIAR</button>
-      </form>
-    </div>
-  </section>
+/* Campos com apenas linha inferior (look da imagem) */
+.retangulo input,
+.retangulo select,
+.retangulo textarea {
+  width: 100%;
+  padding: 10px 6px;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid #6b7d58;
+  border-radius: 0;
+  background: transparent;
+  font-size: 15px;
+  outline: none;
+  color: #333;
+}
 
-  <script>
-    const form = document.getElementById('rsvpForm');
+/* Ajustes de textarea */
+.retangulo textarea {
+  min-height: 80px;
+  resize: vertical;
+}
 
-    form.addEventListener('submit', e => {
-      e.preventDefault();
+/* Placeholder mais suave */
+.retangulo ::placeholder {
+  color: #9aa596;
+}
 
-      fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
-        method: 'POST',
-        body: new FormData(form)
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (data.result === 'success') {
-          alert('RSVP enviado com sucesso!');
-          form.reset();
-        } else {
-          alert('Ocorreu um erro, tente novamente.');
-        }
-      })
-      .catch(err => alert('Erro: ' + err));
-    });
-  </script>
+/* Botão verde */
+.retangulo button {
+  width: 100%;
+  margin-top: 26px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #5f7157;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: filter .2s ease;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.retangulo button:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsivo */
+@media (max-width: 560px) {
+  .retangulo { padding: 28px 20px; }
+  .retangulo h2 { font-size: 28px; }
+}
 
 /* ================================
    RESET BÁSICO

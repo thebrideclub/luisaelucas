@@ -120,12 +120,34 @@
 
   <img src="flor.png" alt="Flor" class="imagem-flor" />
 
- <!-- Retângulo RSVP -->
-  <section class="sessao-rsvp">
-    <div class="retangulo-rsvp">
-      <a href="rsvp.html" class="link-rsvp">R.S.V.P</a>
-    </div>
-  </section>
+<!-- Seção do RSVP (dentro do index.html) -->
+<section class="rsvp-section">
+  <div class="retangulo">
+    <h2>Confirme sua presença</h2>
+
+    <form id="rsvpForm" autocomplete="off">
+      <label>Nome</label>
+      <input type="text" name="nome" required>
+
+      <label>Whatsapp (DDD) + NÚMERO</label>
+      <input type="tel" name="whatsapp" required>
+
+      <label>Vai comparecer?</label>
+      <select name="presenca" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label>Número de acompanhantes</label>
+      <input type="number" name="acompanhantes" min="0" value="0">
+
+      <label>Mensagem</label>
+      <textarea name="mensagem"></textarea>
+
+      <button type="submit">ENVIAR</button>
+    </form>
+  </div>
+</section>
 
 </section>
     <section class="slider">

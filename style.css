@@ -148,17 +148,19 @@ body {
   text-transform: uppercase;
   font-weight: thin;
      margin-bottom: 2px;
-
+transform: scaleX(1.2);
 
 }
 .data2 {
   font-family: 'Chopard', serif;
   font-size: 16px;
   color: #9c9585;
-  margin: -5px 0 -20px 0;
+  margin: -5px -20px;
   text-transform: uppercase;
   font-weight: thin;
      margin-bottom: 9px;
+transform: scaleX(1.2)
+
 
 }
 

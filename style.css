@@ -132,7 +132,7 @@ body {
 
 .texto1 {
   font-family: 'Montserrat', serif;
-  font-size: 18px;
+  font-size: 10px;
   color: #9c9585;
   margin: -5px 0 -20px 0;
   text-transform: uppercase;
@@ -148,7 +148,7 @@ body {
   margin: -5px 0 -20px 0;
   text-transform: uppercase;
   font-weight: thin;
-     margin-bottom: 9px;
+     margin-bottom: 6px;
 
 
 }
@@ -161,9 +161,7 @@ body {
   font-weight: thin;
      margin-bottom: 9px;
 
-
 }
-
 
 .cidade {
   font-family: "Girly Moods DEMO", cursive;

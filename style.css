@@ -136,17 +136,18 @@ body {
       letter-spacing: 3px;
     }
 
-    .data {
-      font-family: 'Montserrat', serif;
-      font-size: 17px;
-      color: #6e5a38;
-      text-transform: uppercase;
-      font-weight: 200;
-      transform: scaleX(1.1);
- letter-spacing: 4px;
-
-    }
-
+  .data {
+  font-family: 'Chopard', serif;
+  font-size: 17px;
+  color: #6e5a38;
+  text-transform: uppercase;
+  font-weight: 200;
+  transform: scaleX(1.1);
+  letter-spacing: 4px;
+  
+  margin-top: 20px;   /* espaço acima */
+  margin-bottom: 20px; /* espaço abaixo */
+}
     .data2 {
       font-family: 'Montserrat', serif;
       font-size: 10px;
@@ -155,11 +156,15 @@ body {
       font-weight: 200;
       transform: scaleX(1.1);
  letter-spacing: 4px;
+  
+  margin-top: 20px;   /* espaço acima */
+  margin-bottom: 20px; /* espaço abaixo */
+
 
     }
     .icon-embauba {
       margin-top: 10px;  
-      height: 46px;
+      height: 70px;
       margin-bottom: 10px;
     }
 /* ================================

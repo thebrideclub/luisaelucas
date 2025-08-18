@@ -114,7 +114,6 @@ body {
 
 .info-casal {
  
-  background-image: url('fundo_branco.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,10 +123,10 @@ body {
 
 .nomes {
   font-family: "RetroSignature", cursive;
-  font-size: 80px;
+  font-size: 90px;
   color: #c3af8e;
   margin-bottom: 9px;
-  font-weight: normal;
+  font-weight: thin;
 }
 
 .texto1 {
@@ -137,7 +136,7 @@ body {
   margin: -5px 0 -20px 0;
   text-transform: uppercase;
   font-weight: thin;
-     margin-bottom: 9px;
+     margin-bottom: 15px;
 
 
 }
@@ -148,7 +147,7 @@ body {
   margin: -5px 0 -20px 0;
   text-transform: uppercase;
   font-weight: thin;
-     margin-bottom: 6px;
+     margin-bottom: 10px;
 
 
 }

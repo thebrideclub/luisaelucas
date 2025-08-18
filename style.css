@@ -739,6 +739,39 @@ text-transform: uppercase;
   color: #333;
 }
 
+/*RSVP*/
+
+/* ========= RSVP ========= */
+.sessao-rsvp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.retangulo-rsvp {
+  background-color: #f5f0e6; /* bege suave para combinar com seu site */
+  border: 2px solid #d4b8a3; /* tom mais escuro para destacar */
+  padding: 20px 50px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.retangulo-rsvp:hover {
+  transform: scale(1.05);
+  background-color: #eaddd1;
+}
+
+.link-rsvp {
+  font-family: "RetroSignature", cursive; /* título com sua fonte */
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+
+
 /* ========== CARROSSEL ========== */
 .carousel {
   position: relative;

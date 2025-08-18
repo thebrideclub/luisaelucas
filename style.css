@@ -105,35 +105,20 @@ body {
 /* ================================
    FOTO PRINCIPAL E INFORMAÇÕES
 ==================================*/
-.foto-principal {
-  max-width: 1200px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-
+body {
+  background-color: #fdfaf7;
+  color: #6e5a38;
+  text-align: center;
+  padding: 80px 20px;
 }
 
-    .info-casal {
-      padding: 60px 20px;
-    }
-
-/* nomes principais */
+/* nomes */
 .nomes {
   font-family: "RetroSignature", cursive;
-  font-size: 95px;
+  font-size: 80px; /* reduzido para não pesar tanto */
   color: #c3af8e;
-  margin-bottom: 40px;
+  margin-bottom: 50px; /* mais espaço antes da data */
   font-weight: normal;
-}
-
-/* detalhe de linha */
-.separator {
-  width: 70px;
-  height: 1px;
-  background-color: #c3af8e;
-  margin: 30px auto;
 }
 
 /* data */
@@ -143,7 +128,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 6px;
   color: #4a3b27;
-  margin-bottom: 15px;
+  margin-bottom: 30px; /* respiro para o local */
 }
 
 /* local */
@@ -153,9 +138,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #7b6a54;
-  margin-top: 5px;
+}
 
-    }
+    
     .icon-embauba {
       margin-top: 10px;  
       height: 70px;

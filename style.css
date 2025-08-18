@@ -486,6 +486,57 @@ body {
   margin: 10px auto 0 auto;
   border-radius: 2px;
 }
+ <!-- Seção do RSVP -->
+  <section class="rsvp-section">
+    <div class="retangulo">
+      <h2>Confirme sua presença</h2>
+
+      <form id="rsvpForm" autocomplete="off">
+        <label>Nome</label>
+        <input type="text" name="nome" required>
+
+        <label>Whatsapp (DDD) + NÚMERO</label>
+        <input type="tel" name="whatsapp" required>
+
+        <label>Vai comparecer?</label>
+        <select name="presenca" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+
+        <label>Número de acompanhantes</label>
+        <input type="number" name="acompanhantes" min="0" value="0">
+
+        <label>Mensagem</label>
+        <textarea name="mensagem"></textarea>
+
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('rsvpForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.result === 'success') {
+          alert('RSVP enviado com sucesso!');
+          form.reset();
+        } else {
+          alert('Ocorreu um erro, tente novamente.');
+        }
+      })
+      .catch(err => alert('Erro: ' + err));
+    });
+  </script>
 
 /* ================================
    RESET BÁSICO
@@ -536,3 +587,6 @@ body {
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform
+
+
+

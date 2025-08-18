@@ -130,13 +130,40 @@ body {
   font-weight: normal;
 }
 
-.data {
+.texto1 {
   font-family: 'Montserrat', serif;
   font-size: 18px;
   color: #9c9585;
   margin: -5px 0 -20px 0;
   text-transform: uppercase;
+  font-weight: thin;
+     margin-bottom: 9px;
+
+
 }
+.data {
+  font-family: 'Chopard', serif;
+  font-size: 18px;
+  color: #9c9585;
+  margin: -5px 0 -20px 0;
+  text-transform: uppercase;
+  font-weight: thin;
+     margin-bottom: 9px;
+
+
+}
+.data2 {
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #9c9585;
+  margin: -5px 0 -20px 0;
+  text-transform: uppercase;
+  font-weight: thin;
+     margin-bottom: 9px;
+
+
+}
+
 
 .cidade {
   font-family: "Girly Moods DEMO", cursive;

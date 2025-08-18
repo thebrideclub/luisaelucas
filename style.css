@@ -99,7 +99,14 @@ body {
 .menu-list li a:hover {
   color: #a55b4a;
 }
-
+.menu::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc; /* cor da linha */
+  margin-top: 20px;       /* espaço depois do menu */
+}
 
 
 /* ================================

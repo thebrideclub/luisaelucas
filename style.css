@@ -788,7 +788,14 @@ font-weight: 100; /* Thin */
   color: #5f7157;
   text-transform: uppercase;
 }
+.radio-group label {
+  display: inline-block; /* deixa os labels lado a lado */
+  margin-right: 20px;    /* espaço entre eles */
+  font-size: 12px;
+  font-family: 'Chopart', serif;
 
+
+}
 /* Campos com apenas linha inferior (look da imagem) */
 .retangulo input,
 .retangulo select,

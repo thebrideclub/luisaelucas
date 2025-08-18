@@ -112,6 +112,15 @@ body {
    FOTO PRINCIPAL E INFORMAÇÕES
 ==================================*/
 
+
+
+body {
+   background-image: url('fundo.png');
+  text-align: center;
+  padding: 80px 20px;
+  opacity: 0.7; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
+}
+
 .foto-principal { 
 max-width: 1200px; 
 width: 100%; h
@@ -121,13 +130,6 @@ margin: 0 auto;
 margin-top: 20px; 
 }
 
-
-body {
-   background-image: url('fundo.png');
-  text-align: center;
-  padding: 80px 20px;
-  opacity: 0.7; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
-}
 
 /* nomes */
 .nomes {

@@ -1030,5 +1030,27 @@ text-transform: uppercase;
   .dois-pontos {
     display: none;
   }
+/* Área que contém o cartão do RSVP */
+.rsvp-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Cartão/retângulo central */
+.retangulo {
+  background: #f7f5ef;
+  padding: 40px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+/* Título em RetroSignature */
+.retangulo h2 {
+  font-family: 'RetroSignature', cursive;
+  font-size: 52px;
+
 
 }

@@ -4,12 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RSVP - Luisa & Lucas</title>
+
+  <!-- 1) CSS global do site (menu, fontes, etc.) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- 2) CSS específico da página RSVP (não mexe no menu) -->
   <link rel="stylesheet" href="rsvp.css" />
+
   <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
 
-  <!-- Cabeçalho com logo -->
+  <!-- Cabeçalho igual às outras páginas -->
   <header class="menu">
     <div class="logo-container">
       <img src="logo.png" alt="Logo" class="logo" />
@@ -19,7 +25,11 @@
       <ul class="menu-list">
         <li><a href="index.html">CASAMENTO</a></li>
         <li><a href="dicas.html">DICAS</a></li>
-        <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
+        <li>
+          <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
+            COMO CHEGAR
+          </a>
+        </li>
         <li><a href="rsvp.html">R.S.V.P</a></li>
         <li><a href="presentes.html">PRESENTES</a></li>
         <li><a href="mensagem.html">MENSAGEM</a></li>
@@ -27,32 +37,34 @@
     </nav>
   </header>
 
-  <!-- Retângulo central -->
-  <div class="retangulo">
-    <h2>Confirme sua presença</h2>
-    
-    <form id="rsvpForm">
-      <label>Nome</label>
-      <input type="text" name="nome" required>
+  <!-- Seção do RSVP -->
+  <section class="rsvp-section">
+    <div class="retangulo">
+      <h2>Confirme sua presença</h2>
 
-      <label>Whatsapp (DDD) + NÚMERO</label>
-      <input type="text" name="telefone" required>
+      <form id="rsvpForm" autocomplete="off">
+        <label>Nome</label>
+        <input type="text" name="nome" required>
 
-      <label>Vai comparecer?</label>
-      <select name="presenca" required>
-        <option value="Sim">Sim</option>
-        <option value="Não">Não</option>
-      </select>
+        <label>Whatsapp (DDD) + NÚMERO</label>
+        <input type="tel" name="whatsapp" required>
 
-      <label>Número de acompanhantes:</label>
-      <input type="number" name="acompanhantes" min="0">
+        <label>Vai comparecer?</label>
+        <select name="presenca" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
 
-      <label>Mensagem:</label>
-      <textarea name="mensagem"></textarea>
+        <label>Número de acompanhantes</label>
+        <input type="number" name="acompanhantes" min="0" value="0">
 
-      <button type="submit">Enviar RSVP</button>
-    </form>
-  </div>
+        <label>Mensagem</label>
+        <textarea name="mensagem"></textarea>
+
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </section>
 
   <script>
     const form = document.getElementById('rsvpForm');

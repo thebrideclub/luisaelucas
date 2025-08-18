@@ -31,6 +31,15 @@ html {
   font-weight: light;
   font-style: normal;
 }
+@font-face {
+  font-family: 'RetroSignature';
+  src: url('RetroSignature.woff2') format('woff2'),
+       url('RetroSignature.woff') format('woff'),
+       url('RetroSignature.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
 
 
 body {
@@ -114,7 +123,7 @@ body {
 }
 
 .nomes {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "RetroSignature", cursive;
   font-size: 80px;
   color: #c3af8e;
   margin-bottom: 9px;
@@ -177,7 +186,7 @@ body {
 }
 
 .titulo-contagem {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "RetroSignature", cursive;
   font-size: 80px;
   color: #ffffff;
   margin-bottom: 40px;
@@ -233,7 +242,7 @@ body {
 }
 
 .titulo-sessao {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "RetroSignature", cursive;
   font-size: 48px;
   color: #9c8a73;
   margin-bottom: 20px;
@@ -290,7 +299,7 @@ body {
 ==================================*/
 .sessao-dress-code {
   background-image: url('fundo_branco.png');
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "RetroSignature", cursive;
   font-size: 48px;
   color: #9c8a73;
   margin-bottom: 20px;
@@ -303,7 +312,7 @@ body {
 }
 
 .titulo-dress {
-  font-family: "Girly Moods DEMO", cursive;
+  font-family: "RetroSignature", cursive;
   font-size: 60px;
   color: #9c8a73;
   margin-bottom: 20px;

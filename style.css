@@ -54,7 +54,7 @@ body {
    MENU E CABEÇALHO
 ==================================*/
 .menu {
-  background-color: #fdfaf7;
+  background-image: url('fundo.png');
   padding: 30px 0 10px;
   border-top: 7px solid;
   display: flex;
@@ -106,8 +106,8 @@ body {
   height: 1px;
   background-color: #ccc; /* cor da linha */
   margin-top: 20px;       /* espaço depois do menu */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* sombra da linha */
 }
-
 
 /* ================================
    FOTO PRINCIPAL E INFORMAÇÕES
@@ -119,11 +119,14 @@ width: 100%; h
 eight: auto; 
 display: block; 
 margin: 0 auto; 
-margin-top: 20px; }
+margin-top: 20px; 
+  opacity: 0.8; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
+
+}
 
 
 body {
-  background-color: #fdfaf7;
+   background-image: url('fundo_branco.png');
   color: #6e5a38;
   text-align: center;
   padding: 80px 20px;

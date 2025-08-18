@@ -105,7 +105,7 @@ body {
   height: 1px;
   background-color: #ccc; /* cor da linha */
   margin-top: 20px;       /* espaço depois do menu */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* sombra da linha */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra da linha */
 }
 
 /* ================================
@@ -124,12 +124,9 @@ margin-top: 20px;
 
 body {
    background-image: url('fundo.png');
-  color: #6e5a38;
   text-align: center;
   padding: 80px 20px;
-  opacity: 0.8; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
-
-
+  opacity: 0.7; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
 }
 
 /* nomes */

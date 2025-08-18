@@ -119,47 +119,41 @@ body {
       padding: 60px 20px;
     }
 
-    .nomes {
-      font-family: "RetroSignature", cursive;
-      font-size: 80px;
-      color: #c3af8e;
-      margin: 0 0 15px 0;
-      font-weight: 100;
-    }
-
-    .texto1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 10px;
-      color: #6f6f6f;
-      margin: 0 0 25px 0;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-    }
-
-  .data {
-  font-family: 'Chopard', serif;
-  font-size: 17px;
-  color: #6e5a38;
-  text-transform: uppercase;
-  font-weight: 200;
-  transform: scaleX(1.1);
-  letter-spacing: 4px;
-  
-  margin-top: 20px;   /* espaço acima */
-  margin-bottom: 20px; /* espaço abaixo */
+/* nomes principais */
+.nomes {
+  font-family: "RetroSignature", cursive;
+  font-size: 95px;
+  color: #c3af8e;
+  margin-bottom: 40px;
+  font-weight: normal;
 }
-    .data2 {
-      font-family: 'Montserrat', serif;
-      font-size: 10px;
-      color: #6e5a38;
-      text-transform: uppercase;
-      font-weight: 200;
-      transform: scaleX(1.1);
- letter-spacing: 4px;
-  
-  margin-top: 20px;   /* espaço acima */
-  margin-bottom: 20px; /* espaço abaixo */
 
+/* detalhe de linha */
+.separator {
+  width: 70px;
+  height: 1px;
+  background-color: #c3af8e;
+  margin: 30px auto;
+}
+
+/* data */
+.data {
+  font-family: "Chopard", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #4a3b27;
+  margin-bottom: 15px;
+}
+
+/* local */
+.local {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #7b6a54;
+  margin-top: 5px;
 
     }
     .icon-embauba {

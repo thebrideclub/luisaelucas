@@ -792,7 +792,10 @@ font-weight: 100; /* Thin */
   display: inline-block; /* deixa os labels lado a lado */
   margin-right: 20px;    /* espaço entre eles */
   font-size: 12px;
-  font-family: 'Chopart', serif;
+  font-family: 'Chopard', serif;
+  text-transform: uppercase;
+
+
 
 
 }

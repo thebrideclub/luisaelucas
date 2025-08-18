@@ -20,3 +20,25 @@
 
   atualizarContagem();
   setInterval(atualizarContagem, 1000);
+<script>
+  const form = document.getElementById('rsvpForm');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.result === 'success') {
+        alert('RSVP enviado com sucesso!');
+        form.reset();
+      } else {
+        alert('Ocorreu um erro, tente novamente.');
+      }
+    })
+    .catch(err => alert('Erro: ' + err));
+  });
+</script>

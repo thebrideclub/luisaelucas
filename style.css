@@ -54,9 +54,9 @@ body {
    MENU E CABEÇALHO
 ==================================*/
 .menu {
-  background-color: #fdfcf9;
+  background-color: #fdfaf7;
   padding: 30px 0 10px;
-  border-top: 2px solid #5f7157;
+  border-top: 7px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,6 +112,16 @@ body {
 /* ================================
    FOTO PRINCIPAL E INFORMAÇÕES
 ==================================*/
+
+.foto-principal { 
+max-width: 1200px; 
+width: 100%; h
+eight: auto; 
+display: block; 
+margin: 0 auto; 
+margin-top: 20px; }
+
+
 body {
   background-color: #fdfaf7;
   color: #6e5a38;

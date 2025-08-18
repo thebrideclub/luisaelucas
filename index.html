@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luisa & Lucas</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
 
@@ -19,9 +19,12 @@
       <ul class="menu-list">
         <li><a href="index.html">CASAMENTO</a></li>
         <li><a href="dicas.html">DICAS</a></li>
-        <li> <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
-      COMO CHEGAR</a></li>
- <li><a href="rsvp.html">R.S.V.P</a></li>
+        <li>
+          <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
+            COMO CHEGAR
+          </a>
+        </li>
+        <li><a href="rsvp.html">R.S.V.P</a></li>
         <li><a href="presentes.html">PRESENTES</a></li>
         <li><a href="mensagem.html">MENSAGEM</a></li>
       </ul>
@@ -34,16 +37,14 @@
   <!-- Texto central -->
   <section class="info-casal">
     <h1 class="nomes">Luisa & Lucas</h1>
-<p class="texto1">CONVIDAM PARA A CERIMÔNIA DE SEU CASAMENTO </p>
-
+    <p class="texto1">CONVIDAM PARA A CERIMÔNIA DE SEU CASAMENTO</p>
     <p class="data">22 de novembro de 2025</p>
-    <p class="data2">sábado, ás 15h30</p>
+    <p class="data2">sábado, às 15h30</p>
     <img src="embauba.png" alt="Embauba" class="icon-embauba" />
-
   </section>
 
   <!-- Texto de boas-vindas -->
-  <div class="texto-boas-vindas">
+  <section class="texto-boas-vindas">
     <div class="texto-boas-vindas-conteudo">
       <p>
         QUERIDOS AMIGOS E FAMILIARES,<br><br>
@@ -55,7 +56,7 @@
         LUISA E LUCAS
       </p>
     </div>
-  </div>
+  </section>
 
   <!-- Contagem Regressiva -->
   <section class="contagem-regressiva">
@@ -96,61 +97,63 @@
     </p>
     <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="botao-como-chegar">COMO CHEGAR</a>
   </section>
+
   <!-- Sessão Dress Code -->
   <section class="sessao-dress-code" id="dress-code">  
-  <h2 class="titulo-dress">Dress Code</h2>
+    <h2 class="titulo-dress">Dress Code</h2>
 
-  <img src= "casal.png" alt="Casal" class="imagem-casal" />
-  <p class="traje">TRAJE SOCIAL COMPLETO</p>
+    <img src="casal.png" alt="Casal" class="imagem-casal" />
+    <p class="traje">TRAJE SOCIAL COMPLETO</p>
 
-  <img src="salto.png" alt="Salto" class="imagem-salto" />
-  <p class="descricao-dress">
-    MULHERES DEEM PREFERÊNCIA A VESTIDOS LEVES.<br>
-    O TERRENO DA CERIMÔNIA É IRREGULAR,<br>
-    POR ISSO RECOMENDAMOS O USO DE SALTO GROSSO.
-  </p>
+    <img src="salto.png" alt="Salto" class="imagem-salto" />
+    <p class="descricao-dress">
+      MULHERES DEEM PREFERÊNCIA A VESTIDOS LEVES.<br>
+      O TERRENO DA CERIMÔNIA É IRREGULAR,<br>
+      POR ISSO RECOMENDAMOS O USO DE SALTO GROSSO.
+    </p>
 
-  <button class="botao-referencias">REFERÊNCIAS</button>
+    <button class="botao-referencias">REFERÊNCIAS</button>
 
-  <p class="convite-final">
-    Venha pronto para<br />
-    se divertir e celebrar<br />
-    com a gente!
-  </p>
+    <p class="convite-final">
+      Venha pronto para<br />
+      se divertir e celebrar<br />
+      com a gente!
+    </p>
 
-  <img src="flor.png" alt="Flor" class="imagem-flor" />
+    <img src="flor.png" alt="Flor" class="imagem-flor" />
+  </section>
 
-<!-- Seção do RSVP (dentro do index.html) -->
-<section class="rsvp-section">
-  <div class="retangulo">
-    <h2>Confirme sua presença</h2>
+  <!-- Seção RSVP -->
+  <section class="rsvp-section">
+    <div class="retangulo">
+      <h2>Confirme sua presença</h2>
 
-    <form id="rsvpForm" autocomplete="off">
-      <label>Nome</label>
-      <input type="text" name="nome" required>
+      <form id="rsvpForm" autocomplete="off">
+        <label>Nome</label>
+        <input type="text" name="nome" required />
 
-      <label>Whatsapp (DDD) + NÚMERO</label>
-      <input type="tel" name="whatsapp" required>
+        <label>Whatsapp (DDD) + NÚMERO</label>
+        <input type="tel" name="whatsapp" required />
 
-      <label>Vai comparecer?</label>
-      <select name="presenca" required>
-        <option value="Sim">Sim</option>
-        <option value="Não">Não</option>
-      </select>
+        <label>Vai comparecer?</label>
+        <select name="presenca" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
 
-      <label>Número de acompanhantes</label>
-      <input type="number" name="acompanhantes" min="0" value="0">
+        <label>Número de acompanhantes</label>
+        <input type="number" name="acompanhantes" min="0" value="0" />
 
-      <label>Mensagem</label>
-      <textarea name="mensagem"></textarea>
+        <label>Mensagem</label>
+        <textarea name="mensagem"></textarea>
 
-      <button type="submit">ENVIAR</button>
-    </form>
-  </div>
-</section>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </section>
 
-</section>
-    <section class="slider">
+  <!-- Sessão Slider -->
+  <section class="slider">
     <div class="slider-track">
       <div class="slide"><img src="imagem1.jpg" alt="Imagem 1" /></div>
       <div class="slide"><img src="imagem2.jpg" alt="Imagem 2" /></div>
@@ -163,19 +166,19 @@
       <div class="slide"><img src="imagem3.jpg" alt="Imagem 3" /></div>
     </div>
   </section>
-<!-- Rodapé -->
-<footer class="rodape-site">
-  <div class="conteudo-rodape">
-    <nav class="links-rodape">
-      <a href="https://stalwart-bonbon-ff25eb.netlify.app/">Início</a>
-      <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
-        Como Chegar
-      </a>
-    </nav>
-    <p class="endereco-rodape">📍 Embaúba Boutique Hotel</p>
-  </div>
-</footer>
 
+  <!-- Rodapé -->
+  <footer class="rodape-site">
+    <div class="conteudo-rodape">
+      <nav class="links-rodape">
+        <a href="https://stalwart-bonbon-ff25eb.netlify.app/">Início</a>
+        <a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
+          Como Chegar
+        </a>
+      </nav>
+      <p class="endereco-rodape">📍 Embaúba Boutique Hotel</p>
+    </div>
+  </footer>
 
 </body>
 </html>

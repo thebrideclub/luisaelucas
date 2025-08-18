@@ -129,7 +129,7 @@ body {
 
     .texto1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
+      font-size: 16px;
       color: #6f6f6f;
       margin: 0 0 25px 0;
       text-transform: uppercase;
@@ -147,8 +147,8 @@ body {
     }
 
     .data2 {
-      font-family: 'Chopard', serif;
-      font-size: 20px;
+      font-family: 'Montserrat', serif;
+      font-size: 16px;
       color: #6e5a38;
       margin: 0 0 20px 0;
       text-transform: uppercase;

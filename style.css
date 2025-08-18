@@ -42,20 +42,14 @@ html {
   font-style: normal;
 }
 
-/* Corpo */
+/* ================================
+   ESTILO GLOBAL DO BODY
+==================================*/
 body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* ================================
@@ -123,6 +117,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 40px 0;
 }
 
@@ -174,7 +169,7 @@ body {
 }
 
 .coqueiro-sessao {
-  margin-top: 10px;  
+  margin-top: 10px;
   height: 42px;
   margin-bottom: 10px;
 }
@@ -188,6 +183,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 60px 0;
 }
 
@@ -263,6 +259,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 60px 20px;
   text-align: center;
 }
@@ -422,13 +419,14 @@ body {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
 
 .sessao-programacao .icone-coqueiro {
   width: 30px;
-  margin: 20px auto 60px auto;
+  margin: 20px auto;
   display: block;
+  margin-bottom: 60px;
 }
 
 .sessao-programacao .mensagem-programacao {
@@ -463,14 +461,14 @@ body {
   margin-top: 10px;
 }
 
-.icone-sapato, 
+.icone-sapato,
 .icone-folha {
   width: 50px;
   margin: 10px auto;
   display: block;
 }
 
-.imagem-maio { 
+.imagem-maio {
   width: 100px;
   margin: 10px auto;
   display: block;
@@ -490,7 +488,21 @@ body {
 }
 
 /* ================================
-   SLIDER / CARROSSEL
+   RESET BÁSICO
+==================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffaf8;
+  padding: 40px 0;
+}
+
+/* ================================
+   SLIDER
 ==================================*/
 .slider {
   overflow: hidden;
@@ -523,81 +535,4 @@ body {
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* ================================
-   SESSÃO DICAS
-==================================*/
-.sessao-dicas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 20px;
-}
-
-.dica-card {
-  background-color: #fffaf5;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  width: 200px;
-  height: 200px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dica-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.dica-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
-
-.titulo-dicas {
-  font-family: 'Chopard', serif;
-  font-size: 16px;
-  color: #7b4e35;
-  font-weight: 600;
-  padding: 0 10px;
-}
-
-/* ================================
-   SESSÃO HOSPEDAGEM
-==================================*/
-.sessao-hospedagem {
-  padding: 60px 20px;
-  background: url('fundo_branco.png') no-repeat center center;
-  background-size: cover;
-  text-align: center;
-}
-
-.titulo-hospedagem {
-  font-family: 'Girly Moods DEMO', cursive;
-  font-size: 60px;
-  color: #c3af8e;
-  font-weight: normal;
-  margin-bottom: 40px;
-}
-
-/* Cartão do hotel */
-.hotel {
-  font-family: 'Chopard', serif;
-  background: rgba(255, 255, 255, 0.9);
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 
+  100% { transform

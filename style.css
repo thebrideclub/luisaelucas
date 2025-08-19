@@ -52,13 +52,6 @@ body {
   background-attachment: fixed;           /* mantém a imagem fixa ao rolar */
 }
 
-}
-
-
-
-/* ================================
-   MENU E CABEÇALHO
-==================================*/
 /* ================================
    MENU E CABEÇALHO
 ==================================*/
@@ -109,16 +102,15 @@ body {
   color: #a55b4a;
 }
 
-.menu::after 
-{
+.menu::after {
   content: "";
   position: absolute;
-  bottom: 0; /* cola a linha na parte de baixo do menu */
+  bottom: 0; /* se necessário, use bottom: -1px ou -2px */
   left: 0;
   width: 100%;
   height: 1px;
   background-color: #ccc;
-  box-shadow: 0 6px 6px rgba(0,0,0,0.2); /* sombra mais evidente */
+  box-shadow: 0 6px 6px rgba(0,0,0,0.2);
 }
 
 /* ================================
@@ -499,11 +491,6 @@ font-weight: normal;
   box-sizing: border-box;
 }
 
-/* Corpo */
-body {
-  background-color: #fffaf8;
-  padding: 40px 0;
-}
 
 /* Slider */
 .slider {

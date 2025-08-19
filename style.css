@@ -46,9 +46,17 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
   text-align: center;
+  background-image: url('fundo_branco.png'); /* caminho da sua imagem */
+  background-repeat: no-repeat;           /* não repete a imagem */
+  background-size: cover;                 /* cobre toda a tela */
+  background-position: center;            /* centraliza a imagem */
+  background-attachment: fixed;           /* mantém a imagem fixa ao rolar */
 }
+
+}
+
+
 
 /* ================================
    MENU E CABEÇALHO
@@ -122,7 +130,6 @@ body {
 
 
 .convite {
-  background-image: url('fundo_branco.png');
   text-align: center;
   padding: 0px 20px;
   margin-top: 0; /* tira espaço extra */

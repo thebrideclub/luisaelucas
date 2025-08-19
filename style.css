@@ -45,7 +45,7 @@ html {
 
 body {
   text-align: center;
-  background-color: #f1ece3; /* caminho da sua imagem */
+  background-color: #f7f1e7; /* caminho da sua imagem */
   background-repeat: no-repeat;           /* não repete a imagem */
   background-size: cover;                 /* cobre toda a tela */
   background-position: center;            /* centraliza a imagem */
@@ -136,7 +136,7 @@ body {
   font-family: "RetroSignature", cursive;
   font-size: 70px; /* reduzido para não pesar tanto */
   color: #5f7157;
-margin-top: 60px;
+margin-top: 40px;
   margin-bottom: 0px; /* mais espaço antes da data */
   font-weight: 100;
 }
@@ -147,7 +147,7 @@ margin-top: 60px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #c3af8e;
+  color: #5f7157;
   margin-bottom: 10px; /* respiro para o local */
 }
 

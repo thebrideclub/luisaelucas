@@ -1162,14 +1162,10 @@ text-align: center; }
 
 
   }
-.nomes {
-margin-top: 30px;
-  margin-bottom: -100px; /* mais espaço antes da data */
-  font-weight: 50;
-}
+
   .texto-boas-vindas-conteudo {
     margin-top: 20px;
-    font-size: 3vw;
+    font-size: 2.7vw;
     padding: 20px 20px;
   }
 

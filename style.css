@@ -138,26 +138,26 @@ body {
   color: #5f7157;
 margin-top: 60px;
   margin-bottom: 20px; /* mais espaço antes da data */
-  font-weight: normal;
+  font-weight: 100;
 }
 
 /* data */
 .data {
   font-family: "Montserrat", serif;
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #c3af8e;
-  margin-bottom: 20px; /* respiro para o local */
+  margin-bottom: 10px; /* respiro para o local */
 }
 
 /* local */
 .local {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #c3af8e;
+  color: #5f7157;
   margin-bottom: 60px; /* respiro para o local */
 
 

@@ -130,8 +130,8 @@ body {
 }
 
 .foto-principal { 
-  width: 100%; 
-  height: auto; 
+  width: auto; 
+  height: 100%; 
   display: block; 
   margin: 0;  
 }
@@ -1202,9 +1202,24 @@ text-align: center; }
     justify-content: center;
     align-items: center;
 
-
-
   }
+
+
+/* nomes */
+.nomes {
+  font-size: 60px; /* reduzido para não pesar tanto */
+}
+
+/* data */
+.data {
+  font-size: 11px;
+}
+
+/* local */
+.local {
+  font-size: 11px;
+}   
+
 
   .texto-boas-vindas-conteudo {
     font-size: 2.7vw;

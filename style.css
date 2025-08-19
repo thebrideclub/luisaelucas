@@ -805,7 +805,7 @@ text-align: center; }
 .radio-group label {
   display: flex;
   align-items: center;
-  gap: 2px; /* espaço entre a bolinha e o texto */
+  gap: 0px; /* espaço entre a bolinha e o texto */
   cursor: pointer;
   font-size: 12px;
   justify-content: center; /* centraliza os radios */

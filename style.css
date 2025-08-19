@@ -134,9 +134,9 @@ body {
 /* nomes */
 .nomes {
   font-family: "RetroSignature", cursive;
-  font-size: 80px; /* reduzido para não pesar tanto */
-  color: #c3af8e;
-margin-top: 20px;
+  font-size: 70px; /* reduzido para não pesar tanto */
+  color: #5f7157;
+margin-top: 60px;
   margin-bottom: 20px; /* mais espaço antes da data */
   font-weight: normal;
 }

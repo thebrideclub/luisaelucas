@@ -805,7 +805,9 @@ text-align: center; }
 .radio-group label {
   display: flex;
   align-items: center;
-  gap: 0px; /* espaço entre a bolinha e o texto */
+  gap: 8px; /* espaço entre a bolinha e o texto */
+min-width: 60px; /* garante largura igual para os dois */
+  justify-content: center;
   cursor: pointer;
   font-size: 12px;
   justify-content: center; /* centraliza os radios */
@@ -828,6 +830,8 @@ text-align: center; }
   font-family: 'Montserrat', serif;
   outline: none;
   color: #333;
+
+
 }
 
 /* Ajustes de textarea */
@@ -1271,6 +1275,11 @@ text-align: center; }
   display: flex;
   justify-content: center;
   padding: 40px 20px;
+}
+
+/* Rótulos */
+.retangulo label {
+  font-size: 11px;
 }
 
 /* Cartão/retângulo central */

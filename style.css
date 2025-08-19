@@ -1040,9 +1040,16 @@ font-weight: 100; /* Thin */
   }
 
   .menu-list li a {
-    font-size: 7px;
+    font-size: 9px;
     padding: 4px 6px;
     white-space: nowrap;
+  font-weight: normal;
+ flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+
   }
 
   .foto-principal {

@@ -919,6 +919,47 @@ text-align: center; }
 .retangulo_msg button:hover {
   filter: brightness(0.9);
 }
+.lista-presentes {
+  text-align: center;       /* Centraliza tudo dentro da seção */
+  padding: 50px 20px;       /* Espaçamento interno */
+  background-color: #f7f5ef; /* Opcional: cor de fundo */
+}
+
+.lista-presentes h2 {
+  font-family: 'Chopard', serif; /* Ou outra fonte que preferir */
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.presente-img {
+  max-width: 300px;         /* Ajuste do tamanho da imagem */
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;               /* Espaço entre os botões */
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid #000;  /* Borda fina */
+  text-decoration: none;    /* Remove sublinhado */
+  color: #000;              /* Cor do texto */
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  border-radius: 5px;       /* Bordas levemente arredondadas */
+  transition: all 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #000;   /* Preenche ao passar o mouse */
+  color: #fff;              /* Texto fica branco */
+}
 
 
 /* ========== CARROSSEL ========== */

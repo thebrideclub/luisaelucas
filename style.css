@@ -280,7 +280,7 @@ font-family: "Montserrat", serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #5f7157;
-  margin-bottom: 60px; /* respiro para o local */
+  margin-bottom: 30px; /* respiro para o local */
 }
 
 .botao-como-chegar {
@@ -301,7 +301,10 @@ font-family: "Montserrat", serif;
 }
 
 .imagem-flor {
-  width: 40px;
+  width: 60px;
+  margin-bottom: 10px; /* respiro para o local */
+
+
 
 
 
@@ -1172,7 +1175,7 @@ text-align: center; }
   }
 
   .titulo-contagem {
-    font-size: 10vw;
+    font-size: 12vw;
   }
 
   .contador {
@@ -1195,7 +1198,7 @@ text-align: center; }
   }
 
  .titulo-sessao {
-    font-size: 10vw;
+    font-size: 12vw;
   }
 
 

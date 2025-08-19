@@ -188,7 +188,7 @@ margin-top: 40px;
   font-family: 'Montserrat', serif;
   text-transform: uppercase;
   color: #5f7157;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   letter-spacing: 1.5px;
   max-width: 800px;
@@ -1132,7 +1132,7 @@ text-align: center; }
 
   .logo {
     margin-top: 20px;
-    width: 80px;
+    width: 70px;
     height: auto;
   }
 
@@ -1165,7 +1165,7 @@ text-align: center; }
 
   .texto-boas-vindas-conteudo {
     margin-top: 25px;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 25px 25px;
   }
 
@@ -1185,7 +1185,7 @@ text-align: center; }
   }
 
   .bloco p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .dois-pontos {

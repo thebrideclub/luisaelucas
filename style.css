@@ -113,6 +113,18 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra da linha */
 }
 
+
+.menu::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* cola a linha na parte de baixo do menu */
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* sombra mais evidente */
+}
+
 /* ================================
    FOTO PRINCIPAL E INFORMAÇÕES
 ==================================*/
@@ -120,17 +132,18 @@ body {
 
 
 .convite {
-   background-image: url('fundo_branco.png');
+  background-image: url('fundo_branco.png');
   text-align: center;
   padding: 0px 20px;
-  opacity: 0.4; /* ajuste de 0 (invisível) até 1 (totalmente visível) */
+  opacity: 0.4;
+  margin-top: 0; /* tira espaço extra */
 }
 
 .foto-principal { 
-width: 100%; h
-eight: auto; 
-display: block; 
-margin: 0 auto;  
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;  
 }
 
 

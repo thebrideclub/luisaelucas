@@ -125,8 +125,7 @@ body {
 width: 100%; h
 eight: auto; 
 display: block; 
-margin: 0 auto; 
-margin-top: 20px; 
+margin: 0 auto;  
 }
 
 
@@ -135,6 +134,7 @@ margin-top: 20px;
   font-family: "RetroSignature", cursive;
   font-size: 80px; /* reduzido para não pesar tanto */
   color: #c3af8e;
+margin-top: 80px;
   margin-bottom: 50px; /* mais espaço antes da data */
   font-weight: normal;
 }

@@ -249,66 +249,52 @@ margin-top: 40px;
    SEÇÃO: O CASAMENTO
 ==================================*/
 .sessao-como-chegar {
-  background-image: url('fundo_branco.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   padding: 60px 20px;
   text-align: center;
 }
 
 .titulo-sessao {
   font-family: "RetroSignature", cursive;
-  font-size: 48px;
+  font-size: 80px;
   color: #9c8a73;
   margin-bottom: 20px;
   font-weight: normal;
 }
 
 .data-sessao {
-  font-family: 'Chopard', serif;
-  font-size: 16px;
-  color: #5f5a4c;
-  letter-spacing: 1px;
-  line-height: 1.6;
+font-family: "Montserrat", serif;
+  font-size: 13px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  letter-spacing: 3px;
+  color: #5f7157;
+  margin-bottom: 10px; /* respiro para o local */
 }
 
-.imagem-sessao {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 40px;
-  display: block;
-}
 
 .local-sessao {
   font-family: 'Chopard', serif;
-  font-size: 14px;
-  color: #5f5a4c;
-  line-height: 1.6;
+  font-size: 13px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  letter-spacing: 3px;
+  color: #5f7157;
+  margin-bottom: 60px; /* respiro para o local */
 }
 
 .botao-como-chegar {
-  font-family: 'Chopard', serif;
+  font-family: 'Montserrat', serif;
   text-transform: uppercase;
-  background-color: #c3af8e;
-  color: #fff;
-  padding: 10px 30px;
-  border-radius: 20px;
-  text-decoration: none;
+  color: #c3af8e; /* cor do texto */
   font-size: 14px;
   letter-spacing: 1px;
+  text-decoration: none; /* tira o sublinhado padrão */
+  border-bottom: 2px solid #c3af8e; /* linha embaixo do texto */
+  padding-bottom: 2px; /* espaçamento entre texto e linha */
   display: inline-block;
-  transition: background 0.3s;
+  transition: border-color 0.3s;
 }
 
 .botao-como-chegar:hover {
-  background-color: #b09a7a;
+  border-color: #8f7150; /* muda a cor da linha ao passar o mouse */
 }
 
 /* ================================

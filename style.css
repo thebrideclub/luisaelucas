@@ -378,9 +378,6 @@ font-family: "Montserrat", serif;
 
 
 
-
-
-
 /* ================================
    SEÇÃO: PROGRAMAÇÃO
 ==================================*/
@@ -478,7 +475,6 @@ font-weight: normal;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /* Slider */
 .slider {
@@ -721,17 +717,14 @@ text-transform: uppercase;
   padding: 40px 20px;
 }
 
-/* Cartão/retângulo central */
-.retangulo {
-  background: rgba(255, 255, 255, 0); /* transparente */
-  padding: 40px;
-  width: 90%;           /* aumenta a largura */
-  max-width: 700px;     /* largura máxima maior */
-  border: 2px solid #6b7d58; /* borda verde */
-  border-radius: 6px;
-  text-align: center;
-  box-shadow: none; /* opcional: remove sombra, já que é transparente */
-}
+/* Cartão/retângulo central */ .retangulo { 
+background: #f7f5ef; 
+padding: 40px; 
+width: 100%; 
+max-width: 520px; 
+box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+border-radius: 6px; 
+text-align: center; }
 
 /* Título em RetroSignature */
 .retangulo h2 {

@@ -300,6 +300,11 @@ font-family: "Montserrat", serif;
   border-color: #8f7150; /* muda a cor da linha ao passar o mouse */
 }
 
+.imagem-flor {
+  width: 40px;
+
+
+
 /* ================================
    SEÇÃO: DRESS CODE
 .sessao-dress-code {
@@ -374,8 +379,7 @@ font-family: "Montserrat", serif;
 }
 
 .imagem-flor {
-  width: 150px;
-  margin-top: 10px;
+  width: 40px;
 }
 
 ==================================*/
@@ -1193,6 +1197,20 @@ text-align: center; }
  .titulo-sessao {
     font-size: 10vw;
   }
+
+
+
+.data-sessao {
+  font-size: 12px;
+}
+
+
+.local-sessao {
+
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
 
 /* Área que contém o cartão do RSVP */
 .rsvp-section {

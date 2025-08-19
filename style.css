@@ -806,7 +806,7 @@ text-align: center; }
   display: flex;
   align-items: center;
   gap: 2px; /* espaço entre a bolinha e o texto */
-min-width: 60px; /* garante largura igual para os dois */
+min-width: 30px; /* garante largura igual para os dois */
   justify-content: center;
   cursor: pointer;
   font-size: 12px;

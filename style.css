@@ -303,7 +303,6 @@ font-family: "Montserrat", serif;
 
 /* ================================
    SEÇÃO: DRESS CODE
-==================================*/
 .sessao-dress-code {
   background-image: url('fundo_branco.png');
   font-family: "RetroSignature", cursive;
@@ -380,6 +379,7 @@ font-family: "Montserrat", serif;
   margin-top: 10px;
 }
 
+==================================*/
 
 
 /* ================================
@@ -821,6 +821,100 @@ text-align: center; }
 }
 
 .retangulo button:hover {
+  filter: brightness(0.9);
+}
+
+/* ========= MSG NOIVOS ========= */
+
+/* Área que contém o cartão do RSVP */
+.msg-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Cartão/retângulo central */ .retangulo_msg { 
+background: #f7f5ef; 
+padding: 40px; 
+width: 100%; 
+max-width: 520px; 
+box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+border-radius: 6px; 
+text-align: center; }
+
+/* Título em RetroSignature */
+.retangulo_msg h2 {
+  font-family: 'RetroSignature', cursive;
+  font-size: 52px;
+  color: #5f7157;
+  text-align: center;
+  margin: 0 0 24px 0;
+  font-weight: 100; /* Thin */
+}
+
+/* Formulário em Montserrat */
+.retangulo_msg form {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Rótulos */
+.retangulo_msg label {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #5f7157;
+  text-transform: uppercase;
+}
+
+/* Campos com apenas linha inferior (look da imagem) */
+.retangulo_msg input,
+.retangulo_msg select,
+.retangulo_msg textarea {
+  width: 100%;
+  padding: 10px 6px;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid #6b7d58;
+  border-radius: 0;
+  background: transparent;
+  font-size: 15px;
+  font-family: 'Montserrat', serif;
+  outline: none;
+  color: #333;
+}
+
+/* Ajustes de textarea */
+.retangulo_msg textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Placeholder mais suave */
+.retangulo_msg ::placeholder {
+  color: #9aa596;
+}
+
+
+/* Botão verde */
+.retangulo_msg button {
+  width: 100%;
+  margin-top: 26px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #5f7157;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: filter .2s ease;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.retangulo_msg button:hover {
   filter: brightness(0.9);
 }
 

@@ -53,12 +53,16 @@ body {
 /* ================================
    MENU E CABEÇALHO
 ==================================*/
+/* ================================
+   MENU E CABEÇALHO
+==================================*/
 .menu {
   background-image: url('fundo.png');
-  padding: 60px 0px;
+  padding: 60px 0px 20px 0px; /* diminui o padding de baixo */
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative; /* importante pro ::after */
 }
 
 .logo-container {
@@ -98,6 +102,7 @@ body {
 .menu-list li a:hover {
   color: #a55b4a;
 }
+
 .menu::after {
   content: "";
   display: block;

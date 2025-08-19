@@ -316,17 +316,22 @@ font-family: "Montserrat", serif;
 }
 
 .titulo-traje {
-  font-family: 'Chopard', serif; /* Fonte do título */
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #333;
+  font-family: 'Chopard', serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #5f7157;
+  margin-bottom: 30px; /* respiro para o local */
+  transform: scaleY(0.8);     /* 0.8 = 80% da altura */
 }
 
 .detalhe-traje {
-  font-family: 'Montserrat', sans-serif; /* Fonte dos detalhes */
-  font-size: 16px;
-  margin: 5px 0;
-  color: #555;
+font-family: "Montserrat", serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #5f7157;
+  margin-bottom: 10px; /* respiro para o local */
 }
 
 .dress-img {

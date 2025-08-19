@@ -118,7 +118,6 @@ body {
 ==================================*/
 
 
-
 .convite {
   text-align: center;
   padding: 0px 20px;
@@ -137,19 +136,19 @@ body {
   font-family: "RetroSignature", cursive;
   font-size: 80px; /* reduzido para não pesar tanto */
   color: #c3af8e;
-margin-top: 80px;
-  margin-bottom: 50px; /* mais espaço antes da data */
+margin-top: 20px;
+  margin-bottom: 20px; /* mais espaço antes da data */
   font-weight: normal;
 }
 
 /* data */
 .data {
-  font-family: "Chopard", serif;
+  font-family: "Montserrat", serif;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 6px;
-  color: #4a3b27;
-  margin-bottom: 30px; /* respiro para o local */
+  letter-spacing: 3px;
+  color: #c3af8e;
+  margin-bottom: 20px; /* respiro para o local */
 }
 
 /* local */
@@ -157,8 +156,11 @@ margin-top: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #7b6a54;
+  letter-spacing: 3px;
+  color: #c3af8e;
+  margin-bottom: 60px; /* respiro para o local */
+
+
 }
     
     .icon-embauba {

@@ -321,13 +321,13 @@ font-family: "Montserrat", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #5f7157;
-  margin-bottom: 30px; /* respiro para o local */
+  margin-bottom: 10px; /* respiro para o local */
   transform: scaleY(0.8);     /* 0.8 = 80% da altura */
 }
 
 .detalhe-traje {
 font-family: "Montserrat", serif;
-  font-size: 11px;
+  font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #5f7157;
@@ -917,7 +917,7 @@ text-align: center; }
 .retangulo_msg select,
 .retangulo_msg textarea {
   width: 100%;
-  padding: 10px 6px;
+  padding: 6px 6px;
   margin-top: 6px;
   border: none;
   border-bottom: 1px solid #6b7d58;
@@ -1286,7 +1286,7 @@ text-align: center; }
 /* Título em RetroSignature */
 .retangulo h2 {
   font-family: 'RetroSignature', cursive;
-  font-size: 52px;
+  font-size: 40px;
 
 
 }

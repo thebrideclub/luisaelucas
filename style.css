@@ -57,7 +57,7 @@ body {
 ==================================*/
 .menu {
   background-image: url('fundo.png');
-  padding: 10px 0px 10px 0px; /* diminui o padding de baixo */
+  padding: 10px 0px 20px 0px; /* diminui o padding de baixo */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,6 +282,9 @@ font-family: "Montserrat", serif;
   letter-spacing: 3px;
   color: #5f7157;
   margin-bottom: 30px; /* respiro para o local */
+  transform: scaleY(0.8);     /* 0.8 = 80% da altura */
+
+
 }
 
 .botao-como-chegar {

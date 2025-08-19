@@ -44,8 +44,6 @@ html {
 
 
 body {
-  margin: 0;
-  padding: 0;
   text-align: center;
   background-image: url('fundo_branco.png'); /* caminho da sua imagem */
   background-repeat: no-repeat;           /* não repete a imagem */

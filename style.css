@@ -883,16 +883,13 @@ min-width: 30px; /* garante largura igual para os dois */
   text-align: center;
   margin: 0 0 24px 0;
   font-weight: 100; /* Thin */
-  margin-bottom: 30px;
-
 
 }
 
 .presente-img {
-  max-width: 300px;         /* Ajuste do tamanho da imagem */
+  max-width: 200px;         /* Ajuste do tamanho da imagem */
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
 }
 
 .botoes-container {
@@ -929,22 +926,10 @@ min-width: 30px; /* garante largura igual para os dois */
   padding: 40px 20px;
 }
 
-/* Cartão/retângulo central */
-.retangulo_msg { 
-  background: #f7f5ef; 
-  padding: 40px; 
-  width: 100%; 
-  max-width: 450px; /* maior largura */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
-  border-radius: 8px; 
-  text-align: center;
-  border: 1px solid #c1d0a6; /* contorno verde fino */
-  position: relative;
-}
 
 /* Título em RetroSignature */
 .retangulo_msg h2 {
-  font-family: 'RetroSignature', cursive;
+  font-family: 'Montserrat', cursive;
   font-size: 36px; /* menor e mais elegante */
   color: #5f7157;
   text-align: center;
@@ -956,6 +941,8 @@ min-width: 30px; /* garante largura igual para os dois */
 .retangulo_msg form {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+
 }
 
 /* Rótulos */
@@ -999,12 +986,12 @@ min-width: 30px; /* garante largura igual para os dois */
 
 /* Botão verde arredondado */
 .retangulo_msg button {
-  width: auto;
-  padding: 10px 30px;
-  margin-top: 20px;
+    width: 100%;
+  margin-top: 26px;
+  padding: 12px 16px;
   border: none;
-  border-radius: 20px;
-  background: #8e7b5f; /* cor semelhante à imagem */
+  border-radius: 4px;
+  background: #5f7157;
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;

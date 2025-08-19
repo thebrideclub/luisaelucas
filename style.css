@@ -1165,7 +1165,6 @@ text-align: center; }
 
   .texto-boas-vindas-conteudo {
     font-size: 2.7vw;
-    padding: 15px 15px;
   }
 
   .titulo-contagem {
@@ -1190,6 +1189,11 @@ text-align: center; }
   .dois-pontos {
     display: none;
   }
+
+ .titulo-sessao {
+    font-size: 10vw;
+  }
+
 /* Área que contém o cartão do RSVP */
 .rsvp-section {
   display: flex;

@@ -307,9 +307,34 @@ font-family: "Montserrat", serif;
 .imagem-flor {
   width: 60px;
   margin-bottom: 10px; /* respiro para o local */
+}
 
+/* ========= TRAJE ========= */
+.traje-section {
+  text-align: center;
+  padding: 40px 20px;
+}
 
+.titulo-traje {
+  font-family: 'Chopard', serif; /* Fonte do título */
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
 
+.detalhe-traje {
+  font-family: 'Montserrat', sans-serif; /* Fonte dos detalhes */
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.dress-img {
+  margin-top: 20px;
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
 
 
 /* ================================
@@ -937,9 +962,11 @@ text-align: center; }
 }
 
 .lista-presentes h2 {
-  font-family: 'Chopard', serif; /* Ou outra fonte que preferir */
+  font-family: 'RetroSignature', serif; /* Ou outra fonte que preferir */
   margin-bottom: 30px;
   font-size: 32px;
+  color: #5f7157;
+
 }
 
 .presente-img {
@@ -960,7 +987,7 @@ text-align: center; }
   padding: 10px 25px;
   border: 1px solid #000;  /* Borda fina */
   text-decoration: none;    /* Remove sublinhado */
-  color: #000;              /* Cor do texto */
+   color: #5f7157;              /* Cor do texto */
   font-family: 'Chopard', serif;
   font-size: 16px;
   border-radius: 5px;       /* Bordas levemente arredondadas */

@@ -653,8 +653,8 @@ font-family: "Montserrat", serif;
 
 /* Título principal da seção */
 .titulo-hospedagem {
-  font-family: 'Girly Moods DEMO', cursive;
-  font-size: 60px;
+  font-family: 'RetroSignature', cursive;
+  font-size: 52px;
   color: #c3af8e;
   font-weight: 600;
   padding: 0 10px;
@@ -695,15 +695,12 @@ text-transform: uppercase;
 
 /* Botão "Ver mais" */
 .hotel button {
-  background-color: #bb9469;
-  color: white;
-  border: none;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Chopard', serif;
+  font-family: 'Montserrat', serif;
 }
 
 .hotel button:hover {

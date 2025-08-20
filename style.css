@@ -954,7 +954,6 @@ min-width: 30px; /* garante largura igual para os dois */
 
 /* ========== FEED INSTAGRAM - MAQUIAGEM ========== */
 .feed-instagram.fundo-branco {
-  background-color: #ffffff;
   padding: 60px 20px;
   text-align: center;
 }
@@ -977,11 +976,11 @@ min-width: 30px; /* garante largura igual para os dois */
 }
 
 .perfil-item p {
-  font-family: 'Chopard', serif;
+  font-family: 'Montserrat', serif;
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 10px;
- font-weight: normal;
+ font-weight: 100;
   text-align: center;
 }
 

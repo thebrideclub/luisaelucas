@@ -616,7 +616,17 @@ font-weight: normal;
   border-radius: 2px;
   display: block;
 }
+.sessao-dica {
+  text-align: center;
+  padding: 40px 20px;
+}
 
+.texto-sessao {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #444;
+  margin: 20px 0;
+}
 /* Seção geral */
 .sessao-hospedagem {
   padding: 60px 20px;

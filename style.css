@@ -622,10 +622,12 @@ font-weight: normal;
 }
 
 .texto-sessao {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  color: #444;
-  margin: 20px 0;
+font-family: "Montserrat", serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #5f7157;
+  margin-bottom: 10px; /* respiro para o local */
 }
 /* Seção geral */
 .sessao-hospedagem {

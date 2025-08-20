@@ -20,6 +20,9 @@
 
   atualizarContagem();
   setInterval(atualizarContagem, 1000);
+
+</script>
+
 <script>
   const form = document.getElementById('rsvpForm');
 

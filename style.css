@@ -926,6 +926,24 @@ min-width: 30px; /* garante largura igual para os dois */
   padding: 40px 20px;
 }
 
+.retangulo_msg {
+  position: relative;
+  background: #fff; /* fundo branco */
+  padding: 40px;
+  border: 1px solid #6b8e23; /* borda verde externa */
+}
+
+/* Borda interna */
+.retangulo_msg::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid #6b8e23; /* borda verde interna */
+  pointer-events: none;
+}
 
 /* Título em RetroSignature */
 .retangulo_msg h2 {

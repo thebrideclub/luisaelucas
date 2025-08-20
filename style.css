@@ -670,7 +670,9 @@ font-family: "Montserrat", serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #5f7157;
-  margin-bottom: 10px; /* respiro para o local */
+  margin-bottom: 40px; /* respiro para o local */
+ font-weight: normal;
+
 }
 
 /* Cada hotel */
@@ -696,9 +698,9 @@ font-family: "Montserrat", serif;
 .hotel .info {
   font-family: 'Montserrat', serif;
   text-transform: uppercase;
- font-size: 9px;
-
-
+ font-size: 6px;
+  color: #5f7157;
+ font-weight: normal;
 }
 
 .hotel h3 {
@@ -708,10 +710,13 @@ font-family: 'Chopard', serif;
   margin-bottom: 5px;
   text-transform: uppercase;
   text-decoration: underline;
+  color: #5f7157;
+ font-weight: normal;
+
 }
 
 .hotel p {
-  font-size: 15px;
+  font-size: 12px;
   color: #333;
   margin-bottom: 5px;
 }

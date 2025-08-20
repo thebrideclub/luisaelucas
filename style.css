@@ -1005,7 +1005,7 @@ min-width: 30px; /* garante largura igual para os dois */
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 30px;
-  font-weight: normal;
+  font-weight: 100;
   text-align: center;
 }
 

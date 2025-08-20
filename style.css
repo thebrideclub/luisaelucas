@@ -928,7 +928,6 @@ min-width: 30px; /* garante largura igual para os dois */
 
 .retangulo_msg {
   position: relative;
-  background: #fff; /* fundo branco */
   padding: 40px;
   border: 1px solid #6b8e23; /* borda verde externa */
 }

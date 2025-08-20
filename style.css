@@ -459,6 +459,17 @@ font-family: "Montserrat", serif;
 
 }
 
+.card-vans {
+  width: 100%;
+  max-width: 180px;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+  display: block;
+margin-top: 30px
+  margin-bottom: 30px; /* respiro para o local */
+
+
+}
 .sessao-dica {
   text-align: center;
   padding: 40px 20px;

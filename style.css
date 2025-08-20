@@ -926,27 +926,8 @@ min-width: 30px; /* garante largura igual para os dois */
   padding: 40px 20px;
 }
 
-.retangulo_msg {
-  position: relative;
-  padding: 40px;
-  border: 0.5px solid #6b8e23; /* borda verde externa */
-}
-
-
-
-/* Borda interna */
-.retangulo_msg::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
-  border: 0.5px solid #6b8e23; /* borda verde interna */
-  pointer-events: none;
-}
 .mensagem-img {
-  width: 100px;   /* largura fixa */
+  width: 200px;   /* largura fixa */
   max-width: 100%; /* garante que não estoure o container */
   height: auto;   /* mantém a proporção */
   display: block; /* evita espaços estranhos */

@@ -615,6 +615,9 @@ font-weight: normal;
   margin: 10px auto 0 auto;
   border-radius: 2px;
   display: block;
+  margin-bottom: 10px; /* respiro para o local */
+
+
 }
 .card-maquiagem {
   width: 100%;
@@ -622,6 +625,9 @@ font-weight: normal;
   margin: 10px auto 0 auto;
   border-radius: 2px;
   display: block;
+  margin-bottom: 10px; /* respiro para o local */
+
+
 }
 
 .sessao-dica {
@@ -631,9 +637,9 @@ font-weight: normal;
 
 .texto-sessao {
 font-family: "Montserrat", serif;
-  font-size: 11px;
+  font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #5f7157;
   margin-bottom: 10px; /* respiro para o local */
 }

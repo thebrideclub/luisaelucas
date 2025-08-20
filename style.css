@@ -609,13 +609,21 @@ font-weight: normal;
 ==================================*/
 
 /* Imagem de topo (caso exista) */
-.imagem-hosp {
+.card-hospedagem {
   width: 100%;
-  max-width: 200px;
+  max-width: 180px;
   margin: 10px auto 0 auto;
   border-radius: 2px;
   display: block;
 }
+.card-maquiagem {
+  width: 100%;
+  max-width: 180px;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+  display: block;
+}
+
 .sessao-dica {
   text-align: center;
   padding: 40px 20px;

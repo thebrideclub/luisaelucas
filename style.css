@@ -929,8 +929,10 @@ min-width: 30px; /* garante largura igual para os dois */
 .retangulo_msg {
   position: relative;
   padding: 40px;
-  border: 1px solid #6b8e23; /* borda verde externa */
+  border: 0.5px solid #6b8e23; /* borda verde externa */
 }
+
+
 
 /* Borda interna */
 .retangulo_msg::before {
@@ -940,9 +942,17 @@ min-width: 30px; /* garante largura igual para os dois */
   left: 8px;
   right: 8px;
   bottom: 8px;
-  border: 1px solid #6b8e23; /* borda verde interna */
+  border: 0.5px solid #6b8e23; /* borda verde interna */
   pointer-events: none;
 }
+.mensagem-img {
+  width: 100px;   /* largura fixa */
+  max-width: 100%; /* garante que não estoure o container */
+  height: auto;   /* mantém a proporção */
+  display: block; /* evita espaços estranhos */
+  margin: 0 auto; /* centraliza a imagem */
+}
+
 
 /* Título em RetroSignature */
 .retangulo_msg h2 {

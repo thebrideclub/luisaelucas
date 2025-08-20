@@ -44,9 +44,9 @@
   <div class="hotel">
     <img src="intercity2.jpg" alt="Intercity Teresópolis">
     <div class="info">
-      <h3>Intercity Teresópolis</h3>
-      <p>Distância até o casamento: 9 mins.</p>
-      <p>Promocode: CasamentoLuisaeLucas</p>
+      <h3 onclick="abrirModal('modal1')" style="cursor:pointer;"> Intercity Teresópolis</h3>
+      <p>Distância até o casamento: 30 mins.</p>
+      <p>Promocode: CasamentoLuisaeLucas | 5% OFF</p>
     </div>
   </div>
 
@@ -54,22 +54,30 @@
   <div class="hotel">
     <img src="tere1.jpg" alt="Pousada Terê Parque">
     <div class="info">
-      <h3>Pousada Terê Parque</h3>
-      <p>Distância até o casamento: 11 mins.</p>
-      <p>Promocode: #CasamentoLuisa&Lucas - 10%</p>
+     <h3 onclick="abrirModal('modal2')" style="cursor:pointer;"> Pousada Terê Parque</h3>
+      <p>Distância até o casamento: 35 mins.</p>
+      <p>Promocode: #CasamentoLuisa&Lucas | 10% OFF</p>
     </div>
   </div>
 
   <!-- Hotel 3 -->
   <div class="hotel">
-    <img src="cascata1.jpg" alt="Pousada Nosso Paraíso">
+    <img src="athos2.jpg" alt="Athos Hotel">
     <div class="info">
-      <h3>Pousada Nosso Paraíso</h3>
-      <p>Distância até o casamento: 13 mins.</p>
-      <p>Promo: 10% de desconto a partir da segunda diária ou PIX</p>
+     <h3 onclick="abrirModal('modal3')" style="cursor:pointer;"> Athos Hotel</h3>
+      <p>Distância até o casamento: 33 mins.</p>
+      <p>Promo: LUISAELUCAS | 10% OFF</p>
     </div>
   </div>
-
+  <!-- Hotel 4 -->
+  <div class="hotel">
+    <img src="cascata1.jpg" alt="Pousada Nosso Paraíso">
+    <div class="info">
+     <h3 onclick="abrirModal('modal4')" style="cursor:pointer;"> Pousada Nosso Paraíso</h3>
+      <p>Distância até o casamento: 22 mins.</p>
+      <p>Promo: 10% OFF a partir da segunda diária ou PIX</p>
+    </div>
+  </div>
 <img src="vans.png" alt="Vans" class="card-vans" />
 
  <p class="subtexto">
@@ -110,37 +118,39 @@
     position: relative;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    font-family: 'Chopard', serif;
+    font-family: 'Montserrat', serif;
   }
 
   .modal-conteudo h3 {
-    color: #8c4c4c;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 12px;
+ letter-spacing: 2px;
+  color: #5f7157;
+  margin-bottom: 10px; 
+
   }
 
   .modal-conteudo p {
-    color: #444;
-    font-size: 16px;
+  color: #5f7157;
+    font-size: 10px;
     margin-bottom: 10px;
   }
 
   .modal-conteudo a {
     display: inline-block;
     margin-top: 10px;
-    color: #d58a8a;
+  color: #5f7157;
     text-decoration: underline;
     font-weight: bold;
-    font-family: 'Chopard', serif;
+    font-family: 'Montserrat', serif;
   }
 
   /* Botão fechar */
   .fechar {
-    color: #999;
+  color: #5f7157;
     position: absolute;
     top: 12px;
     right: 20px;
-    font-size: 28px;
+    font-size: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;

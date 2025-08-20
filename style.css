@@ -341,177 +341,6 @@ font-family: "Montserrat", serif;
   height: auto;
 }
 
-
-/* ================================
-   SEÇÃO: DRESS CODE
-.sessao-dress-code {
-  background-image: url('fundo_branco.png');
-  font-family: "RetroSignature", cursive;
-  font-size: 48px;
-  color: #9c8a73;
-  margin-bottom: 20px;
-  font-weight: normal;
-}
-
-.icone-coqueiro {
-  width: 42px;
-  margin-bottom: 10px;
-}
-
-.titulo-dress {
-  font-family: "RetroSignature", cursive;
-  font-size: 60px;
-  color: #9c8a73;
-  margin-bottom: 20px;
-  font-weight: normal;
-}
-
-.imagem-casal {
-  width: 150px;
-  margin: 0 auto 10px;
-}
-
-.traje {
-  font-family: 'Chopard', serif;
-  font-size: 12px;
-  color: #4a3f35;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-}
-
-.imagem-salto {
-  width: 160px;
-  margin-bottom: 15px;
-}
-
-.descricao-dress {
-  font-size: 10px;
-  max-width: 400px;
-  margin: 0 auto 30px;
-  color: #4a3f35;
-  font-family: 'Chopard', serif;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.botao-referencias {
-  background-color: #c6af91;
-  border: none;
-  padding: 10px 30px;
-  font-size: 14px;
-  font-family: 'Chopard', serif;
-  color: white;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  cursor: pointer;
-}
-
-.convite-final {
-  font-family: "Girly Moods DEMO", cursive;
-  font-size: 36px;
-  color: #4a3f35;
-  line-height: 8px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.imagem-flor {
-  width: 40px;
-}
-
-==================================*/
-
-
-/* ================================
-
-.sessao-programacao {
-background-image: url('fundo_branco.png');
-  padding: 60px 20px;
-  background-color: #fefcf9;
-  color: #2f2f2f;
-  font-family: 'Chopard', serif;
-  text-align: center;
-}
-
-.sessao-programacao .titulo-programacao {
-  text-transform: uppercase;
-  font-size: 2.5rem;
- color: #b98b5e;
-  letter-spacing: 2px;
-  margin-bottom: -10px;
-}
-
-.sessao-programacao .subtitulo-programacao {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 60px
-}
-
-.sessao-programacao .icone-coqueiro {
-  width: 30px;
-  margin: 20px auto;
-  display: block;
-   margin-bottom: 60px;
-}
-
-.sessao-programacao .mensagem-programacao {
-  font-size: 1rem;
-  margin-bottom: 80px;
-  line-height: 1.5;
-}
-
-.dia-programacao {
-  margin-bottom: 5px;
-
-}
-
-.dia-programacao .evento-nome {
-  font-family: "Girly Moods DEMO", cursive;
-  font-size: 4.5rem;
-  color: #b98b5e;
-  margin: 10px 0;
-}
-
-.dia-programacao .evento-detalhes {
-  font-family: 'Chopard', serif;
-  font-size: 0.95rem;
-       text-transform: uppercase;
-font-weight: normal;
-  margin: 8px 0, auto;
-}
-
-.dia-programacao .evento-extra {
-  font-family: 'Chopard', serif;
-  font-size: 0.9rem;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-.icone-sapato, 
-.icone-folha {
-  width: 50px;
-  margin: 10px auto;
-  display: block;
-}
-.imagem-maio { 
- width: 100px;
-  margin: 10px auto;
-  display: block;
-}
-.agradecimento {
-  margin-top: 30px;
-  font-size: 0.95rem;
-  font-style: italic;
-}
-
-.imagem-programacao {
-  width: 100%;
-  max-width: 600px;
-  margin: 10px auto 0 auto; /* ajuste fino */
-  border-radius: 2px
-}
-
 /* Reset básico */
 * {
   margin: 0;
@@ -654,7 +483,7 @@ font-family: "Montserrat", serif;
 /* Título principal */
 .titulo-hospedagem {
   font-family: 'RetroSignature', cursive;
-  font-size: 52px;
+  font-size: 60px;
   color: #c3af8e;
   font-weight: 600;
   padding: 0 10px;
@@ -698,20 +527,18 @@ font-family: "Montserrat", serif;
 .hotel .info {
   font-family: 'Montserrat', serif;
   text-transform: uppercase;
- font-size: 6px;
+ font-size: 3px;
   color: #5f7157;
  font-weight: normal;
 }
 
 .hotel h3 {
 font-family: 'Chopard', serif;
-  font-size: 11px;
-  color: #000;
-  margin-bottom: 5px;
+  font-size: 15px;
   text-transform: uppercase;
   text-decoration: underline;
   color: #5f7157;
- font-weight: normal;
+ font-weight: 100;
 
 }
 

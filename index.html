@@ -145,7 +145,17 @@
   
   <div class="botoes-container">
     <a href="https://noivos.casar.com/luisaelucas25?#/one-page/_start" class="botao">Lista virtual</a>
-    <a href="#" class="botao">Presenteie com PIX</a>
+    <a href="#" class="botao" onclick="copiarPix(event)">Presenteie com PIX</a>
+
+<script>
+  function copiarPix(e) {
+    e.preventDefault(); // evita recarregar a página
+    const numero = "(21) 98872-1170";
+    navigator.clipboard.writeText(numero).then(() => {
+      alert("Chave PIX copiada: " + numero);
+    });
+  }
+</script>
   </div>
 </section>
 

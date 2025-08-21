@@ -35,7 +35,14 @@
         <img src="hospedagem.png" alt="Hospedagem" class="card-hospedagem" />
   <h2 class="titulo-hospedagem">Hospedagem</h2>
  
-
+  <!-- Hotel 0 -->
+  <div class="hotel">
+    <img src="hotelembauba1.jpg" alt="Embaúba Boutique Hotel">
+    <div class="info">
+      <h3 onclick="abrirModal('modal0')" style="cursor:pointer;"> Intercity Teresópolis</h3>
+      <p>Local do casamento.</p>
+    </div>
+  </div>
   <!-- Hotel 1 -->
   <div class="hotel">
     <img src="intercity2.jpg" alt="Intercity Teresópolis">
@@ -212,6 +219,23 @@
 </head>
 <body>
 
+<!-- MODAL 0-->
+<div class="modal" id="modal0">
+  <div class="modal-conteudo">
+    <span class="fechar">&times;</span>
+    <h3> Embaúba Boutique Hotel</h3></h3>
+    <div class="carousel">
+      <img class="carousel-img active" src="hotelembauba1.jpg" alt="Foto 1 do hotel" />
+      <img class="carousel-img" src="hotelembauba2.jpg" alt="Foto 2 do hotel" />
+      <img class="carousel-img" src="hotelembauba3.jpg" alt="Foto 3 do hotel" />
+<img class="carousel-img" src="hotelembauba4.jpg" alt="Foto 4 do hotel" />
+      <button class="carousel-btn prev">❮</button>
+      <button class="carousel-btn next">❯</button>
+    </div>
+    <p>Local da cerimônia do casamento <br/>
+    <a href="https://embaubaboutiquehotel.com.br" target="_blank" rel="noopener noreferrer">Site Oficial</a>
+  </div>
+</div>
 
 <!-- MODAL 1 -->
 <div class="modal" id="modal1">

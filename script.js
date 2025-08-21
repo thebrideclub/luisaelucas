@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // ====== CONTAGEM REGRESSIVA ======
   const destino = new Date("2025-11-22T15:30:00-03:00").getTime();
 
   const diasEl = document.getElementById("dias");
@@ -32,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   atualizarContagem();
   const timer = setInterval(atualizarContagem, 1000);
-});
 
- // ====== RSVP (Google Apps Script) ======
+
+  // ====== RSVP (Google Apps Script) ======
   const form = document.getElementById('rsvpForm');
   if (form) {
     form.addEventListener('submit', async (e) => {

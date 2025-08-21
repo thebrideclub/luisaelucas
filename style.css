@@ -347,44 +347,45 @@ font-family: "Montserrat", serif;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Slider */
+/* Slider principal */
 .slider {
-  overflow: hidden;
-  position: relative;
+  overflow: hidden;         /* Esconde o que estiver fora do contêiner */
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: #fff;         /* fundo clean */
 }
 
-/* Faixa que se move */
+/* Faixa de slides */
 .slider-track {
   display: flex;
-  width: calc(250px * 10); /* largura total: número de slides * largura */
-  animation: scroll 30s linear infinite;
+  width: calc(6 * 33.3333%); /* 6 slides x 33.3333% cada */
+  animation: scroll 20s linear infinite; /* movimento suave e contínuo */
 }
 
 /* Cada slide */
 .slide {
-  min-width: 250px;
-  transition: transform 0.3s ease;
-  padding: 10px;
+  flex: 0 0 33.3333%;       /* cada slide ocupa 1/3 do espaço visível */
 }
 
 .slide img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  display: block;
   object-fit: cover;
+  border-radius: 0;         /* sem bordas arredondadas */
+  transition: transform 0.3s ease; /* efeito suave ao hover (opcional) */
 }
 
-/* Animação de rolagem contínua */
+/* efeito opcional ao passar o mouse */
+.slide img:hover {
+  transform: scale(1.05);   /* leve zoom chique */
+}
+
+/* Animação contínua */
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
 
 /* ======================
       SESSÃO DICAS

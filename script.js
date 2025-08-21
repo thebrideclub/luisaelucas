@@ -1,40 +1,41 @@
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  // ====== CONTAGEM REGRESSIVA (evento dia 22/11/2025 às 15:30 em São Paulo) ======
-  const destino = new Date('2025-11-22T15:30:00-03:00').getTime();
-  const diasEl = document.getElementById('dias');
-  const horasEl = document.getElementById('horas');
-  const minutosEl = document.getElementById('minutos');
-  const segundosEl = document.getElementById('segundos');
+document.addEventListener("DOMContentLoaded", () => {
+  const destino = new Date("2025-11-22T15:30:00-03:00").getTime();
 
-  function duasCasas(n) { return String(n).padStart(2, '0'); }
+  const diasEl = document.getElementById("dias");
+  const horasEl = document.getElementById("horas");
+  const minutosEl = document.getElementById("minutos");
+  const segundosEl = document.getElementById("segundos");
 
   function atualizarContagem() {
     const agora = Date.now();
-    const dif = destino - agora;
+    const diferenca = destino - agora;
 
-    if (dif <= 0) {
-      diasEl && (diasEl.textContent = '00');
-      horasEl && (horasEl.textContent = '00');
-      minutosEl && (minutosEl.textContent = '00');
-      segundosEl && (segundosEl.textContent = '00');
+    if (diferenca <= 0) {
+      diasEl.textContent = "00";
+      horasEl.textContent = "00";
+      minutosEl.textContent = "00";
+      segundosEl.textContent = "00";
       clearInterval(timer);
       return;
     }
 
-    const dias = Math.floor(dif / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((dif % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((dif % (1000 * 60)) / 1000);
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
-    diasEl && (diasEl.textContent = duasCasas(dias));
-    horasEl && (horasEl.textContent = duasCasas(horas));
-    minutosEl && (minutosEl.textContent = duasCasas(minutos));
-    segundosEl && (segundosEl.textContent = duasCasas(segundos));
+    diasEl.textContent = String(dias).padStart(2, "0");
+    horasEl.textContent = String(horas).padStart(2, "0");
+    minutosEl.textContent = String(minutos).padStart(2, "0");
+    segundosEl.textContent = String(segundos).padStart(2, "0");
   }
 
   atualizarContagem();
   const timer = setInterval(atualizarContagem, 1000);
+});
+</script>
+<script>
 
   // ====== RSVP (Google Apps Script) ======
   const form = document.getElementById('rsvpForm');

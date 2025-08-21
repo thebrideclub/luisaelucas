@@ -957,6 +957,7 @@ min-width: 30px; /* garante largura igual para os dois */
 
 /* ========== FEED INSTAGRAM - MAQUIAGEM ========== */
 .feed-instagram {
+  margin-top: 40px;
     padding: 60px 20px;
   background-size: cover;
   text-align: center;

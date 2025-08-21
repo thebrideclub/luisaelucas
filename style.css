@@ -1010,6 +1010,19 @@ min-width: 30px; /* garante largura igual para os dois */
 
 }
 
+.fotos-lado-a-lado {
+  display: flex;           /* Faz as fotos ficarem em linha */
+  justify-content: space-between; /* Espaço entre elas */
+  gap: 10px;               /* Espaço entre as fotos (opcional) */
+}
+
+.fotos-lado-a-lado img {
+  width: 32%;              /* Cada foto ocupa aproximadamente 1/3 do espaço */
+  height: auto;            /* Mantém proporção da imagem */
+  object-fit: cover;       /* Corta a imagem para preencher o espaço se necessário */
+  border-radius: 8px;      /* Cantos arredondados, opcional */
+}
+
 /* ===========================
    RODAPÉ PADRÃO DO SITE
 =========================== */

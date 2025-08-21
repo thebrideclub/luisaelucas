@@ -1075,8 +1075,11 @@ min-width: 30px; /* garante largura igual para os dois */
   padding: 40px 20px;
   text-align: center;
   color: #3d2e24; /* Marrom escuro elegante */
-  font-family: 'Chopard', serif;
+  font-family: 'Montserrat', serif;
   margin-top: 60px;
+  font-size: 11px;
+letter-spacing: 2px;
+
 }
 
 .conteudo-rodape {
@@ -1093,7 +1096,8 @@ min-width: 30px; /* garante largura igual para os dois */
   text-decoration: none;
   color: #3d2e24;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 11px;
+letter-spacing: 2px;
   transition: color 0.3s ease;
 }
 

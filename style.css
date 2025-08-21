@@ -1109,6 +1109,50 @@ letter-spacing: 2px;
   font-size: 16px;
   margin-top: 10px;
 }
+/* ======== PIX SECTION ======== */
+.pix-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f7f5ef; /* mesmo tom usado nas outras seções */
+}
+
+.pix-section .titulo-sessao {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.pix-section .descricao-sessao {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* botão/link copiar PIX */
+.botao-pix {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.botao-pix:hover {
+  background: #333;
+  color: #fff;
+}
+
+
 
 
 /* ================================

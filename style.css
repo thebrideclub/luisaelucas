@@ -1017,10 +1017,9 @@ min-width: 30px; /* garante largura igual para os dois */
 }
 
 .fotos-lado-a-lado img {
-  width: 32%;              /* Cada foto ocupa aproximadamente 1/3 do espaço */
+  width: 20%;              /* Cada foto ocupa aproximadamente 1/3 do espaço */
   height: auto;            /* Mantém proporção da imagem */
   object-fit: cover;       /* Corta a imagem para preencher o espaço se necessário */
-  border-radius: 8px;      /* Cantos arredondados, opcional */
 }
 
 /* ===========================

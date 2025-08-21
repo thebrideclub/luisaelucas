@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presenteie com PIX | Luisa & Lucas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Cabeçalho com logo -->
+  <header class="menu">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo" />
+    </div>
+
+    <nav class="nav-container">
+      <ul class="menu-list">
+        <li><a href="index.html">O CASAMENTO</a></li>
+        <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
+        <li><a href="dicas.html">DICAS</a></li>
+        <li><a href="index.html#rsvp">R.S.V.P</a></li>
+        <li><a href="https://noivos.casar.com/luisaelucas25?#/one-page/_start">PRESENTES</a></li>
+        <li><a href="index.html#msg">MENSAGEM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção PIX -->
+  <section class="pix-section">
+    <h2 class="titulo-sessao">Presenteie com PIX</h2>
+    <p class="descricao-sessao">Clique abaixo para copiar nossa chave PIX 💛</p>
+
+    <a href="#" id="copiarPix" class="botao-pix">Copiar chave PIX</a>
+    <span id="feedback" style="margin-left:8px;"></span>
+  </section>
+
+  <script>
+    const link = document.getElementById("copiarPix");
+    const fb = document.getElementById("feedback");
+    const chave = "sua.chave.pix@banco.com"; // 👉 coloque sua chave aqui
+
+    link.addEventListener("click", async (e) => {
+      e.preventDefault();
+      try {
+        await navigator.clipboard.writeText(chave);
+        fb.textContent = "Copiado!";
+      } catch {
+        const area = document.createElement("textarea");
+        area.value = chave;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        document.body.removeChild(area);
+        fb.textContent = "Copiado!";
+      }
+      setTimeout(() => fb.textContent = "", 2000);
+    });
+  </script>
+</body>
+</html>

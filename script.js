@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   atualizarContagem();
   const timer = setInterval(atualizarContagem, 1000);
-});
-</script>
-<script>
 
   // ====== RSVP (Google Apps Script) ======
   const form = document.getElementById('rsvpForm');
@@ -51,9 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
           body: new FormData(form)
         });
 
-        const text = await res.text(); // pode vir HTML se der erro no GAS
+        const text = await res.text();
         let data;
-        try { data = JSON.parse(text); } catch { data = { result: res.ok ? 'success' : 'error', raw: text }; }
+        try { 
+          data = JSON.parse(text); 
+        } catch { 
+          data = { result: res.ok ? 'success' : 'error', raw: text }; 
+        }
 
         if (data.result === 'success') {
           alert('RSVP enviado com sucesso!');

@@ -895,6 +895,50 @@ min-width: 30px; /* garante largura igual para os dois */
 
 
 
+/* ====== CONTATO ====== */
+.contato-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4a4a;
+  background-color: #f7f5ef; /* Opcional: cor de fundo */
+}
+
+.titulo-contato {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.texto-contato {
+  font-size: 11px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.whatsapp-contato a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-contato a:hover {
+  color: #25D366; /* verde WhatsApp no hover */
+}
+
+.icone-whatsapp {
+  width: 16px;
+  height: 16px;
+}
+
+
 /* ========== CARROSSEL ========== */
 .carousel {
   position: relative;

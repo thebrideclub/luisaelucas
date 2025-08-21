@@ -956,18 +956,23 @@ min-width: 30px; /* garante largura igual para os dois */
 /* ========== FEED INSTAGRAM ========== */
 
 /* ========== FEED INSTAGRAM - MAQUIAGEM ========== */
-.feed-instagram.fundo-branco {
-  padding: 60px 20px;
+.feed-instagram {
+    padding: 60px 20px;
+  background-size: cover;
   text-align: center;
 }
 
-.feed-instagram.fundo-branco h2 {
-  font-family: 'RetroSignature', cursive;
+
+.feed-instagram h2 {
+    font-family: 'RetroSignature', cursive;
   font-size: 60px;
-  color: #5f7157;
+  color: #c3af8e;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+ font-weight: normal;
   text-align: center;
-  margin: 0 0 24px 0;
-  font-weight: 100; /* Thin */
 }
 
 .lista-perfis {
@@ -989,22 +994,6 @@ min-width: 30px; /* garante largura igual para os dois */
   text-decoration: underline;
 
 
-}
-
-.feed-instagram {
-  padding: 60px 20px;
-  background-color: #fffafc;
-  text-align: center;
-  font-weight: normal;
-}
-
-.feed-instagram h2 {
-  font-family: 'RetroSignature', cursive;
-  font-size: 52px;
-  color: #5f7157;
-  text-align: center;
-  margin: 0 0 24px 0;
-  font-weight: 100; /* Thin */
 }
 
 .perfil-instagram {

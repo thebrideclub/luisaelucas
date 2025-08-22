@@ -816,9 +816,6 @@ min-width: 30px; /* garante largura igual para os dois */
   margin: 0 auto; /* centraliza a imagem */
 }
 
-.retangulo_msg {
-  background: #f7f5ef; /* cor de fundo que tinha antes */
-}
 /* Título em RetroSignature */
 .retangulo_msg h2 {
   font-family: 'RetroSignature', cursive;

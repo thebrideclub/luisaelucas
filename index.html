@@ -95,38 +95,51 @@
 
 
   <!-- Seção RSVP -->
-<section class="rsvp-section" id="rsvp">
-    <div class="retangulo">
-      <h2>Confirme sua presença</h2>
+<<section class="rsvp-section" id="rsvp">
+  <div class="retangulo">
+    <h2>Confirme sua presença</h2>
 
-      <form id="rsvpForm" autocomplete="off">
-        <label>Nome</label>
-        <input type="text" name="nome" required />
+    <form id="rsvpForm" autocomplete="off">
+      <label>Nome</label>
+      <input type="text" name="nome" required />
 
-        <label>Whatsapp (DDD) + NÚMERO</label>
-        <input type="tel" name="whatsapp" required />
+      <label>Whatsapp (DDD) + NÚMERO</label>
+      <input type="tel" name="whatsapp" required />
 
-<label>Confirma presença?</label>
+      <label>Confirma presença?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="presenca" value="sim" required> Sim</label>
+        <label><input type="radio" name="presenca" value="nao"> Não</label>
+      </div>
 
-<div class="radio-group">
-  <label> <input type="radio" name="presenca" value="sim" required> Sim </label>
-  <label>
-    <input type="radio" name="presenca" value="nao">
-    Não
-  </label>
-</div>
-        </select>
+      <label>Nome acompanhante</label>
+      <textarea name="acompanhantes"></textarea>
 
-        <label>Nome acompanhante</label>
-        <textarea name="acompanhantes"></textarea>
-
-        <label>Mensagem</label>
+      <!-- Campo do chinelo escondido por padrão -->
+      <div id="campo-chinelo" style="display: none;">
+        <label>Mulheres: Inserir a numeração para chinelo</label>
         <textarea name="mensagem"></textarea>
+      </div>
 
-        <button type="submit">ENVIAR</button>
-      </form>
-    </div>
-  </section>
+      <button type="submit">ENVIAR</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  const radios = document.querySelectorAll('input[name="presenca"]');
+  const campoChinelo = document.getElementById('campo-chinelo');
+
+  radios.forEach(radio => {
+    radio.addEventListener('change', function() {
+      if (this.value === "sim") {
+        campoChinelo.style.display = "block";
+      } else {
+        campoChinelo.style.display = "none";
+      }
+    });
+  });
+</script>
 
   <!-- Sessão Presentes -->
 

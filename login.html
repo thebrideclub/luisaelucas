@@ -3,148 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lista de RSVPs - Luisa & Lucas</title>
+  <title> Home | Luisa & Lucas</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" type="image/png">
-  <style>
-    .login-container {
-      max-width: 400px;
-      margin: 60px auto;
-      padding: 25px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
-      text-align: center;
-      font-family: 'Chopard', serif;
-    }
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border-radius: 6px;
-      border: none;
-      background: #d19;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background: #b07;
-    }
-
-    #rsvpTable {
-      width: 90%;
-      margin: 30px auto;
-      border-collapse: collapse;
-      font-family: 'Chopard', serif;
-    }
-    #rsvpTable th, #rsvpTable td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    #rsvpTable th {
-      background-color: #fdfcf9;
-      color: #5f7157;
-    }
-    #rsvpTable tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-  </style>
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
 
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho com logo -->
   <header class="menu">
     <div class="logo-container">
       <img src="logo.png" alt="Logo" class="logo" />
     </div>
+
     <nav class="nav-container">
       <ul class="menu-list">
-        <li><a href="#casamento">O CASAMENTO</a></li>
-        <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
-        <li><a href="dicas.html">DICAS</a></li>
-        <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
-        <li><a href="#">PRESENTES</a></li>
-        <li><a href="#">MENSAGEM</a></li>
+    <li><a href="index.html">O CASAMENTO</a></li>
+    <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
+    <li><a href="dicas.html">DICAS</a></li>    
+<li><a href="#rsvp">R.S.V.P</a></li>
+    <li><a href="https://noivos.casar.com/luisaelucas25?#/one-page/_start">PRESENTES</a></li>
+    <li><a href="#msg">MENSAGEM</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1 style="font-family: 'Chopard', serif; color: #5f7157;">Área restrita - Login</h1>
+ <h1 class="titulo-login">Área dos noivos - Login</h1>
 
-  <div class="login-container" id="loginDiv">
-    <input type="text" id="usuario" placeholder="Usuário">
-    <input type="password" id="senha" placeholder="Senha">
-    <button onclick="verificarLogin()">Entrar</button>
-  </div>
+<div class="login-container" id="loginDiv">
+  <input type="text" id="usuario" placeholder="Usuário">
+  <input type="password" id="senha" placeholder="Senha">
+  <button onclick="verificarLogin()">Entrar</button>
+</div>
 
-  <div id="rsvpDiv" style="display:none;">
-    <h2 style="text-align:center; font-family: 'Chopard', serif; color:#5f7157;">Lista de RSVPs</h2>
-    <table id="rsvpTable">
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Email</th>
-          <th>Presença</th>
-          <th>Acompanhantes</th>
-          <th>Mensagem</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Dados preenchidos via JS -->
-      </tbody>
-    </table>
-  </div>
+<div id="rsvpDiv" class="rsvp-container">
+  <h2 class="titulo-rsvp">Lista de RSVPs</h2>
+  <table id="rsvpTable">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Presença</th>
+        <th>Acompanhantes</th>
+        <th>Mensagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dados preenchidos via JS -->
+    </tbody>
+  </table>
+</div>
 
-  <script>
-    const usuarioCorreto = "luisa";
-    const senhaCorreta = "luisa123";
-    const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyuLXmplYCokZzXkTgeCSDL_1UA8M5qmtQK9BO7cxAAXiq_RKN-pHzNiDC2GmiL4NKg2g/exec";
+<script>
+  const usuarioCorreto = "luisa";
+  const senhaCorreta = "luisa123";
+  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyuLXmplYCokZzXkTgeCSDL_1UA8M5qmtQK9BO7cxAAXiq_RKN-pHzNiDC2GmiL4NKg2g/exec";
 
-    function verificarLogin() {
-      const usuario = document.getElementById('usuario').value;
-      const senha = document.getElementById('senha').value;
+  function verificarLogin() {
+    const usuario = document.getElementById('usuario').value;
+    const senha = document.getElementById('senha').value;
 
-      if(usuario === usuarioCorreto && senha === senhaCorreta) {
-        document.getElementById('loginDiv').style.display = "none";
-        document.getElementById('rsvpDiv').style.display = "block";
-        carregarRSVPs();
-      } else {
-        alert("Usuário ou senha incorretos!");
-      }
+    if(usuario === usuarioCorreto && senha === senhaCorreta) {
+      document.getElementById('loginDiv').style.display = "none";
+      document.getElementById('rsvpDiv').style.display = "block";
+      carregarRSVPs();
+    } else {
+      alert("Usuário ou senha incorretos!");
     }
+  }
 
-    function carregarRSVPs() {
-      fetch(WEBAPP_URL)
-        .then(res => res.json())
-        .then(data => {
-          const tbody = document.querySelector("#rsvpTable tbody");
-          tbody.innerHTML = "";
-          data.forEach(item => {
-            const tr = document.createElement("tr");
-            // Ignorando a primeira coluna "data"
-            tr.innerHTML = `
-              <td>${item.nome}</td>
-              <td>${item.email}</td>
-              <td>${item.presenca}</td>
-              <td>${item.acompanhantes}</td>
-              <td>${item.mensagem}</td>
-            `;
-            tbody.appendChild(tr);
-          });
-        })
-        .catch(err => alert("Erro ao carregar RSVPs: " + err));
-    }
-  </script>
-
-</body>
-</html>
+  function carregarRSVPs() {
+    fetch(WEBAPP_URL)
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.querySelector("#rsvpTable tbody");
+        tbody.innerHTML = "";
+        data.forEach(item => {
+          const tr = document.createElement("tr");
+          // Ignorando a primeira coluna "data"
+          tr.innerHTML = `
+            <td>${item.nome}</td>
+            <td>${item.email}</td>
+            <td>${item.presenca}</td>
+            <td>${item.acompanhantes}</td>
+            <td>${item.mensagem}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(err => alert("Erro ao carregar RSVPs: " + err));
+  }
+</script>

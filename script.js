@@ -36,42 +36,71 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ====== RSVP (Google Apps Script) ======
+
+
+ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('rsvpForm');
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const submitBtn = form.querySelector('[type="submit"]');
-      if (submitBtn) submitBtn.disabled = true;
+  const campoChinelo = document.getElementById('campo-chinelo');
+  const presencaRadios = form.querySelectorAll('input[name="presenca"]');
 
-      try {
-        const res = await fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
-          method: 'POST',
-          body: new FormData(form)
-        });
-
-        const text = await res.text();
-        let data;
-        try { 
-          data = JSON.parse(text); 
-        } catch { 
-          data = { result: res.ok ? 'success' : 'error', raw: text }; 
-        }
-
-        if (data.result === 'success') {
-          alert('RSVP enviado com sucesso!');
-          form.reset();
-        } else {
-          alert('Ocorreu um erro no servidor. Detalhes: ' + (data.raw || text || ''));
-          console.error('Resposta do servidor:', text);
-        }
-      } catch (err) {
-        alert('Erro de rede: ' + err.message);
-        console.error(err);
-      } finally {
-        if (submitBtn) submitBtn.disabled = false;
+  // Mostra ou esconde o campo do chinelo dependendo da presença
+  presencaRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (radio.value === 'sim' && radio.checked) {
+        campoChinelo.style.display = 'block';
+      } else {
+        campoChinelo.style.display = 'none';
+        form.querySelector('textarea[name="mensagem"]').value = '';
       }
     });
-  } else {
+  });
+
+  if (!form) {
     console.warn('Formulário #rsvpForm não encontrado no DOM.');
+    return;
   }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = form.querySelector('[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
+    try {
+      // Cria FormData e loga todos os campos para depuração
+      const formData = new FormData(form);
+      for (const [key, value] of formData.entries()) {
+        console.log(key, value);
+      }
+
+      // Envia para o Apps Script
+      const res = await fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
+        method: 'POST',
+        body: formData
+      });
+
+      const text = await res.text();
+      let data;
+      try { 
+        data = JSON.parse(text); 
+      } catch { 
+        data = { result: res.ok ? 'success' : 'error', raw: text }; 
+      }
+
+      if (data.result === 'success') {
+        alert('RSVP enviado com sucesso!');
+        form.reset();
+        campoChinelo.style.display = 'none';
+      } else {
+        alert('Ocorreu um erro no servidor. Detalhes: ' + (data.raw || text || ''));
+        console.error('Resposta do servidor:', text);
+      }
+    } catch (err) {
+      alert('Erro de rede: ' + err.message);
+      console.error(err);
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+});
+
 });

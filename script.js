@@ -37,13 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ====== RSVP (Google Apps Script) ======
 
-
- document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('rsvpForm');
   const campoChinelo = document.getElementById('campo-chinelo');
-  const presencaRadios = form.querySelectorAll('input[name="presenca"]');
+  const presencaRadios = document.querySelectorAll('input[name="presenca"]');
 
-  // Mostra ou esconde o campo do chinelo dependendo da presença
+  // Mostra ou esconde o campo do chinelo
   presencaRadios.forEach(radio => {
     radio.addEventListener('change', () => {
       if (radio.value === 'sim' && radio.checked) {
@@ -55,10 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  if (!form) {
-    console.warn('Formulário #rsvpForm não encontrado no DOM.');
-    return;
-  }
+  // Envio do formulário
+  if (!form) return;
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -66,13 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (submitBtn) submitBtn.disabled = true;
 
     try {
-      // Cria FormData e loga todos os campos para depuração
       const formData = new FormData(form);
       for (const [key, value] of formData.entries()) {
         console.log(key, value);
       }
 
-      // Envia para o Apps Script
       const res = await fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
         method: 'POST',
         body: formData
@@ -102,5 +96,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 });

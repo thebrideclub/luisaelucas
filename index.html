@@ -124,22 +124,11 @@
       <button type="submit">ENVIAR</button>
     </form>
   </div>
+ <script src="script.js"></script>
+
 </section>
 
-<script>
-  const radios = document.querySelectorAll('input[name="presenca"]');
-  const campoChinelo = document.getElementById('campo-chinelo');
 
-  radios.forEach(radio => {
-    radio.addEventListener('change', function() {
-      if (this.value === "sim") {
-        campoChinelo.style.display = "block";
-      } else {
-        campoChinelo.style.display = "none";
-      }
-    });
-  });
-</script>
 
   <!-- Sessão Presentes -->
 

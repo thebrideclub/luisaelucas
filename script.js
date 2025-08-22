@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ====== CONTAGEM REGRESSIVA ======
-const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
 
+  // =============================
+  // CONTAGEM REGRESSIVA
+  // =============================
+  const destino = new Date(2025, 10, 22, 0, 0, 0).getTime(); // Novembro = 10
   const diasEl = document.getElementById("dias");
   const horasEl = document.getElementById("horas");
   const minutosEl = document.getElementById("minutos");
   const segundosEl = document.getElementById("segundos");
+
+  let timer;
 
   function atualizarContagem() {
     const agora = Date.now();
@@ -32,9 +36,11 @@ const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
   }
 
   atualizarContagem();
-  const timer = setInterval(atualizarContagem, 1000);
+  timer = setInterval(atualizarContagem, 1000);
 
-  // ====== RSVP (Google Apps Script) ======
+  // =============================
+  // FORMULÁRIO RSVP
+  // =============================
   const form = document.getElementById('rsvpForm');
   const campoChinelo = document.getElementById('campo-chinelo');
   const presencaRadios = document.querySelectorAll('input[name="presenca"]');
@@ -45,7 +51,8 @@ const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
         campoChinelo.style.display = 'block';
       } else {
         campoChinelo.style.display = 'none';
-        form.querySelector('textarea[name="mensagem"]').value = '';
+        const mensagemField = form.querySelector('textarea[name="mensagem"]');
+        if (mensagemField) mensagemField.value = '';
       }
     });
   });
@@ -88,7 +95,9 @@ const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
     });
   }
 
-  // ====== MENSAGEM AOS NOIVOS (Google Apps Script) ======
+  // =============================
+  // MENSAGEM AOS NOIVOS
+  // =============================
   const msgForm = document.getElementById("msgForm");
   if (msgForm) {
     msgForm.addEventListener("submit", async (e) => {
@@ -104,7 +113,7 @@ const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
         formData.append("nome", nome);
         formData.append("mensagem", mensagem);
 
-        const res = await fetch(https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
+        const res = await fetch('https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
           method: "POST",
           body: formData
         });

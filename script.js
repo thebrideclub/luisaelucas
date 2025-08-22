@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ====== CONTAGEM REGRESSIVA ======
-  const destino = new Date("2025-11-22T00:00:00-00:00").getTime();
+  const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
 
   const diasEl = document.getElementById("dias");
   const horasEl = document.getElementById("horas");

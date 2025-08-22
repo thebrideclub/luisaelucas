@@ -1159,6 +1159,144 @@ letter-spacing: 2px;
 
 
 
+
+
+
+
+/* ======== ÁREA DOS NOIVOS ======== */
+body {
+  background: #f7f5ef;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+/* título login */
+.titulo-login {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/* ===== LOGIN ===== */
+.login-container {
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px 20px;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.login-container input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+.login-container button {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* ===== MENU PÓS-LOGIN ===== */
+#menuAdmin {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#menuAdmin button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  margin: 0 10px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#menuAdmin button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* ===== TABELAS ===== */
+.rsvp-container,
+.msg-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-rsvp,
+.titulo-msg {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+table th, table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background: #f7f5ef;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+table tr:hover td {
+  background: #fafafa;
+}
+
+
+
+
+
+
 /* ================================
    RESPONSIVO
 ==================================*/

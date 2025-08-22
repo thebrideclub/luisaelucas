@@ -34,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   atualizarContagem();
   const timer = setInterval(atualizarContagem, 1000);
 
-
   // ====== RSVP (Google Apps Script) ======
   const form = document.getElementById('rsvpForm');
   const campoChinelo = document.getElementById('campo-chinelo');
   const presencaRadios = document.querySelectorAll('input[name="presenca"]');
 
-  // Mostra ou esconde o campo do chinelo
   presencaRadios.forEach(radio => {
     radio.addEventListener('change', () => {
       if (radio.value === 'sim' && radio.checked) {
@@ -52,46 +50,81 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Envio do formulário
-  if (!form) return;
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const submitBtn = form.querySelector('[type="submit"]');
-    if (submitBtn) submitBtn.disabled = true;
+      try {
+        const formData = new FormData(form);
+        const res = await fetch('https://script.google.com/macros/s/SEU_RSVP_WEBAPP/exec', {
+          method: 'POST',
+          body: formData
+        });
 
-    try {
-      const formData = new FormData(form);
-      for (const [key, value] of formData.entries()) {
-        console.log(key, value);
+        const text = await res.text();
+        let data;
+        try { 
+          data = JSON.parse(text); 
+        } catch { 
+          data = { result: res.ok ? 'success' : 'error', raw: text }; 
+        }
+
+        if (data.result === 'success') {
+          alert('RSVP enviado com sucesso!');
+          form.reset();
+          campoChinelo.style.display = 'none';
+        } else {
+          alert('Ocorreu um erro no servidor. Detalhes: ' + (data.raw || text || ''));
+          console.error('Resposta do servidor:', text);
+        }
+      } catch (err) {
+        alert('Erro de rede: ' + err.message);
+        console.error(err);
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
       }
+    });
+  }
 
-      const res = await fetch('https://script.google.com/macros/s/AKfycbzdKEtzjqlpAMfF-oaKkvrWzu-ej_cA5D76eVKtHYVDEiOHZKMfFdr0_QzLOtTlWSwbfQ/exec', {
-        method: 'POST',
-        body: formData
-      });
+  // ====== MENSAGEM AOS NOIVOS (Google Apps Script) ======
+  const msgForm = document.getElementById("msgForm");
+  if (msgForm) {
+    msgForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const submitBtn = msgForm.querySelector('[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
 
-      const text = await res.text();
-      let data;
-      try { 
-        data = JSON.parse(text); 
-      } catch { 
-        data = { result: res.ok ? 'success' : 'error', raw: text }; 
+      const nome = document.getElementById("msg-nome").value;
+      const mensagem = document.getElementById("msg-noivos").value;
+
+      try {
+        const formData = new URLSearchParams();
+        formData.append("nome", nome);
+        formData.append("mensagem", mensagem);
+
+        const res = await fetch("https://script.google.com/macros/s/SEU_MSG_WEBAPP/exec", {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await res.json();
+
+        if (data.result === "sucesso" || data.result === "success") {
+          alert("Mensagem enviada com sucesso!");
+          msgForm.reset();
+        } else {
+          alert("Ocorreu um erro ao enviar. Detalhes: " + JSON.stringify(data));
+          console.error(data);
+        }
+      } catch (err) {
+        alert("Erro de rede: " + err.message);
+        console.error(err);
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
       }
+    });
+  }
 
-      if (data.result === 'success') {
-        alert('RSVP enviado com sucesso!');
-        form.reset();
-        campoChinelo.style.display = 'none';
-      } else {
-        alert('Ocorreu um erro no servidor. Detalhes: ' + (data.raw || text || ''));
-        console.error('Resposta do servidor:', text);
-      }
-    } catch (err) {
-      alert('Erro de rede: ' + err.message);
-      console.error(err);
-    } finally {
-      if (submitBtn) submitBtn.disabled = false;
-    }
-  });
 });

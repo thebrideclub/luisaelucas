@@ -58,7 +58,7 @@ const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
 
       try {
         const formData = new FormData(form);
-        const res = await fetch('https://script.google.com/macros/s/SEU_RSVP_WEBAPP/exec', {
+        const res = await fetch('https://script.google.com/macros/s/AKfycbzdKEtzjqlpAMfF-oaKkvrWzu-ej_cA5D76eVKtHYVDEiOHZKMfFdr0_QzLOtTlWSwbfQ/exec', {
           method: 'POST',
           body: formData
         });
@@ -104,7 +104,7 @@ const destino = new Date("2025-11-22T00:00:00-03:00").getTime();
         formData.append("nome", nome);
         formData.append("mensagem", mensagem);
 
-        const res = await fetch("https://script.google.com/macros/s/SEU_MSG_WEBAPP/exec", {
+        const res = await fetch(https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
           method: "POST",
           body: formData
         });

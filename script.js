@@ -95,45 +95,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =============================
-  // MENSAGEM AOS NOIVOS
-  // =============================
-  const msgForm = document.getElementById("msgForm");
-  if (msgForm) {
-    msgForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const submitBtn = msgForm.querySelector('[type="submit"]');
-      if (submitBtn) submitBtn.disabled = true;
+ // =============================
+// MENSAGEM AOS NOIVOS
+// =============================
+const msgForm = document.getElementById("msgForm");
 
-      const msg-nome = document.getElementById("msg-nome").value;
-      const msg-noivos = document.getElementById("msg-noivos").value;
+if (msgForm) {
+  msgForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn = msgForm.querySelector('[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
 
-      try {
-        const formData = new URLSearchParams();
-        formData.append("msg-nome", msg-nome);
-        formData.append("msg-noivos", msg-noivos);
+    // Pegando os valores do formulário
+    const msgNome = document.getElementById("msg-nome").value;
+    const msgNoivos = document.getElementById("msg-noivos").value;
 
-        const res = await fetch('https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
-          method: "POST",
-          body: formData
-        });
+    try {
+      // Preparando os dados para envio
+      const formData = new URLSearchParams();
+      formData.append("msg-nome", msgNome);
+      formData.append("msg-noivos", msgNoivos);
 
-        const data = await res.json();
+      // Enviando para o Google Apps Script
+      const res = await fetch('https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
+        method: "POST",
+        body: formData
+      });
 
-        if (data.result === "sucesso" || data.result === "success") {
-          alert("Mensagem enviada com sucesso!");
-          msgForm.reset();
-        } else {
-          alert("Ocorreu um erro ao enviar. Detalhes: " + JSON.stringify(data));
-          console.error(data);
-        }
-      } catch (err) {
-        alert("Erro de rede: " + err.message);
-        console.error(err);
-      } finally {
-        if (submitBtn) submitBtn.disabled = false;
+      const data = await res.json();
+
+      if (data.result === "sucesso" || data.result === "success") {
+        alert("Mensagem enviada com sucesso!");
+        msgForm.reset();
+      } else {
+        alert("Ocorreu um erro ao enviar. Detalhes: " + JSON.stringify(data));
+        console.error(data);
       }
-    });
+    } catch (err) {
+      alert("Erro de rede: " + err.message);
+      console.error(err);
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+}
+
   }
 
-});
+);

@@ -17,71 +17,106 @@
 
     <nav class="nav-container">
       <ul class="menu-list">
-    <li><a href="index.html">O CASAMENTO</a></li>
-    <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
-    <li><a href="dicas.html">DICAS</a></li>    
-<li><a href="#rsvp">R.S.V.P</a></li>
-    <li><a href="https://noivos.casar.com/luisaelucas25?#/one-page/_start">PRESENTES</a></li>
-    <li><a href="#msg">MENSAGEM</a></li>
+        <li><a href="index.html">O CASAMENTO</a></li>
+        <li><a href="https://ul.waze.com/ul?place=ChIJF-sY5_tHmAAR6LNQ-d4awaY&ll=-22.26580400%2C-42.93617680&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">COMO CHEGAR</a></li>
+        <li><a href="dicas.html">DICAS</a></li>    
+        <li><a href="https://luisaelucas.netlify.app/#rsvp">R.S.V.P</a></li>
+        <li><a href="https://noivos.casar.com/luisaelucas25?#/one-page/_start">PRESENTES</a></li>
+        <li><a href="https://luisaelucas.netlify.app/#msg">MENSAGEM</a></li>
       </ul>
     </nav>
   </header>
 
- <h1 class="titulo-login">Área dos noivos - Login</h1>
+  <h1 class="titulo-login">Área dos noivos - Login</h1>
 
-<div class="login-container" id="loginDiv">
-  <input type="text" id="usuario" placeholder="Usuário">
-  <input type="password" id="senha" placeholder="Senha">
-  <button onclick="verificarLogin()">Entrar</button>
-</div>
+  <!-- LOGIN -->
+  <div class="login-container" id="loginDiv">
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="verificarLogin()">Entrar</button>
+  </div>
 
+  <!-- MENU PÓS-LOGIN -->
+  <div id="menuAdmin" style="display:none; text-align:center; margin:20px;">
+    <button onclick="mostrarRSVPs()">Confirmações de presença</button>
+    <button onclick="mostrarMensagens()">Mensagens aos noivos</button>
+  </div>
 
-<div id="rsvpDiv" class="rsvp-container" style="display:none;">
-  <h2 class="titulo-rsvp">Lista de RSVPs</h2>
-  <table id="rsvpTable">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Email</th>
-        <th>Presença</th>
-        <th>Acompanhantes</th>
-        <th>Mensagem</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Dados preenchidos via JS -->
-    </tbody>
-  </table>
-</div>
+  <!-- TABELA RSVP -->
+  <div id="rsvpDiv" class="rsvp-container" style="display:none;">
+    <h2 class="titulo-rsvp">Lista de RSVPs</h2>
+    <table id="rsvpTable" border="1" cellpadding="5" cellspacing="0" style="margin:auto;">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Presença</th>
+          <th>Acompanhantes</th>
+          <th>Mensagem</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
+  <!-- TABELA MENSAGENS -->
+  <div id="mensagemDiv" class="msg-container" style="display:none;">
+    <h2 class="titulo-msg">Mensagens aos Noivos</h2>
+    <table id="mensagemTable" border="1" cellpadding="5" cellspacing="0" style="margin:auto;">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Mensagem</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
 <script>
   const usuarioCorreto = "luisa";
   const senhaCorreta = "luisa123";
-  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyuLXmplYCokZzXkTgeCSDL_1UA8M5qmtQK9BO7cxAAXiq_RKN-pHzNiDC2GmiL4NKg2g/exec";
 
+  // URLs dos Web Apps
+  const WEBAPP_URL_RSVP = "https://script.google.com/macros/s/AKfycbyuLXmplYCokZzXkTgeCSDL_1UA8M5qmtQK9BO7cxAAXiq_RKN-pHzNiDC2GmiL4NKg2g/exec";
+  const WEBAPP_URL_MSG  = "https://script.google.com/macros/s/AKfycbx-fU6Nglv33PMbz5Ngi9ntbFdFr1YjEXR_S1tXwvqhSt1R_AMFUPKnliggISzjCKNG/exec"; 
+
+  // Verifica login
   function verificarLogin() {
     const usuario = document.getElementById('usuario').value;
     const senha = document.getElementById('senha').value;
 
     if(usuario === usuarioCorreto && senha === senhaCorreta) {
       document.getElementById('loginDiv').style.display = "none";
-      document.getElementById('rsvpDiv').style.display = "block";
-      carregarRSVPs();
+      document.getElementById('menuAdmin').style.display = "block";
     } else {
       alert("Usuário ou senha incorretos!");
     }
   }
 
+  // Mostrar RSVPs
+  function mostrarRSVPs(){
+    document.getElementById('rsvpDiv').style.display = "block";
+    document.getElementById('mensagemDiv').style.display = "none";
+    carregarRSVPs();
+  }
+
+  // Mostrar Mensagens
+  function mostrarMensagens(){
+    document.getElementById('rsvpDiv').style.display = "none";
+    document.getElementById('mensagemDiv').style.display = "block";
+    carregarMensagens();
+  }
+
+  // Carregar RSVPs
   function carregarRSVPs() {
-    fetch(WEBAPP_URL)
+    fetch(WEBAPP_URL_RSVP)
       .then(res => res.json())
       .then(data => {
         const tbody = document.querySelector("#rsvpTable tbody");
         tbody.innerHTML = "";
         data.forEach(item => {
           const tr = document.createElement("tr");
-          // Ignorando a primeira coluna "data"
           tr.innerHTML = `
             <td>${item.nome}</td>
             <td>${item.email}</td>
@@ -94,4 +129,26 @@
       })
       .catch(err => alert("Erro ao carregar RSVPs: " + err));
   }
+
+  // Carregar Mensagens
+  function carregarMensagens() {
+    fetch(WEBAPP_URL_MSG)
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.querySelector("#mensagemTable tbody");
+        tbody.innerHTML = "";
+        data.forEach(item => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${item.Nome}</td>
+            <td>${item["Mensagem aos noivos"]}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(err => alert("Erro ao carregar mensagens: " + err));
+  }
 </script>
+
+</body>
+</html>

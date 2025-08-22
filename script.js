@@ -105,13 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const submitBtn = msgForm.querySelector('[type="submit"]');
       if (submitBtn) submitBtn.disabled = true;
 
-      const nome = document.getElementById("msg-nome").value;
-      const mensagem = document.getElementById("msg-noivos").value;
+      const msg-nome = document.getElementById("msg-nome").value;
+      const msg-noivos = document.getElementById("msg-noivos").value;
 
       try {
         const formData = new URLSearchParams();
-        formData.append("nome", nome);
-        formData.append("mensagem", mensagem);
+        formData.append("msg-nome", msg-nome);
+        formData.append("msg-noivos", msg-noivos);
 
         const res = await fetch('https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
           method: "POST",

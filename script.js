@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ====== RSVP (Google Apps Script) ======
-
   const form = document.getElementById('rsvpForm');
   const campoChinelo = document.getElementById('campo-chinelo');
   const presencaRadios = document.querySelectorAll('input[name="presenca"]');
@@ -95,5 +94,4 @@ document.addEventListener("DOMContentLoaded", () => {
       if (submitBtn) submitBtn.disabled = false;
     }
   });
-});
 });

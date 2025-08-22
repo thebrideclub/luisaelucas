@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(key, value);
       }
 
-      const res = await fetch('https://script.google.com/macros/s/AKfycbx9Tmo_UrEm_8oc0YvwZ6X1VvdN75KNVG-7O1MsuhkiVvitQ4_Nqi_n6sda9phVYU9Y/exec', {
+      const res = await fetch('https://script.google.com/macros/s/AKfycbxQX3K5eyoD1NTIKcrw1weTbbh2f83roAACGzSNEiLF/dev', {
         method: 'POST',
         body: formData
       });

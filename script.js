@@ -117,7 +117,7 @@ if (msgForm) {
       formData.append("msg-noivos", msgNoivos);
 
       // Enviando para o Google Apps Script
-      const res = await fetch('https://script.google.com/macros/s/AKfycbxR5err9F8q29vdvEr2OMuy4Zu9sjjVWv3ylI_DVNTzdXr-tZxXRHp4aO9_nqCM2are/exec', {
+      const res = await fetch('https://script.google.com/macros/s/AKfycbxb6b1Oiau9LIenQ5prv-VoovKnzDbTOXChdn1OA0BIAYAMweN6bMzZmNqb2t6J1njb/exec', {
         method: "POST",
         body: formData
       });

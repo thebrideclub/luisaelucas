@@ -323,6 +323,8 @@ font-family: "Montserrat", serif;
   color: #5f7157;
   margin-bottom: 10px; /* respiro para o local */
   transform: scaleY(0.8);     /* 0.8 = 80% da altura */
+ font-weight: 100;
+
 }
 
 .detalhe-traje {
@@ -499,7 +501,7 @@ font-family: "Montserrat", serif;
   padding: 0 10px;
   margin-top: 40px;
   margin-bottom: 40px;
- font-weight: normal;
+ font-weight: 100;
   text-align: center;
 }
 
@@ -1019,6 +1021,8 @@ min-width: 30px; /* garante largura igual para os dois */
   margin-bottom: 40px;
  font-weight: normal;
   text-align: center;
+
+
 }
 
 .lista-perfis {

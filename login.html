@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Home | Luisa & Lucas</title>
+  <title>Área dos Noivos | Luisa & Lucas</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.png" type="image/png" />
 </head>
@@ -49,7 +49,7 @@
       <thead>
         <tr>
           <th>Nome</th>
-          <th>TELEFONE</th>
+          <th>Telefone</th>
           <th>Presença</th>
           <th>Acompanhantes</th>
           <th>Mensagem</th>
@@ -74,12 +74,13 @@
   </div>
 
 <script>
+  // Credenciais de login
   const usuarioCorreto = "luisa";
   const senhaCorreta = "luisa123";
 
-  // URLs dos Web Apps
-  const WEBAPP_URL_RSVP = "https://script.google.com/macros/s/AKfycbyuLXmplYCokZzXkTgeCSDL_1UA8M5qmtQK9BO7cxAAXiq_RKN-pHzNiDC2GmiL4NKg2g/exec";
-  const WEBAPP_URL_MSG  = "https://script.google.com/macros/s/AKfycbx-fU6Nglv33PMbz5Ngi9ntbFdFr1YjEXR_S1tXwvqhSt1R_AMFUPKnliggISzjCKNG/exec"; 
+  // URLs dos Web Apps publicados
+  const WEBAPP_URL_RSVP = "COLE_AQUI_SUA_URL_DO_DOGET_DO_RSVP";
+  const WEBAPP_URL_MSG  = "COLE_AQUI_SUA_URL_DOGET_DAS_MENSAGENS";
 
   // Verifica login
   function verificarLogin() {
@@ -109,44 +110,52 @@
   }
 
   // Carregar RSVPs
-  function carregarRSVPs() {
-    fetch(WEBAPP_URL_RSVP)
-      .then(res => res.json())
-      .then(data => {
-        const tbody = document.querySelector("#rsvpTable tbody");
-        tbody.innerHTML = "";
-        data.forEach(item => {
-          const tr = document.createElement("tr");
-          tr.innerHTML = `
-            <td>${item.nome}</td>
-            <td>${item.whatsapp}</td>
-            <td>${item.presenca}</td>
-            <td>${item.acompanhantes}</td>
-            <td>${item.mensagem}</td>
-          `;
-          tbody.appendChild(tr);
-        });
-      })
-      .catch(err => alert("Erro ao carregar RSVPs: " + err));
+  async function carregarRSVPs() {
+    try {
+      const res = await fetch(WEBAPP_URL_RSVP);
+      const data = await res.json();
+
+      const tbody = document.querySelector("#rsvpTable tbody");
+      tbody.innerHTML = "";
+
+      data.forEach(item => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${item.nome}</td>
+          <td>${item.whatsapp}</td>
+          <td>${item.presenca}</td>
+          <td>${item.acompanhantes}</td>
+          <td>${item.mensagem}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    } catch(err) {
+      console.error("Erro ao carregar RSVPs:", err);
+      alert("Erro ao carregar RSVPs. Veja o console para detalhes.");
+    }
   }
 
   // Carregar Mensagens
-  function carregarMensagens() {
-    fetch(WEBAPP_URL_MSG)
-      .then(res => res.json())
-      .then(data => {
-        const tbody = document.querySelector("#mensagemTable tbody");
-        tbody.innerHTML = "";
-        data.forEach(item => {
-          const tr = document.createElement("tr");
-          tr.innerHTML = `
-            <td>${item.Nome}</td>
-            <td>${item["Mensagem aos noivos"]}</td>
-          `;
-          tbody.appendChild(tr);
-        });
-      })
-      .catch(err => alert("Erro ao carregar mensagens: " + err));
+  async function carregarMensagens() {
+    try {
+      const res = await fetch(WEBAPP_URL_MSG);
+      const data = await res.json();
+
+      const tbody = document.querySelector("#mensagemTable tbody");
+      tbody.innerHTML = "";
+
+      data.forEach(item => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${item.nome}</td>
+          <td>${item.mensagem}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    } catch(err) {
+      console.error("Erro ao carregar mensagens:", err);
+      alert("Erro ao carregar mensagens. Veja o console para detalhes.");
+    }
   }
 </script>
 

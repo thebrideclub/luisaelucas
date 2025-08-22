@@ -11,7 +11,7 @@ html {
   src: url('Chopard.woff2') format('woff2'),
        url('Chopard.woff') format('woff'),
        url('Chopard.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -20,10 +20,9 @@ html {
   src: url('girlydemo.woff2') format('woff2'),
        url('girlydemo.woff') format('woff'),
        url('girlydemo.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Montserrat';
   src: url('Montserrat.woff2') format('woff2'),
@@ -32,7 +31,6 @@ html {
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'RetroSignature';
   src: url('RetroSignature.woff2') format('woff2'),
@@ -42,14 +40,9 @@ html {
   font-style: normal;
 }
 
-/* BODY UNIFICADO */
 body {
   text-align: center;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
-  background-color: #f7f5ef;
+  background-color: #fffcf6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,7 +54,7 @@ body {
 ==================================*/
 .menu {
   background-image: url('fundo.png');
-  padding: 10px 0 20px 0;
+  padding: 10px 0px 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,6 +108,7 @@ body {
   width: 100%;
   height: 1px;
   background-color: #ccc;
+  margin-top: 10px;
   box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 
@@ -123,7 +117,7 @@ body {
 ==================================*/
 .convite {
   text-align: center;
-  padding: 10px;
+  padding: 0 10px;
   margin-top: 0;
 }
 
@@ -140,7 +134,7 @@ body {
   color: #5f7157;
   margin-top: 40px;
   margin-bottom: 0px;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .data {
@@ -159,11 +153,12 @@ body {
   letter-spacing: 3px;
   color: #5f7157;
   margin-bottom: 60px;
-}   
+}
 
 .icon-embauba {
-  margin: 10px 0;
+  margin-top: 10px;  
   height: 30px;
+  margin-bottom: 10px;
 }
 
 /* ================================
@@ -205,7 +200,7 @@ body {
   font-size: 80px;
   color: #ffffff;
   margin-bottom: 40px;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .contador {
@@ -256,7 +251,7 @@ body {
   font-size: 80px;
   color: #9c8a73;
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .data-sessao {
@@ -333,87 +328,92 @@ body {
   height: auto;
 }
 
-/* RESET BÁSICO */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================================
-   RESPONSIVO
-==================================*/
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+/* Slider principal */
+.slider {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+}
 
-  .logo-container {
-    margin: 0 auto 10px auto;
-  }
+.slider-track {
+  display: flex;
+  width: calc(6 * 33.3333%);
+  animation: scroll 20s linear infinite;
+}
 
-  .logo {
-    margin-top: 20px;
-    width: 70px;
-    height: auto;
-  }
+.slide {
+  flex: 0 0 33.3333%;
+}
 
-  .nav-container {
-    width: 100%;
-    overflow-x: auto;
-    justify-content: flex-start;
-  }
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
 
-  .menu-list {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 10px;
-    padding: 0 10px;
-    margin: 0;
-  }
+.slide img:hover {
+  transform: scale(1.05);
+}
 
-  .menu-list li a {
-    font-size: 9px;
-    padding: 4px 6px;
-    white-space: nowrap;
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
-  .nomes {
-    font-size: 60px;
-  }
+/* ======================
+      SESSÃO DICAS
+====================== */
+.sessao-dicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
 
-  .data,
-  .local,
-  .local-sessao {
-    font-size: 11px;
-  }
+.dica-card {
+  background-color: #fffaf5;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .texto-boas-vindas-conteudo {
-    font-size: 2.7vw;
-  }
+.dica-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
-  .titulo-contagem {
-    font-size: 12vw;
-  }
+.dica-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
 
-  .bloco span {
-    font-size: 8vw;
-  }
-
-  .bloco p {
-    font-size: 3vw;
-  }
-
-  .dois-pontos {
-    display: none;
-  }
-
-  .titulo-sessao {
-    font-size: 12vw;
-  }
+.titulo-dicas {
+  font-family: 'Chopard', serif;
+  font-size: 16px;
+  color: #7b4e35;
+  font-weight: 600;
+  padding: 0 10px;
 }

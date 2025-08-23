@@ -80,7 +80,7 @@
 
   // URLs do Web App atualizado
   const WEBAPP_URL_RSVP = "https://script.google.com/macros/s/AKfycbxDfeWgMdnj-YWTrD-BqzFQsMJasOd5GwgXYjs6z3K2LUDhVhymiInvmUhF69MtATuIFQ/exec";
-  const WEBAPP_URL_MSG  = "https://script.google.com/macros/s/AKfycbxDfeWgMdnj-YWTrD-BqzFQsMJasOd5GwgXYjs6z3K2LUDhVhymiInvmUhF69MtATuIFQ/exec"; // Se a mesma planilha para mensagens
+  const WEBAPP_URL_MSG  = "https://script.google.com/macros/s/AKfycbz4wCLT8IAKKKVp0eLkmyR8uycaxoIJ8r1vUD-_qXt2E1sXQ-1RN_n8YFTH6DYrODiK/exec"; // Se a mesma planilha para mensagens
 
   // Verifica login
   function verificarLogin() {
@@ -144,12 +144,14 @@
       const tbody = document.querySelector("#mensagemTable tbody");
       tbody.innerHTML = "";
 
-      data.forEach(item => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td>${item.nome}</td>
-          <td>${item.mensagem}</td>
-        `;
+  data.forEach(item => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>${item["msg-nome"]}</td>
+    <td>${item["msg-noivos"]}</td>
+  `;
+  document.querySelector("#tabela-mensagens tbody").appendChild(tr);
+});
         tbody.appendChild(tr);
       });
     } catch(err) {

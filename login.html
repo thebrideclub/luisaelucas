@@ -136,29 +136,27 @@
   }
 
   // Carregar Mensagens
-  async function carregarMensagens() {
-    try {
-      const res = await fetch(WEBAPP_URL_MSG);
-      const data = await res.json();
+async function carregarMensagens() {
+  try {
+    const res = await fetch(WEBAPP_URL_MSG);
+    const data = await res.json();
 
-      const tbody = document.querySelector("#mensagemTable tbody");
-      tbody.innerHTML = "";
+    const tbody = document.querySelector("#mensagemTable tbody");
+    tbody.innerHTML = "";
 
-  data.forEach(item => {
-  const tr = document.createElement("tr");
-  tr.innerHTML = `
-    <td>${item["msg-nome"]}</td>
-    <td>${item["msg-noivos"]}</td>
-  `;
-  document.querySelector("#tabela-mensagens tbody").appendChild(tr);
-});
-        tbody.appendChild(tr);
-      });
-    } catch(err) {
-      console.error("Erro ao carregar mensagens:", err);
-      alert("Erro ao carregar mensagens. Veja o console para detalhes.");
-    }
+    data.forEach(item => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${item["msg-nome"]}</td>
+        <td>${item["msg-noivos"]}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  } catch(err) {
+    console.error("Erro ao carregar mensagens:", err);
+    alert("Erro ao carregar mensagens. Veja o console para detalhes.");
   }
+}
 </script>
 
 </body>
